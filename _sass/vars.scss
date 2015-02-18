@@ -1,0 +1,34 @@
+/*
+	Greenandlonely v3
+*/
+
+//settings
+$use-markup-fix: false;
+$use-silent-classes: true;
+
+//breakpoints
+$breakpoints: (
+    'palm' '(max-width: 480px)',
+    'lap' '(min-width: 481px) and (max-width: 1023px)',
+    'portable' '(max-width: 1023px)',
+    'desk' '(min-width: 1024px)'
+);
+$lap-start: 481px;
+$desk-start: 1024px;
+$desk-wide-start: 1200px;
+
+//fonts
+$base-font: 'PT Sans', Helvetica, Arial, sans-serif;
+
+//colours
+$body-bg: #fff;
+$body-text: #111;
+$menu-text: #111;
+
+//metrics
+$spacer: 24px;
+$gutter: $spacer;
+$header-width: 120px;
+
+//multiples
+$divider: 1px solid #ccc;

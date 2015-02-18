@@ -1,0 +1,30 @@
+
+* {
+	@include vendor(box-sizing, border-box);
+}
+
+html {
+	font-family: $base-font;
+}
+
+body {
+	font-size: 14px;
+	margin: 0;
+	background-color: $body-bg;
+	color: $body-text;
+	position: relative;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+}
+
+a {
+	color: $body-text;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

@@ -1,0 +1,21 @@
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	//border: $divider;
+	width: $header-width;
+	padding: $gutter 0;
+	height: 100%;
+	
+	&__inner {
+		background-color: #efefef;
+		@include vendor(border-radius, 0 5px 5px 0);
+		//height: 100%;
+	}
+}
+
+.wrapper {
+	padding: $spacer;
+	padding-left: $header-width + $gutter;
+}
