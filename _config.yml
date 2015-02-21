@@ -11,4 +11,4 @@ permalink:    /:year/:month/:day/:title/
 # Build settings
 paginate: 10
 
-markdown: rdiscount
+//markdown: rdiscount
