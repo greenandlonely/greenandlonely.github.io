@@ -823,39 +823,27 @@ img {
   height: auto; }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 120px;
-  padding: 24px 0;
-  height: 100%; }
-  .header__inner {
-    background-color: #efefef;
-    -webkit-border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
-    -ms-border-radius: 0 5px 5px 0;
-    -o-border-radius: 0 5px 5px 0;
-    border-radius: 0 5px 5px 0; }
+  border-bottom: 1px solid #ccc; }
 
 .wrapper {
   padding: 24px;
-  padding-left: 144px; }
+  padding-left: 24px; }
 
-.album {
+.archive {
   list-style: none outside none;
   margin: 0;
   padding: 0; }
-  @media only screen and (min-width: 481px) {
-    .album {
+  @media only screen and (min-width: 1024px) {
+    .archive {
       -moz-column-count: 2;
       -webkit-column-count: 2;
       column-count: 2;
       -moz-column-gap: 24px;
       -webkit-column-gap: 24px;
       column-gap: 24px; }
-      .album__item {
+      .archive__item, .archive__item--square {
         margin-bottom: 24px; }
-      .album img {
+      .archive img {
         display: block; } }
 
 .menu {
