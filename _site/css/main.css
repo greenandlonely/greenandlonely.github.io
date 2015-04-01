@@ -829,22 +829,27 @@ img {
   padding: 24px;
   padding-left: 24px; }
 
-.archive {
+.archive, .archive__item--double {
   list-style: none outside none;
   margin: 0;
   padding: 0; }
   @media only screen and (min-width: 1024px) {
-    .archive {
+    .archive, .archive__item--double {
       -moz-column-count: 2;
       -webkit-column-count: 2;
       column-count: 2;
       -moz-column-gap: 24px;
       -webkit-column-gap: 24px;
-      column-gap: 24px; }
-      .archive__item, .archive__item--square {
-        margin-bottom: 24px; }
-      .archive img {
-        display: block; } }
+      column-gap: 24px; } }
+  .archive__item, .archive__item--double {
+    margin-bottom: 24px;
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    height: auto; }
+    .archive__item img, .archive__item--double img {
+      display: inline-block; }
 
 .menu {
   color: #111; }

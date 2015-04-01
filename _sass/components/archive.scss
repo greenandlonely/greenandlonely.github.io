@@ -8,23 +8,28 @@
 		column-count: 2;
 		-moz-column-gap: $gutter;
 		-webkit-column-gap: $gutter;
-		column-gap: $gutter;
-			
-		&__item {
-			margin-bottom: $gutter;
-			
-			@include media-query(desk-wide) {
-				
-			}
-			
-			&--square {
-				@extend .archive__item;
-				
-			}
+		column-gap: $gutter;			
+	}
+	
+	&__item {
+		margin-bottom: $gutter;
+		break-inside: avoid-column;
+		-webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		break-inside: avoid;
+		height: auto;
+		
+		&--double {
+			@extend .archive;
+			@extend .archive__item;
 		}
 		
 		img {
-			display: block;
+			display: inline-block;
 		}
+	}
+	
+	img {
+		//display: block;
 	}
 }
