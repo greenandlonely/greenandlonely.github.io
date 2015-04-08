@@ -5,8 +5,8 @@
     <description>James Clarke&#39;s photo blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Apr 2015 14:07:08 +0100</pubDate>
-    <lastBuildDate>Wed, 01 Apr 2015 14:07:08 +0100</lastBuildDate>
+    <pubDate>Wed, 08 Apr 2015 11:16:32 +0100</pubDate>
+    <lastBuildDate>Wed, 08 Apr 2015 11:16:32 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -27,8 +27,8 @@
 
 </description>
         <pubDate>Sun, 15 Feb 2015 14:35:32 +0000</pubDate>
-        <link>http://localhost:4000/2015/02/15/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/2015/02/15/welcome-to-jekyll/</guid>
+        <link>http://localhost:4000/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>
@@ -43,8 +43,8 @@
 &lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/greenandlonely/14531290801&quot; title=&quot;Untitled by James Clarke, on Flickr&quot;&gt;&lt;img src=&quot;/assets/14531290801_6494d5957d_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;Untitled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 29 Jun 2014 21:47:20 +0100</pubDate>
-        <link>http://localhost:4000/2014/06/29/the-park/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/06/29/the-park/</guid>
+        <link>http://localhost:4000/the-park/</link>
+        <guid isPermaLink="true">http://localhost:4000/the-park/</guid>
         
         
       </item>
@@ -60,8 +60,8 @@
 &lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/greenandlonely/14017501527&quot; title=&quot;Untitled by James Clarke, on Flickr&quot;&gt;&lt;img src=&quot;/assets/14017501527_6bab39ebb3_b.jpg&quot; width=&quot;768&quot; height=&quot;1024&quot; alt=&quot;Untitled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 May 2014 10:43:20 +0100</pubDate>
-        <link>http://localhost:4000/2014/05/17/barcelona/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/05/17/barcelona/</guid>
+        <link>http://localhost:4000/barcelona/</link>
+        <guid isPermaLink="true">http://localhost:4000/barcelona/</guid>
         
         
       </item>
@@ -75,8 +75,8 @@
 &lt;p&gt;Attempting zone focussing again after failing at it last year.&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Apr 2014 20:51:26 +0100</pubDate>
-        <link>http://localhost:4000/2014/04/21/zone-focussing/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/04/21/zone-focussing/</guid>
+        <link>http://localhost:4000/zone-focussing/</link>
+        <guid isPermaLink="true">http://localhost:4000/zone-focussing/</guid>
         
         
       </item>
@@ -88,8 +88,8 @@
 &lt;p&gt;Well, attempting to.&lt;/p&gt;
 </description>
         <pubDate>Thu, 17 Apr 2014 21:16:48 +0100</pubDate>
-        <link>http://localhost:4000/2014/04/17/getting-back-on-the-horse/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/04/17/getting-back-on-the-horse/</guid>
+        <link>http://localhost:4000/getting-back-on-the-horse/</link>
+        <guid isPermaLink="true">http://localhost:4000/getting-back-on-the-horse/</guid>
         
         
       </item>
@@ -101,8 +101,8 @@
 &lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/greenandlonely/11484576383/&quot; title=&quot;Untitled by jclarke0206, on Flickr&quot;&gt;&lt;img src=&quot;/assets/11484576383_90cb47e471_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;Untitled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 21 Dec 2013 20:36:27 +0000</pubDate>
-        <link>http://localhost:4000/2013/12/21/novemberdecember/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/12/21/novemberdecember/</guid>
+        <link>http://localhost:4000/novemberdecember/</link>
+        <guid isPermaLink="true">http://localhost:4000/novemberdecember/</guid>
         
         
       </item>
@@ -112,8 +112,8 @@
         <description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/greenandlonely/11330400456/&quot; title=&quot;Untitled by jclarke0206, on Flickr&quot;&gt;&lt;img src=&quot;/assets/11330400456_0991763650_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;Untitled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 11 Dec 2013 22:57:05 +0000</pubDate>
-        <link>http://localhost:4000/2013/12/11/hangin/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/12/11/hangin/</guid>
+        <link>http://localhost:4000/hangin/</link>
+        <guid isPermaLink="true">http://localhost:4000/hangin/</guid>
         
         
       </item>
@@ -124,8 +124,8 @@
 &lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/greenandlonely/10501797415/&quot; title=&quot;Untitled by jclarke0206, on Flickr&quot;&gt;&lt;img src=&quot;/assets/10501797415_7a496e5e65_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;Untitled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 27 Oct 2013 00:27:35 +0100</pubDate>
-        <link>http://localhost:4000/2013/10/27/boo/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/10/27/boo/</guid>
+        <link>http://localhost:4000/boo/</link>
+        <guid isPermaLink="true">http://localhost:4000/boo/</guid>
         
         
       </item>
@@ -141,8 +141,8 @@
 &lt;p&gt;I&#39;ve finally finished going through 3,500 holiday photos. After this there are no more, I promise.&lt;/p&gt;
 </description>
         <pubDate>Wed, 23 Oct 2013 14:17:48 +0100</pubDate>
-        <link>http://localhost:4000/2013/10/23/malaysia-day/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/10/23/malaysia-day/</guid>
+        <link>http://localhost:4000/malaysia-day/</link>
+        <guid isPermaLink="true">http://localhost:4000/malaysia-day/</guid>
         
         
       </item>
@@ -152,8 +152,8 @@
         <description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/greenandlonely/10299089615/&quot; title=&quot;Untitled by jclarke0206, on Flickr&quot;&gt;&lt;img src=&quot;/assets/10299089615_016d4d4ec2_b.jpg&quot; width=&quot;1024&quot; height=&quot;682&quot; alt=&quot;Untitled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Oct 2013 22:58:51 +0100</pubDate>
-        <link>http://localhost:4000/2013/10/15/hat-party/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/10/15/hat-party/</guid>
+        <link>http://localhost:4000/hat-party/</link>
+        <guid isPermaLink="true">http://localhost:4000/hat-party/</guid>
         
         
       </item>

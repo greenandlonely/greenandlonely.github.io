@@ -15,8 +15,10 @@
 //Layouts
 @import "layouts/layout";
 @import "layouts/blog";
+@import "layouts/favourites";
 
 //Components
-@import "components/archive";
 @import "components/post";
 @import "components/menu";
+@import "components/icon";
+@import "components/logo";

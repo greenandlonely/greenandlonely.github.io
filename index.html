@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<div class="home">
 	<ul class="post-list">
 		{% for post in paginator.posts %}
 		<li>
@@ -19,18 +18,17 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 {% if paginator.total_pages > 1 %}
-	<div class="pagination">
+	<div class="paging">
 		{% if paginator.previous_page %}
-			<a rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+			<a rel="prev" title="or you can press the left arrow on your keyboard" class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous page</a>
 		{% else %}
-			<span>&laquo; Prev</span>
+			Previous page
 		{% endif %}
 		
 		{% if paginator.next_page %}
-			<a rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+			<a rel="next" title="or you can press the right arrow on your keyboard" class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next page</a>
 		{% else %}
-			<span>Next &raquo;</span>
+			Next page
 		{% endif %}
 	</div>
 {% endif %}
-</div>

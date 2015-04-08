@@ -1,13 +1,27 @@
 
 .menu {
-	color: $menu-text;
-	//display: none;
+	position: absolute;
+	top: 0;
+	right: $spacer;
+	margin: 0;
+	height: $header-height;
 	
-	span {
+	&__item {
+		display: inline-block;
+		vertical-align: middle;
+		line-height: $header-height;
 		
+		> a {
+			color: $menu-text;
+			text-decoration: none;
+		}
 	}
 	
-	a {
-		color: $menu-text;
-	}
+	&__item--highlighted {
+		@extend .menu__item;
+		
+		> a {
+			color: $menu-text--highlighted;
+		}
+	}	
 }

@@ -5,12 +5,11 @@ description: "James Clarke's photo blog"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: greenandlonely
-github_username:  greenandlonely
-permalink:    /:year/:month/:day/:title/
+github_username: greenandlonely
+permalink: /:title/
 
 # Build settings
 paginate: 5
 paginate_path: "/:num"
 
 //markdown: rdiscount
-

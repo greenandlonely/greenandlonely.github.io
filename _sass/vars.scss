@@ -8,14 +8,13 @@ $use-silent-classes: true;
 
 //breakpoints
 $breakpoints: (
-    'palm' '(max-width: 480px)',
-    'lap' '(min-width: 481px) and (max-width: 1023px)',
-    'portable' '(max-width: 1023px)',
-    'desk' '(min-width: 1024px)'
+    'palm' '(max-width: 680px)',
+    'lap' '(min-width: 681px) and (max-width: 1024px)',
+    'portable' '(max-width: 1024px)',
+    'desk' '(min-width: 1025px)'
 );
-$lap-start: 481px;
-$desk-start: 1024px;
-$desk-wide-start: 1200px;
+$lap-start: 681px;
+$desk-start: 1025px;
 
 //fonts
 $base-font: 'PT Sans', Helvetica, Arial, sans-serif;
@@ -24,11 +23,12 @@ $base-font: 'PT Sans', Helvetica, Arial, sans-serif;
 $body-bg: #fff;
 $body-text: #111;
 $menu-text: #111;
+$menu-text--highlighted: #a00;
 
 //metrics
 $spacer: 24px;
 $gutter: $spacer;
-$header-width: 120px;
+$header-height: 50px;
 
 //multiples
-$divider: 1px solid #ccc;
+$divider: 1px solid #fff;

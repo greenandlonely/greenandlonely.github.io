@@ -1,0 +1,22 @@
+
+.logo {
+	line-height: $header-height;
+	vertical-align: middle;
+	margin: 0;
+	
+	> a {
+		text-decoration: none;
+	}
+	
+	&__icon {
+		width: 55px;
+	}
+}
+
+.colour--primary {
+	fill: #000;
+}
+
+.colour--secondary {
+	fill: #fff;
+}
