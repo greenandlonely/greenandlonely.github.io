@@ -1,11 +1,10 @@
 
 .header {
-	border-bottom: $divider;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: $body-bg;
 	height: $header-height;
 	margin: 0;
 	padding: 0 $spacer;
@@ -13,7 +12,7 @@
 
 .page {
 	@include media-query(lap-and-up) {
-		padding: $header-height $spacer $spacer;
+		padding: $header-height $spacer 0;
 	}
 	
 	padding: 0;

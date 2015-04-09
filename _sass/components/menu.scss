@@ -5,11 +5,13 @@
 	right: $spacer;
 	margin: 0;
 	height: $header-height;
+	text-transform: uppercase;
 	
 	&__item {
 		display: inline-block;
 		vertical-align: middle;
 		line-height: $header-height;
+		padding-left: 10px;
 		
 		> a {
 			color: $menu-text;
