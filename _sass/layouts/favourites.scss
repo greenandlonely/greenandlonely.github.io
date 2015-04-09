@@ -31,7 +31,7 @@
 		text-align: center;
 		margin-bottom: $gutter;
 		
-		@include media-query(lap-and-up) {
+		@include media-query(palm) {
 			&:last-child {
 				margin: 0;
 			}
@@ -43,33 +43,30 @@
 	}
 	
 	&__item--double {
-		-moz-column-count: 2;
-		-webkit-column-count: 2;
-		column-count: 2;
-		-moz-column-gap: $gutter;
-		-webkit-column-gap: $gutter;
-		column-gap: $gutter;
+		@include media-query(lap-and-up) {
+			-moz-column-count: 2;
+			-webkit-column-count: 2;
+			column-count: 2;
+			-moz-column-gap: $gutter;
+			-webkit-column-gap: $gutter;
+			column-gap: $gutter;			
+			margin-bottom: $gutter;
+		}
+		
 		-webkit-column-break-inside: avoid;
 		page-break-inside: avoid;
 		break-inside: avoid;
-		margin-bottom: $gutter;
 		
-		> a {
-			margin-bottom: $gutter;
-			break-inside: avoid-column;
-			-webkit-column-break-inside: avoid;
-			page-break-inside: avoid;
-			break-inside: avoid;
-			height: auto;
-			text-align: center;
-			-webkit-column-break-inside: avoid;
-			page-break-inside: avoid;
-			break-inside: avoid;
-
-			//display: block;
-			//margin-bottom: $gutter;
+		@include media-query(palm) {
+			> a {
+				display: block;
+				margin-bottom: $gutter;
+				height: auto;
+				text-align: center;
+				//display: block;
+				//margin-bottom: $gutter;
+			}
 		}
-		
 		img {
 			display: inline-block;
 		}

@@ -1,11 +1,14 @@
 
 .header {
-	position: fixed;
-	top: 0;
-	left: 0;
+	@include media-query(lap-and-up) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: $header-height;
+	}
+	
 	width: 100%;
 	background-color: $body-bg;
-	height: $header-height;
 	margin: 0;
 	padding: 0 $spacer;
 }
@@ -20,11 +23,11 @@
 	&__heading {
 		text-align: center;
 		
-		@include media-query(lap-and-up) {
+		@include media-query(desk) {
 			position: fixed;
 			top: 0;
-			left: 45%;
-			text-align: left;
+			left: 0;
+			width: 100%;
 			margin: 0;
 			line-height: $header-height;
 			vertical-align: middle;

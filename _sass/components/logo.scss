@@ -1,7 +1,5 @@
 
 .logo {
-	line-height: $header-height;
-	vertical-align: middle;
 	margin: 0;
 	font-size: 24px;
 	
@@ -11,6 +9,12 @@
 	
 	&__icon {
 		width: 55px;
+	}
+	
+	&__text {
+		display: inline-block;
+		line-height: $header-height;
+		vertical-align: text-bottom;
 	}
 }
 
