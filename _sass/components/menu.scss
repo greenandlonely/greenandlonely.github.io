@@ -2,20 +2,46 @@
 .menu {
 	position: absolute;
 	top: 0;
-	right: $spacer;
+	right: 0;
 	margin: 0;
+	padding: 0 $spacer 0 0;
+	width: 30%;
 	height: $header-height;
 	text-transform: uppercase;
+	text-align: right;
 	
 	&__item {
 		display: inline-block;
 		vertical-align: middle;
 		line-height: $header-height;
-		padding-left: 10px;
+		position: relative;
+		padding-right: 15px;
 		
 		> a {
 			color: $menu-text;
 			text-decoration: none;
+		}
+		
+		&:after {
+			content: "";
+			width: 4px;
+			height: 4px;
+			display: block;
+			position: absolute;
+			top: 50%;
+			margin-top: -3px;
+			right: 5px;
+			border-radius: 100%;
+			background-color: $menu-text--highlighted;
+		}
+		
+		&:last-child {
+			padding: 0;
+			margin: 0;
+			
+			&:after {
+				display: none;
+			}
 		}
 	}
 	

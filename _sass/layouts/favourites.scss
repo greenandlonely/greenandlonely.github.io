@@ -1,13 +1,5 @@
 
 .favourites {
-	&__heading {
-		text-align: center;
-		
-		@include media-query(lap-and-up) {
-			text-align: left;
-		}
-	}
-	
 	&__list {
 		@include bare-list;
 		

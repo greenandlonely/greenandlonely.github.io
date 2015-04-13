@@ -26,11 +26,15 @@
 		@include media-query(desk) {
 			position: fixed;
 			top: 0;
-			left: 0;
-			width: 100%;
-			margin: 0;
+			left: 50%;
+			width: 40%;
+			margin-left: -20%;
 			line-height: $header-height;
 			vertical-align: middle;
+		}
+		
+		> * {
+			margin: 0;
 		}
 	}
 }

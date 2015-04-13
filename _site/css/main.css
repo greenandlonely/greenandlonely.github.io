@@ -834,30 +834,27 @@ img {
       position: fixed;
       top: 0;
       left: 0;
-      height: 44px; } }
+      height: 46px; } }
 
 .page {
   padding: 0; }
   @media only screen and (min-width: 681px) {
     .page {
-      padding: 44px 24px 0; } }
+      padding: 46px 24px 0; } }
   .page__heading {
     text-align: center; }
     @media only screen and (min-width: 1025px) {
       .page__heading {
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        line-height: 44px;
+        left: 50%;
+        width: 40%;
+        margin-left: -20%;
+        line-height: 46px;
         vertical-align: middle; } }
+    .page__heading > * {
+      margin: 0; }
 
-.favourites__heading {
-  text-align: center; }
-  @media only screen and (min-width: 681px) {
-    .favourites__heading {
-      text-align: left; } }
 .favourites__list {
   list-style: none outside none;
   margin: 0;
@@ -909,18 +906,38 @@ img {
 .menu {
   position: absolute;
   top: 0;
-  right: 24px;
+  right: 0;
   margin: 0;
-  height: 44px;
-  text-transform: uppercase; }
+  padding: 0 24px 0 0;
+  width: 30%;
+  height: 46px;
+  text-transform: uppercase;
+  text-align: right; }
   .menu__item, .menu__item--highlighted {
     display: inline-block;
     vertical-align: middle;
-    line-height: 44px;
-    padding-left: 10px; }
+    line-height: 46px;
+    position: relative;
+    padding-right: 15px; }
     .menu__item > a, .menu__item--highlighted > a {
       color: #111;
       text-decoration: none; }
+    .menu__item:after, .menu__item--highlighted:after {
+      content: "";
+      width: 4px;
+      height: 4px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -3px;
+      right: 5px;
+      border-radius: 100%;
+      background-color: #a00; }
+    .menu__item:last-child, .menu__item--highlighted:last-child {
+      padding: 0;
+      margin: 0; }
+      .menu__item:last-child:after, .menu__item--highlighted:last-child:after {
+        display: none; }
   .menu__item--highlighted > a {
     color: #a00; }
 
@@ -1053,14 +1070,15 @@ img {
 
 .logo {
   margin: 0;
-  font-size: 24px; }
+  font-size: 24px;
+  width: 30%; }
   .logo > a {
     text-decoration: none; }
   .logo__icon {
     width: 55px; }
   .logo__text {
     display: inline-block;
-    line-height: 44px;
+    line-height: 46px;
     vertical-align: text-bottom; }
 
 .colour--primary {
