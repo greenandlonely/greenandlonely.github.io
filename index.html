@@ -2,20 +2,20 @@
 layout: default
 ---
 
-	<ul class="post-list">
-		{% for post in paginator.posts %}
-		<li>
-			<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-			<h2>
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</h2>
-			
-			{{ post.content }}
-		</li>
-		{% endfor %}
-	</ul>
+<ul class="posts">
+	{% for post in paginator.posts %}
+	<li class="">
+		<span class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		<h2>
+			<a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		</h2>
+		
+		{{ post.content }}
+	</li>
+	{% endfor %}
+</ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 {% if paginator.total_pages > 1 %}
 	<div class="paging">

@@ -16,6 +16,7 @@
 		line-height: $header-height;
 		position: relative;
 		padding-right: 15px;
+		font-weight: bold;
 		
 		> a {
 			color: $menu-text;
@@ -24,13 +25,13 @@
 		
 		&:after {
 			content: "";
-			width: 4px;
-			height: 4px;
+			width: $menu__item-divider-size;
+			height: $menu__item-divider-size;
 			display: block;
 			position: absolute;
 			top: 50%;
 			margin-top: -3px;
-			right: 5px;
+			right: $menu__item-divider-size;
 			border-radius: 100%;
 			background-color: $menu-text--highlighted;
 		}
