@@ -15,7 +15,7 @@
 
 .page {
 	@include media-query(lap-and-up) {
-		padding: $header-height $spacer 0;
+		padding: ($header-height + 5) $spacer 0;
 	}
 	
 	padding: 0;
@@ -36,5 +36,15 @@
 		> * {
 			margin: 0;
 		}
+	}
+}
+
+.blog {
+	padding: $header-height ($paging-size + 10) 0;
+	
+	&__list {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
 	}
 }

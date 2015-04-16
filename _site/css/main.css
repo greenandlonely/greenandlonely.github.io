@@ -834,13 +834,13 @@ img {
       position: fixed;
       top: 0;
       left: 0;
-      height: 46px; } }
+      height: 47px; } }
 
 .page {
   padding: 0; }
   @media only screen and (min-width: 681px) {
     .page {
-      padding: 46px 24px 0; } }
+      padding: 52px 24px 0; } }
   .page__heading {
     text-align: center; }
     @media only screen and (min-width: 1025px) {
@@ -850,10 +850,17 @@ img {
         left: 50%;
         width: 40%;
         margin-left: -20%;
-        line-height: 46px;
+        line-height: 47px;
         vertical-align: middle; } }
     .page__heading > * {
       margin: 0; }
+
+.blog {
+  padding: 47px 60px 0; }
+  .blog__list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0; }
 
 .favourites__list {
   list-style: none outside none;
@@ -903,10 +910,28 @@ img {
   .favourites__item--double img {
     display: inline-block; }
 
-.posts {
+.logo {
   margin: 0;
-  padding: 0;
-  list-style: none outside none; }
+  font-size: 22px;
+  width: 30%;
+  line-height: 47px; }
+  .logo__icon {
+    display: inline-block;
+    padding: 8px 5px 0 0; }
+    .logo__icon > * {
+      width: 55px; }
+  .logo__text {
+    display: inline-block;
+    vertical-align: top; }
+  .logo > a {
+    text-decoration: none; }
+    .logo > a:hover .logo__text, .logo > a:focus .logo__text {
+      color: #a00; }
+    .logo > a:hover .fuji__top-bottom, .logo > a:focus .fuji__top-bottom {
+      fill: #999; }
+
+.post {
+  text-align: center; }
 
 .menu {
   position: absolute;
@@ -915,37 +940,55 @@ img {
   margin: 0;
   padding: 0 24px 0 0;
   width: 30%;
-  height: 46px;
+  height: 47px;
   text-transform: uppercase;
   text-align: right; }
-  .menu__item, .menu__item--highlighted {
+  .menu__item, .menu__item--active {
     display: inline-block;
     vertical-align: middle;
-    line-height: 46px;
+    line-height: 47px;
     position: relative;
     padding-right: 15px;
     font-weight: bold; }
-    .menu__item > a, .menu__item--highlighted > a {
+    .menu__item > a, .menu__item--active > a {
       color: #111;
-      text-decoration: none; }
-    .menu__item:after, .menu__item--highlighted:after {
+      text-decoration: none;
+      display: block;
+      position: relative; }
+      .menu__item > a:before, .menu__item--active > a:before, .menu__item > a:after, .menu__item--active > a:after {
+        display: none; }
+      .menu__item > a:hover:before, .menu__item--active > a:hover:before, .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:before, .menu__item--active > a:focus:before, .menu__item > a:focus:after, .menu__item--active > a:focus:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-bottom: 3px double #111;
+        border-color: #a00; }
+      .menu__item > a:before, .menu__item--active > a:before {
+        top: 0; }
+      .menu__item > a:after, .menu__item--active > a:after {
+        bottom: 0; }
+    .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
+      color: #a00; }
+      .menu__item > a[href^="/f/"]:hover, .menu__item--active > a[href^="/f/"]:hover, .menu__item > a[href^="/f/"]:focus, .menu__item--active > a[href^="/f/"]:focus {
+        border-color: #a00; }
+    .menu__item:after, .menu__item--active:after {
       content: "";
       width: 4px;
       height: 4px;
       display: block;
       position: absolute;
       top: 50%;
-      margin-top: -3px;
+      margin-top: -4px;
       right: 4px;
       border-radius: 100%;
       background-color: #a00; }
-    .menu__item:last-child, .menu__item--highlighted:last-child {
+    .menu__item:last-child, .menu__item--active:last-child {
       padding: 0;
       margin: 0; }
-      .menu__item:last-child:after, .menu__item--highlighted:last-child:after {
+      .menu__item:last-child:after, .menu__item--active:last-child:after {
         display: none; }
-  .menu__item--highlighted > a {
-    color: #a00; }
 
 .icon {
   font-family: 'greenandonely';
@@ -1074,22 +1117,13 @@ img {
 .icon-left:before {
   content: "\3c"; }
 
-.logo {
-  margin: 0;
-  font-size: 22px;
-  width: 30%;
-  line-height: 46px; }
-  .logo__icon {
-    display: inline-block;
-    padding: 8px 5px 0 0; }
-    .logo__icon > * {
-      width: 55px; }
-  .logo__text {
-    display: inline-block;
-    vertical-align: top; }
-  .logo > a {
-    text-decoration: none; }
-    .logo > a:hover .logo__text, .logo > a:focus .logo__text {
-      color: #a00; }
-    .logo > a:hover .fuji__top-bottom, .logo > a:focus .fuji__top-bottom {
-      fill: #999; }
+.paging__next, .paging__prev {
+  position: fixed;
+  bottom: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: red; }
+.paging__next {
+  right: 0; }
+.paging__prev {
+  left: 0; }
