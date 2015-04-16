@@ -30,7 +30,8 @@
 			}
 			
 			&:hover,
-			&:focus {
+			&:focus,
+			&.is-active {
 				&:before,
 				&:after {
 					content: "";
@@ -39,17 +40,16 @@
 					left: 0;
 					width: 100%;
 					border-bottom: 3px double $menu-text;
-					border-color: $menu-text--highlighted;
 				}
 			}
 			
 			
 			&:before {
-				top: 0;
+				top: 10px;
 			}
 			
 			&:after {
-				bottom: 0;
+				bottom: 10px;
 			}
 		}
 		
@@ -57,8 +57,12 @@
 			color: $menu-text--highlighted;
 			
 			&:hover,
-			&:focus {
-				border-color: $menu-text--highlighted;
+			&:focus,
+			&.is-active {
+				&:before,
+				&:after {
+					border-color: $menu-text--highlighted;
+				}
 			}
 		}	
 		

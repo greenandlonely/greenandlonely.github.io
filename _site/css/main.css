@@ -794,12 +794,6 @@ th {
   src: url("/fonts/pt-sans--bold-italic.eot?#iefix") format("embedded-opentype"), url("/fonts/pt-sans--bold-italic.woff2") format("woff2"), url("/fonts/pt-sans--bold-italic.woff") format("woff"), url("/fonts/pt-sans--bold-italic.ttf") format("truetype"), url("/fonts/pt-sans--bold-italic.svg#pt_sansbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
-@font-face {
-  font-family: 'greenandonely';
-  src: url("/fonts/greenandonely.eot?-pusg51");
-  src: url("/fonts/greenandonely.eot?#iefix-pusg51") format("embedded-opentype"), url("/fonts/greenandonely.woff?-pusg51") format("woff"), url("/fonts/greenandonely.ttf?-pusg51") format("truetype"), url("/fonts/greenandonely.svg?-pusg51#greenandonely") format("svg");
-  font-weight: normal;
-  font-style: normal; }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -840,7 +834,7 @@ img {
   padding: 0; }
   @media only screen and (min-width: 681px) {
     .page {
-      padding: 52px 24px 0; } }
+      padding: 47px 24px 0; } }
   .page__heading {
     text-align: center; }
     @media only screen and (min-width: 1025px) {
@@ -957,21 +951,20 @@ img {
       position: relative; }
       .menu__item > a:before, .menu__item--active > a:before, .menu__item > a:after, .menu__item--active > a:after {
         display: none; }
-      .menu__item > a:hover:before, .menu__item--active > a:hover:before, .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:before, .menu__item--active > a:focus:before, .menu__item > a:focus:after, .menu__item--active > a:focus:after {
+      .menu__item > a:hover:before, .menu__item--active > a:hover:before, .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:before, .menu__item--active > a:focus:before, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:before, .menu__item--active > a.is-active:before, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
         content: "";
         display: block;
         position: absolute;
         left: 0;
         width: 100%;
-        border-bottom: 3px double #111;
-        border-color: #a00; }
+        border-bottom: 3px double #111; }
       .menu__item > a:before, .menu__item--active > a:before {
-        top: 0; }
+        top: 10px; }
       .menu__item > a:after, .menu__item--active > a:after {
-        bottom: 0; }
+        bottom: 10px; }
     .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
       color: #a00; }
-      .menu__item > a[href^="/f/"]:hover, .menu__item--active > a[href^="/f/"]:hover, .menu__item > a[href^="/f/"]:focus, .menu__item--active > a[href^="/f/"]:focus {
+      .menu__item > a[href^="/f/"]:hover:before, .menu__item--active > a[href^="/f/"]:hover:before, .menu__item > a[href^="/f/"]:hover:after, .menu__item--active > a[href^="/f/"]:hover:after, .menu__item > a[href^="/f/"]:focus:before, .menu__item--active > a[href^="/f/"]:focus:before, .menu__item > a[href^="/f/"]:focus:after, .menu__item--active > a[href^="/f/"]:focus:after, .menu__item > a[href^="/f/"].is-active:before, .menu__item--active > a[href^="/f/"].is-active:before, .menu__item > a[href^="/f/"].is-active:after, .menu__item--active > a[href^="/f/"].is-active:after {
         border-color: #a00; }
     .menu__item:after, .menu__item--active:after {
       content: "";

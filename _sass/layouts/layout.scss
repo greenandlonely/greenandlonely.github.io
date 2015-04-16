@@ -15,7 +15,7 @@
 
 .page {
 	@include media-query(lap-and-up) {
-		padding: ($header-height + 5) $spacer 0;
+		padding: $header-height $spacer 0;
 	}
 	
 	padding: 0;
