@@ -7,17 +7,18 @@ $use-markup-fix: false;
 $use-silent-classes: true;
 
 //breakpoints
+$lap-start: 681px;
+$desk-start: 1025px;
+
 $breakpoints: (
     'palm' '(max-width: 680px)',
     'lap' '(min-width: 681px) and (max-width: 1024px)',
     'portable' '(max-width: 1024px)',
     'desk' '(min-width: 1025px)'
 );
-$lap-start: 681px;
-$desk-start: 1025px;
 
 //fonts
-$base-font: 'PT Sans', Helvetica, Arial, sans-serif;
+$base-font: 'Archivo Narrow', 'Arial Narrow', sans-serif;
 
 //colours
 $body-bg: #fff;

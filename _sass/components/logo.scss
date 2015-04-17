@@ -2,14 +2,26 @@
 .logo {
 	margin: 0;
 	line-height: $header-height;
+	width: 100%;
+	background-color: red;
+	text-align: center;
+	
+	@include media-query(lap-and-up) {
+		padding-left: $spacer;
+		text-align: left;
+	}
 	
 	@include media-query(lap) {
 		width: 50%;
 	}
 	
+	@include media-query(desk) {
+		width: 30%;
+	}
+	
 	&__icon {
 		display: inline-block;
-		padding: 8px 5px 0 0;
+		padding: 7px 5px 0 0;
 		
 		> * {
 			width: 55px;

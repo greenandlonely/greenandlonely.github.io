@@ -10,7 +10,7 @@
 	width: 100%;
 	background-color: $body-bg;
 	margin: 0;
-	padding: 0 $spacer;
+	//padding: 0 $spacer;
 }
 
 .page {
@@ -31,20 +31,11 @@
 			margin-left: -20%;
 			line-height: $header-height;
 			vertical-align: middle;
+			background-color: green;
 		}
 		
 		> * {
 			margin: 0;
 		}
-	}
-}
-
-.blog {
-	padding: $header-height ($paging-size + 10) 0;
-	
-	&__list {
-		list-style: none outside none;
-		margin: 0;
-		padding: 0;
 	}
 }

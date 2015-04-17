@@ -1,1 +1,10 @@
 
+.blog {
+	padding: $header-height ($paging-size + 10) 0;
+	
+	&__posts {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+	}
+}

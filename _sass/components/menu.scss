@@ -1,16 +1,27 @@
 
 .menu {
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 0;
-	padding: 0 $spacer 0 0;
-	height: $header-height;
 	text-transform: uppercase;
-	text-align: right;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+	@include media-query(lap-and-up) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: $header-height;
+		text-align: right;
+		padding: 0 $spacer 0 0;
+		
+	}
 	
 	@include media-query(lap) {
 		width: 50%;
+	}
+	
+	@include media-query(desk) {
+		width: 30%;
 	}
 	
 	&__item {
@@ -20,6 +31,7 @@
 		position: relative;
 		padding-right: 15px;
 		font-weight: bold;
+		font-size: 16px;
 		
 		> a {
 			color: $menu-text;
@@ -42,7 +54,7 @@
 					position: absolute;
 					left: 0;
 					width: 100%;
-					border-bottom: 3px double $menu-text;
+					border-bottom: 4px double $menu-text;
 				}
 			}
 			
