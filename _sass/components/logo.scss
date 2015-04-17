@@ -1,9 +1,11 @@
 
 .logo {
 	margin: 0;
-	font-size: 22px;
-	width: 30%;
 	line-height: $header-height;
+	
+	@include media-query(lap) {
+		width: 50%;
+	}
 	
 	&__icon {
 		display: inline-block;
@@ -17,6 +19,15 @@
 	&__text {
 		display: inline-block;
 		vertical-align: top;
+		font-size: 16px;
+		
+		@include media-query(lap) {
+			font-size: 18px;
+		}
+		
+		@include media-query(desk) {
+			font-size: 21px;
+		}
 	}
 	
 	> a {

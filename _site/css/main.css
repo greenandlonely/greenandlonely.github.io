@@ -906,9 +906,10 @@ img {
 
 .logo {
   margin: 0;
-  font-size: 22px;
-  width: 30%;
   line-height: 47px; }
+  @media only screen and (min-width: 681px) and (max-width: 1024px) {
+    .logo {
+      width: 50%; } }
   .logo__icon {
     display: inline-block;
     padding: 8px 5px 0 0; }
@@ -916,7 +917,14 @@ img {
       width: 55px; }
   .logo__text {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    font-size: 16px; }
+    @media only screen and (min-width: 681px) and (max-width: 1024px) {
+      .logo__text {
+        font-size: 18px; } }
+    @media only screen and (min-width: 1025px) {
+      .logo__text {
+        font-size: 21px; } }
   .logo > a {
     text-decoration: none; }
     .logo > a:hover .logo__text, .logo > a:focus .logo__text {
@@ -926,6 +934,8 @@ img {
 
 .post {
   text-align: center; }
+  .post img {
+    display: block; }
 
 .menu {
   position: absolute;
@@ -933,10 +943,12 @@ img {
   right: 0;
   margin: 0;
   padding: 0 24px 0 0;
-  width: 30%;
   height: 47px;
   text-transform: uppercase;
   text-align: right; }
+  @media only screen and (min-width: 681px) and (max-width: 1024px) {
+    .menu {
+      width: 50%; } }
   .menu__item, .menu__item--active {
     display: inline-block;
     vertical-align: middle;

@@ -5,10 +5,13 @@
 	right: 0;
 	margin: 0;
 	padding: 0 $spacer 0 0;
-	width: 30%;
 	height: $header-height;
 	text-transform: uppercase;
 	text-align: right;
+	
+	@include media-query(lap) {
+		width: 50%;
+	}
 	
 	&__item {
 		display: inline-block;
