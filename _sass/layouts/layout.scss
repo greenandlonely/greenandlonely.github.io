@@ -21,12 +21,14 @@
 	
 	&__heading {
 		text-align: center;
+		margin-bottom: 15px;
 		
 		@include media-query(desk) {
 			position: fixed;
 			top: 0;
 			left: 50%;
 			width: 40%;
+			margin: 0;
 			margin-left: -20%;
 			line-height: $header-height;
 			vertical-align: middle;
