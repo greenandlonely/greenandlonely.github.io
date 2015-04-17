@@ -851,7 +851,7 @@ img {
 
 .blog {
   padding: 47px 60px 0; }
-  .blog__list {
+  .blog__posts {
     list-style: none outside none;
     margin: 0;
     padding: 0; }
