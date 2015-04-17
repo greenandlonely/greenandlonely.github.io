@@ -3,7 +3,6 @@
 	margin: 0;
 	line-height: $header-height;
 	width: 100%;
-	background-color: red;
 	text-align: center;
 	
 	@include media-query(lap-and-up) {

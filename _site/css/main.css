@@ -844,8 +844,7 @@ img {
         width: 40%;
         margin-left: -20%;
         line-height: 47px;
-        vertical-align: middle;
-        background-color: green; } }
+        vertical-align: middle; } }
     .page__heading > * {
       margin: 0; }
 
@@ -908,7 +907,6 @@ img {
   margin: 0;
   line-height: 47px;
   width: 100%;
-  background-color: red;
   text-align: center; }
   @media only screen and (min-width: 681px) {
     .logo {
