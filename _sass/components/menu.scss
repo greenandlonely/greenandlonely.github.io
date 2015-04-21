@@ -34,11 +34,15 @@
 		font-size: 16px;
 		
 		> a {
-			color: $menu-text;
 			text-decoration: none;
 			display: block;
 			position: relative;
-
+			color: $menu-text--palm;
+			
+			@include media-query(lap-and-up) {
+				color: $menu-text;
+			}
+			
 			&:before,
 			&:after {
 				display: none;
@@ -69,7 +73,11 @@
 		}
 		
 		> a[href^="/f/"] {
-			color: $menu-text--highlighted;
+			color: $menu-text--palm;
+			
+			@include media-query(lap-and-up) {
+				color: $menu-text--highlighted;
+			}
 			
 			&:hover,
 			&:focus,
@@ -88,10 +96,14 @@
 			display: block;
 			position: absolute;
 			top: 50%;
-			margin-top: -$menu__item-divider-size;
+			//margin-top: -$menu__item-divider-size;
 			right: $menu__item-divider-size;
 			border-radius: 100%;
-			background-color: $menu-text--highlighted;
+			background-color: $menu-text--palm;
+			
+			@include media-query (lap-and-up) {
+				background-color: $menu-text--highlighted;
+			}
 		}
 		
 		&:last-child {

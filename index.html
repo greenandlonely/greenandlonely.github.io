@@ -18,17 +18,16 @@ layout: default
 		{% endfor %}
 	</ol>
 	
-	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-	
-	{% if paginator.total_pages > 1 %}
-		<div class="paging">
-			{% if paginator.previous_page %}
-				<a rel="prev" title="or you can press the left arrow on your keyboard" class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous page</a>
-			{% endif %}
-			
-			{% if paginator.next_page %}
-				<a rel="next" title="or you can press the right arrow on your keyboard" class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next page</a>
-			{% endif %}
-		</div>
-	{% endif %}
+	<footer class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></footer>
 </div>
+{% if paginator.total_pages > 1 %}
+	<div class="paging">
+		{% if paginator.previous_page %}
+			<a rel="prev" title="or you can press the left arrow on your keyboard" class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>Previous page</span></a>
+		{% endif %}
+		
+		{% if paginator.next_page %}
+			<a rel="next" title="or you can press the right arrow on your keyboard" class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span>Next page</span></a>
+		{% endif %}
+	</div>
+{% endif %}

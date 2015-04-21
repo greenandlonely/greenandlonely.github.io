@@ -820,14 +820,15 @@ img {
 
 .header {
   width: 100%;
-  background-color: #fff;
+  background-color: #111;
   margin: 0; }
   @media only screen and (min-width: 681px) {
     .header {
       position: fixed;
       top: 0;
       left: 0;
-      height: 47px; } }
+      height: 47px;
+      background-color: #fff; } }
 
 .page {
   padding: 0; }
@@ -847,8 +848,6 @@ img {
         margin-left: -20%;
         line-height: 47px;
         vertical-align: middle; } }
-    .page__heading > * {
-      margin: 0; }
 
 .blog {
   padding: 47px 60px 0; }
@@ -933,7 +932,11 @@ img {
       .logo__text {
         font-size: 21px; } }
   .logo > a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #fff; }
+    @media only screen and (min-width: 681px) {
+      .logo > a {
+        color: #111; } }
     .logo > a:hover .logo__text, .logo > a:focus .logo__text {
       color: #a00; }
     .logo > a:hover .fuji__top-bottom, .logo > a:focus .fuji__top-bottom {
@@ -971,10 +974,13 @@ img {
     font-weight: bold;
     font-size: 16px; }
     .menu__item > a, .menu__item--active > a {
-      color: #111;
       text-decoration: none;
       display: block;
-      position: relative; }
+      position: relative;
+      color: #fff; }
+      @media only screen and (min-width: 681px) {
+        .menu__item > a, .menu__item--active > a {
+          color: #111; } }
       .menu__item > a:before, .menu__item--active > a:before, .menu__item > a:after, .menu__item--active > a:after {
         display: none; }
       .menu__item > a:hover:before, .menu__item--active > a:hover:before, .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:before, .menu__item--active > a:focus:before, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:before, .menu__item--active > a.is-active:before, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
@@ -989,7 +995,10 @@ img {
       .menu__item > a:after, .menu__item--active > a:after {
         bottom: 10px; }
     .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
-      color: #a00; }
+      color: #fff; }
+      @media only screen and (min-width: 681px) {
+        .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
+          color: #a00; } }
       .menu__item > a[href^="/f/"]:hover:before, .menu__item--active > a[href^="/f/"]:hover:before, .menu__item > a[href^="/f/"]:hover:after, .menu__item--active > a[href^="/f/"]:hover:after, .menu__item > a[href^="/f/"]:focus:before, .menu__item--active > a[href^="/f/"]:focus:before, .menu__item > a[href^="/f/"]:focus:after, .menu__item--active > a[href^="/f/"]:focus:after, .menu__item > a[href^="/f/"].is-active:before, .menu__item--active > a[href^="/f/"].is-active:before, .menu__item > a[href^="/f/"].is-active:after, .menu__item--active > a[href^="/f/"].is-active:after {
         border-color: #a00; }
     .menu__item:after, .menu__item--active:after {
@@ -999,23 +1008,33 @@ img {
       display: block;
       position: absolute;
       top: 50%;
-      margin-top: -4px;
       right: 4px;
       border-radius: 100%;
-      background-color: #a00; }
+      background-color: #fff; }
+      @media only screen and (min-width: 681px) {
+        .menu__item:after, .menu__item--active:after {
+          background-color: #a00; } }
     .menu__item:last-child, .menu__item--active:last-child {
       padding: 0;
       margin: 0; }
       .menu__item:last-child:after, .menu__item--active:last-child:after {
         display: none; }
 
-.paging__next, .paging__prev {
+.paging {
   position: fixed;
-  bottom: 24px;
-  width: 50px;
+  bottom: 0;
   height: 50px;
-  background-color: red; }
-.paging__next {
-  right: 0; }
-.paging__prev {
-  left: 0; }
+  width: 100%; }
+  .paging__next, .paging__prev {
+    position: relative; }
+    .paging__next > span, .paging__prev > span {
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      height: 50px;
+      display: block;
+      background-color: red; }
+  .paging__next > span {
+    right: 0; }
+  .paging__prev > span {
+    left: 0; }

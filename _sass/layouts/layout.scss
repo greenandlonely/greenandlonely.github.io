@@ -5,10 +5,11 @@
 		top: 0;
 		left: 0;
 		height: $header-height;
+		background-color: $header-bg;
 	}
 	
 	width: 100%;
-	background-color: $body-bg;
+	background-color: $header-bg--palm;
 	margin: 0;
 }
 
@@ -32,10 +33,6 @@
 			margin-left: -20%;
 			line-height: $header-height;
 			vertical-align: middle;
-		}
-		
-		> * {
-			margin: 0;
 		}
 	}
 }

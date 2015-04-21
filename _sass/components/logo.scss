@@ -39,7 +39,12 @@
 	
 	> a {
 		text-decoration: none;
+		color: $logo-colour--palm;
 		
+		@include media-query(lap-and-up) {
+			color: $logo-colour;
+		}
+			
 		&:hover,
 		&:focus {
 			.logo__text {
