@@ -2,9 +2,11 @@
 .menu {
 	text-transform: uppercase;
 	text-align: center;
-	width: 100%;
+	width: 60%;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
 	
 	@include media-query(lap-and-up) {
 		position: absolute;
@@ -13,7 +15,7 @@
 		height: $header-height;
 		text-align: right;
 		padding: 0 $spacer 0 0;
-		
+		display: block;
 	}
 	
 	@include media-query(lap) {
@@ -25,13 +27,17 @@
 	}
 	
 	&__item {
-		display: inline-block;
-		vertical-align: middle;
-		line-height: $header-height;
-		position: relative;
-		padding-right: 15px;
-		font-weight: bold;
-		font-size: 16px;
+		
+		
+		@include media-query(lap-and-up) {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: $header-height;
+			position: relative;
+			padding-right: 15px;
+			font-weight: bold;
+			font-size: 16px;
+		}
 		
 		> a {
 			text-decoration: none;
@@ -96,7 +102,7 @@
 			display: block;
 			position: absolute;
 			top: 50%;
-			//margin-top: -$menu__item-divider-size;
+			margin-top: -$menu__item-divider-size;
 			right: $menu__item-divider-size;
 			border-radius: 100%;
 			background-color: $menu-text--palm;

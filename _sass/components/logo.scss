@@ -2,12 +2,10 @@
 .logo {
 	margin: 0;
 	line-height: $header-height;
-	width: 100%;
-	text-align: center;
+	width: 40%;
 	
 	@include media-query(lap-and-up) {
 		padding-left: $spacer;
-		text-align: left;
 	}
 	
 	@include media-query(lap) {
@@ -28,9 +26,14 @@
 	}
 	
 	&__text {
-		display: inline-block;
 		vertical-align: top;
 		font-size: 18px;
+		display: none;
+		text-align: left;
+		
+		@include media-query(lap-and-up) {
+			display: inline-block;
+		}
 		
 		@include media-query(desk) {
 			font-size: 21px;

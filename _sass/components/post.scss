@@ -1,4 +1,11 @@
 
 .post {
-	text-align: center;
+	text-align: left;
+	
+	@include media-query(lap-and-up) {
+		text-align: center;
+	}
+	
+	&__title {
+	}
 }
