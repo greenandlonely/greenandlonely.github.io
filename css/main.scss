@@ -16,9 +16,11 @@
 @import "layouts/layout";
 @import "layouts/blog";
 @import "layouts/favourites";
+@import "layouts/blogroll";
 
 //Components
 @import "components/logo";
+@import "components/fuji";
 @import "components/post";
 @import "components/menu";
 @import "components/paging";

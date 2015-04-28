@@ -1,0 +1,31 @@
+
+.blogroll {
+//	display: flex;
+//	flex-direction: row;
+//	flex-wrap: wrap;
+	@include bare-list;
+	margin-left: -$gutter;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	
+	> li {
+		flex: 1 25%;
+		padding: $gutter 0 0 $gutter;
+	}
+	
+	a {
+		background-color: #eee;
+		display: block;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+		
+		&:hover,
+		&:focus {
+			background-color: #111;
+			color: #fff;
+		}
+	}
+}

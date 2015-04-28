@@ -1,0 +1,18 @@
+
+.fuji {
+	&__primary {
+		fill: $fuji__secondary-colour;
+		
+		@include media-query(lap-and-up) {
+			fill: $fuji__primary-colour;
+		}
+	}
+	
+	&__secondary {
+		fill: $fuji__primary-colour;
+		
+		@include media-query(lap-and-up) {
+			fill: $fuji__secondary-colour;
+		}
+	}
+}

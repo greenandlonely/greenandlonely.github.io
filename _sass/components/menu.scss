@@ -49,7 +49,6 @@
 				color: $menu-text;
 			}
 			
-			&:before,
 			&:after {
 				display: none;
 			}
@@ -57,21 +56,16 @@
 			&:hover,
 			&:focus,
 			&.is-active {
-				&:before,
 				&:after {
 					content: "";
 					display: block;
 					position: absolute;
 					left: 0;
 					width: 100%;
-					border-bottom: 4px double $menu-text;
+					border-bottom: 2px solid $menu-text;
 				}
 			}
 			
-			
-			&:before {
-				top: 10px;
-			}
 			
 			&:after {
 				bottom: 10px;
@@ -88,7 +82,6 @@
 			&:hover,
 			&:focus,
 			&.is-active {
-				&:before,
 				&:after {
 					border-color: $menu-text--highlighted;
 				}
@@ -102,7 +95,7 @@
 			display: block;
 			position: absolute;
 			top: 50%;
-			margin-top: -$menu__item-divider-size;
+			margin-top: -($menu__item-divider-size/2);
 			right: $menu__item-divider-size;
 			border-radius: 100%;
 			background-color: $menu-text--palm;
