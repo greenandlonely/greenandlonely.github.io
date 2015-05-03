@@ -5,14 +5,16 @@
 	width: 60%;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
+	display: inline-block;
+	height: $header-height;
+	float: right;
+	position: relative;
+	padding-right: $menu__item-width;
 	
 	@include media-query(lap-and-up) {
 		position: absolute;
 		top: 0;
 		right: 0;
-		height: $header-height;
 		text-align: right;
 		padding: 0 $spacer 0 0;
 		display: block;
@@ -27,7 +29,10 @@
 	}
 	
 	&__item {
-		
+		float: left;
+		height: $header-height/2;
+		display: block;
+		width: $menu__item-width;
 		
 		@include media-query(lap-and-up) {
 			display: inline-block;
@@ -37,6 +42,8 @@
 			padding-right: 15px;
 			font-weight: bold;
 			font-size: 16px;
+			float: none;
+			height: auto;
 		}
 		
 		> a {
@@ -111,6 +118,17 @@
 			
 			&:after {
 				display: none;
+			}
+		}
+		
+		&:last-child {
+			height: $header-height;
+			position: absolute;
+			top: 0;
+			right: 0;
+			
+			@include media-query(lap-and-up) {
+				position: static;
 			}
 		}
 	}

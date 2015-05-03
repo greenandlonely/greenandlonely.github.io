@@ -14,7 +14,6 @@
 	}
 		
 	&__item {
-		margin-bottom: $gutter;
 		break-inside: avoid-column;
 		-webkit-column-break-inside: avoid;
 		page-break-inside: avoid;
@@ -28,7 +27,7 @@
 				margin: 0;
 			}
 		}
-				
+		
 		img {
 			display: inline-block;
 		}

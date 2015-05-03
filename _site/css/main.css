@@ -831,13 +831,13 @@ img {
       background-color: #fff; } }
 
 .page {
-  padding: 0; }
+  padding: 10px 0 0; }
   @media only screen and (min-width: 681px) {
     .page {
       padding: 48px 24px 0; } }
   .page__heading {
     text-align: center;
-    margin-bottom: 15px; }
+    margin: 0 0 15px; }
     @media only screen and (min-width: 1025px) {
       .page__heading {
         position: fixed;
@@ -870,7 +870,6 @@ img {
       -webkit-column-gap: 24px;
       column-gap: 24px; } }
 .favourites__item {
-  margin-bottom: 24px;
   break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -930,6 +929,7 @@ img {
 .logo {
   margin: 0;
   line-height: 48px;
+  display: inline-block;
   width: 40%; }
   @media only screen and (min-width: 681px) {
     .logo {
@@ -990,14 +990,16 @@ img {
   width: 60%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap; }
+  display: inline-block;
+  height: 48px;
+  float: right;
+  position: relative;
+  padding-right: 80px; }
   @media only screen and (min-width: 681px) {
     .menu {
       position: absolute;
       top: 0;
       right: 0;
-      height: 48px;
       text-align: right;
       padding: 0 24px 0 0;
       display: block; } }
@@ -1007,60 +1009,75 @@ img {
   @media only screen and (min-width: 1025px) {
     .menu {
       width: 30%; } }
-  @media only screen and (min-width: 681px) {
-    .menu__item, .menu__item--active {
-      display: inline-block;
-      vertical-align: middle;
-      line-height: 48px;
-      position: relative;
-      padding-right: 15px;
-      font-weight: bold;
-      font-size: 16px; } }
-  .menu__item > a, .menu__item--active > a {
-    text-decoration: none;
+  .menu__item, .menu__item--active {
+    float: left;
+    height: 24px;
     display: block;
-    position: relative;
-    color: #fff; }
+    width: 80px; }
     @media only screen and (min-width: 681px) {
-      .menu__item > a, .menu__item--active > a {
-        color: #111; } }
-    .menu__item > a:after, .menu__item--active > a:after {
-      display: none; }
-    .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
+      .menu__item, .menu__item--active {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 48px;
+        position: relative;
+        padding-right: 15px;
+        font-weight: bold;
+        font-size: 16px;
+        float: none;
+        height: auto; } }
+    .menu__item > a, .menu__item--active > a {
+      text-decoration: none;
+      display: block;
+      position: relative;
+      color: #fff; }
+      @media only screen and (min-width: 681px) {
+        .menu__item > a, .menu__item--active > a {
+          color: #111; } }
+      .menu__item > a:after, .menu__item--active > a:after {
+        display: none; }
+      .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid #111; }
+      .menu__item > a:after, .menu__item--active > a:after {
+        bottom: 10px; }
+    .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
+      color: #fff; }
+      @media only screen and (min-width: 681px) {
+        .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
+          color: #a00; } }
+      .menu__item > a[href^="/f/"]:hover:after, .menu__item--active > a[href^="/f/"]:hover:after, .menu__item > a[href^="/f/"]:focus:after, .menu__item--active > a[href^="/f/"]:focus:after, .menu__item > a[href^="/f/"].is-active:after, .menu__item--active > a[href^="/f/"].is-active:after {
+        border-color: #a00; }
+    .menu__item:after, .menu__item--active:after {
       content: "";
+      width: 4px;
+      height: 4px;
       display: block;
       position: absolute;
-      left: 0;
-      width: 100%;
-      border-bottom: 2px solid #111; }
-    .menu__item > a:after, .menu__item--active > a:after {
-      bottom: 10px; }
-  .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
-    color: #fff; }
-    @media only screen and (min-width: 681px) {
-      .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
-        color: #a00; } }
-    .menu__item > a[href^="/f/"]:hover:after, .menu__item--active > a[href^="/f/"]:hover:after, .menu__item > a[href^="/f/"]:focus:after, .menu__item--active > a[href^="/f/"]:focus:after, .menu__item > a[href^="/f/"].is-active:after, .menu__item--active > a[href^="/f/"].is-active:after {
-      border-color: #a00; }
-  .menu__item:after, .menu__item--active:after {
-    content: "";
-    width: 4px;
-    height: 4px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -2px;
-    right: 4px;
-    border-radius: 100%;
-    background-color: #fff; }
-    @media only screen and (min-width: 681px) {
-      .menu__item:after, .menu__item--active:after {
-        background-color: #a00; } }
-  .menu__item:last-child, .menu__item--active:last-child {
-    padding: 0;
-    margin: 0; }
-    .menu__item:last-child:after, .menu__item--active:last-child:after {
-      display: none; }
+      top: 50%;
+      margin-top: -2px;
+      right: 4px;
+      border-radius: 100%;
+      background-color: #fff; }
+      @media only screen and (min-width: 681px) {
+        .menu__item:after, .menu__item--active:after {
+          background-color: #a00; } }
+    .menu__item:last-child, .menu__item--active:last-child {
+      padding: 0;
+      margin: 0; }
+      .menu__item:last-child:after, .menu__item--active:last-child:after {
+        display: none; }
+    .menu__item:last-child, .menu__item--active:last-child {
+      height: 48px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+      @media only screen and (min-width: 681px) {
+        .menu__item:last-child, .menu__item--active:last-child {
+          position: static; } }
 
 .paging {
   width: 100%; }

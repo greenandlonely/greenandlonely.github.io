@@ -2,6 +2,7 @@
 .logo {
 	margin: 0;
 	line-height: $header-height;
+	display: inline-block;
 	width: 40%;
 	
 	@include media-query(lap-and-up) {
