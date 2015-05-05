@@ -943,7 +943,8 @@ img {
     .logo {
       width: 30%; } }
   .logo__icon {
-    display: inline-block; }
+    display: inline-block;
+    padding-top: 5px; }
     @media only screen and (min-width: 681px) {
       .logo__icon {
         padding: 7px 5px 0 0; } }
