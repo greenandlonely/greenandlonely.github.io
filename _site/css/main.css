@@ -1062,15 +1062,16 @@ img {
       content: "";
       width: 4px;
       height: 4px;
-      display: block;
       position: absolute;
       top: 50%;
       margin-top: -2px;
       right: 4px;
       border-radius: 100%;
-      background-color: #fff; }
+      background-color: #fff;
+      display: none; }
       @media only screen and (min-width: 681px) {
         .menu__item:after, .menu__item--active:after {
+          display: block;
           background-color: #a00; } }
     .menu__item:last-child, .menu__item--active:last-child {
       padding: 0;
