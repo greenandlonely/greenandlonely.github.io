@@ -1,12 +1,12 @@
 
 .logo {
 	margin: 0;
-	line-height: $header-height;
 	display: inline-block;
 	width: 90px;
 	padding-left: 10px;
 	
 	@include media-query(lap-and-up) {
+		line-height: $header-height;
 		padding-left: $spacer;
 	}
 	
@@ -20,7 +20,10 @@
 	
 	&__icon {
 		display: inline-block;
-		padding: 7px 5px 0 0;
+		
+		@include media-query(lap-and-up) {
+			padding: 7px 5px 0 0;
+		}
 	}
 	
 	&__text {

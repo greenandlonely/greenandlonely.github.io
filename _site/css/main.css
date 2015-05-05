@@ -929,12 +929,12 @@ img {
 
 .logo {
   margin: 0;
-  line-height: 48px;
   display: inline-block;
   width: 90px;
   padding-left: 10px; }
   @media only screen and (min-width: 681px) {
     .logo {
+      line-height: 48px;
       padding-left: 24px; } }
   @media only screen and (min-width: 681px) and (max-width: 1024px) {
     .logo {
@@ -943,8 +943,10 @@ img {
     .logo {
       width: 30%; } }
   .logo__icon {
-    display: inline-block;
-    padding: 7px 5px 0 0; }
+    display: inline-block; }
+    @media only screen and (min-width: 681px) {
+      .logo__icon {
+        padding: 7px 5px 0 0; } }
   .logo__text {
     vertical-align: top;
     font-size: 18px;
