@@ -33,13 +33,19 @@ layout: default
 	<div class="paging__inner">
 		{% if paginator.previous_page %}
 			<a rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="paging__arrow" viewBox="0 0 768 768"><path d="M674.644 297.79h-387.951v-193.976l-279.928 280.186 279.928 280.186v-193.976h389.977c46.553 0 84.185-38.536 84.185-86.21s-39.656-86.21-86.21-86.21z"></path></svg>
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 35" enable-background="new 0 0 70 35" xml:space="preserve" class="paging__arrow">
+					<path d="M0,6v23c0,3.313,2.687,6,6,6h58c3.313,0,6-2.687,6-6V6c0-3.313-2.687-6-6-6H6C2.687,0,0,2.687,0,6z M26.8,17.499
+						l16.4-6.359v12.719L26.8,17.499z"/>
+				</svg>
 			</a>
 		{% endif %}
 		
 		{% if paginator.next_page %}
-			<a rel="next" title="Go to the next page. You can also press the left arrow on your keyboard." class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="paging__arrow" viewBox="0 0 768 768"><path d="M93.356 470.21h387.951v193.976l279.928-280.186-279.929-280.186v193.976h-389.977c-46.553 0-84.184 38.536-84.184 86.21s39.656 86.21 86.21 86.21z"></path></svg> 
+			<a rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 35" enable-background="new 0 0 70 35" xml:space="preserve" class="paging__arrow">
+					<path d="M64,0H6C2.687,0,0,2.687,0,6v23c0,3.313,2.687,6,6,6h58c3.313,0,6-2.687,6-6V6C70,2.687,67.313,0,64,0z M26.8,23.859
+					V11.14l16.4,6.359L26.8,23.859z"/>
+				</svg>
 			</a>
 		{% endif %}
 	</div>

@@ -11,21 +11,19 @@
 		position: fixed;
 		bottom: 0;
 		width: $paging-size;
-		height: $paging-size;
 		display: block;
 	}
 	
 	&__next {
-		right: 0;
+		right: $gutter;
 	}
 	
 	&__prev {
-		left: 0;
+		left: $gutter;
 	}
 	
 	&__arrow {
-		width: 50px;
-		height: 50px;
+		width: $paging-size;
 		
 		> * {
 			fill: $paging__arrow-colour;
