@@ -20,6 +20,7 @@
 	
 	&__icon {
 		display: inline-block;
+		padding-top: 5px;
 		
 		@include media-query(lap-and-up) {
 			padding: 7px 5px 0 0;
