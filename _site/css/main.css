@@ -809,7 +809,8 @@ body {
   margin: 0;
   background-color: #fff;
   color: #111;
-  position: relative; }
+  position: relative;
+  min-width: 320px; }
 
 a {
   color: #111; }
@@ -930,7 +931,8 @@ img {
   margin: 0;
   line-height: 48px;
   display: inline-block;
-  width: 40%; }
+  width: 90px;
+  padding-left: 10px; }
   @media only screen and (min-width: 681px) {
     .logo {
       padding-left: 24px; } }
@@ -943,8 +945,6 @@ img {
   .logo__icon {
     display: inline-block;
     padding: 7px 5px 0 0; }
-    .logo__icon > * {
-      width: 55px; }
   .logo__text {
     vertical-align: top;
     font-size: 18px;
@@ -967,16 +967,21 @@ img {
     .logo > a:hover .fuji__top-bottom, .logo > a:focus .fuji__top-bottom {
       fill: #999; }
 
-.fuji__primary {
-  fill: #fff; }
+.fuji {
+  width: 75px; }
   @media only screen and (min-width: 681px) {
-    .fuji__primary {
-      fill: #111; } }
-.fuji__secondary {
-  fill: #111; }
-  @media only screen and (min-width: 681px) {
-    .fuji__secondary {
-      fill: #fff; } }
+    .fuji {
+      width: 60px; } }
+  .fuji__primary {
+    fill: #fff; }
+    @media only screen and (min-width: 681px) {
+      .fuji__primary {
+        fill: #111; } }
+  .fuji__secondary {
+    fill: #111; }
+    @media only screen and (min-width: 681px) {
+      .fuji__secondary {
+        fill: #fff; } }
 
 .post {
   text-align: left; }
@@ -987,16 +992,17 @@ img {
 .menu {
   text-transform: uppercase;
   text-align: center;
-  width: 60%;
   margin: 0;
   padding: 0;
   display: inline-block;
   height: 48px;
   float: right;
   position: relative;
-  padding-right: 80px; }
+  padding-right: 80px;
+  width: 240px; }
   @media only screen and (min-width: 681px) {
     .menu {
+      width: 60%;
       position: absolute;
       top: 0;
       right: 0;
@@ -1024,7 +1030,8 @@ img {
         font-weight: bold;
         font-size: 16px;
         float: none;
-        height: auto; } }
+        height: auto;
+        width: auto; } }
     .menu__item > a, .menu__item--active > a {
       text-decoration: none;
       display: block;
@@ -1070,13 +1077,13 @@ img {
       margin: 0; }
       .menu__item:last-child:after, .menu__item--active:last-child:after {
         display: none; }
-    .menu__item:last-child, .menu__item--active:last-child {
+    .menu__item:last-of-type, .menu__item--active:last-of-type {
       height: 48px;
       position: absolute;
       top: 0;
       right: 0; }
       @media only screen and (min-width: 681px) {
-        .menu__item:last-child, .menu__item--active:last-child {
+        .menu__item:last-of-type, .menu__item--active:last-of-type {
           position: static; } }
 
 .paging {

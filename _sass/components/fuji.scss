@@ -1,5 +1,11 @@
 
 .fuji {
+	width: 75px;
+	
+	@include media-query(lap-and-up) {
+		width: 60px;
+	}
+	
 	&__primary {
 		fill: $fuji__secondary-colour;
 		

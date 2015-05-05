@@ -3,7 +3,8 @@
 	margin: 0;
 	line-height: $header-height;
 	display: inline-block;
-	width: 40%;
+	width: 90px;
+	padding-left: 10px;
 	
 	@include media-query(lap-and-up) {
 		padding-left: $spacer;
@@ -20,10 +21,6 @@
 	&__icon {
 		display: inline-block;
 		padding: 7px 5px 0 0;
-		
-		> * {
-			width: 55px;
-		}
 	}
 	
 	&__text {
@@ -48,7 +45,7 @@
 		@include media-query(lap-and-up) {
 			color: $logo-colour;
 		}
-			
+		
 		&:hover,
 		&:focus {
 			.logo__text {

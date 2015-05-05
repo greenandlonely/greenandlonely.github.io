@@ -2,7 +2,6 @@
 .menu {
 	text-transform: uppercase;
 	text-align: center;
-	width: 60%;
 	margin: 0;
 	padding: 0;
 	display: inline-block;
@@ -10,8 +9,10 @@
 	float: right;
 	position: relative;
 	padding-right: $menu__item-width;
+	width: $menu__item-width * 3;
 	
 	@include media-query(lap-and-up) {
+		width: 60%;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -44,6 +45,7 @@
 			font-size: 16px;
 			float: none;
 			height: auto;
+			width: auto;
 		}
 		
 		> a {
@@ -121,11 +123,15 @@
 			}
 		}
 		
-		&:last-child {
+		&:last-of-type {
 			height: $header-height;
 			position: absolute;
 			top: 0;
 			right: 0;
+			
+			> a {
+				
+			}
 			
 			@include media-query(lap-and-up) {
 				position: static;

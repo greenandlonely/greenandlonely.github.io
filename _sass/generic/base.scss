@@ -13,6 +13,7 @@ body {
 	background-color: $body-bg;
 	color: $body-text;
 	position: relative;
+	min-width: 320px;
 }
 
 a {
