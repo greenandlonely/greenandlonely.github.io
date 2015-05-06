@@ -1,5 +1,9 @@
 
 .header {
+	width: 100%;
+	background-color: $header-bg--palm;
+	margin: 0;
+	
 	@include media-query(lap-and-up) {
 		position: fixed;
 		top: 0;
@@ -7,10 +11,6 @@
 		height: $header-height;
 		background-color: $header-bg;
 	}
-	
-	width: 100%;
-	background-color: $header-bg--palm;
-	margin: 0;
 }
 
 .page {
@@ -23,6 +23,7 @@
 	&__heading {
 		text-align: center;
 		margin: 0 0 15px;
+		font-size: $h2-size;
 		
 		@include media-query(desk) {
 			position: fixed;

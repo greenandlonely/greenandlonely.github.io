@@ -32,7 +32,7 @@
 	&__item {
 		float: left;
 		height: $header-height/2;
-		display: block;
+		display: table;
 		width: $menu__item-width;
 		
 		@include media-query(lap-and-up) {
@@ -50,7 +50,8 @@
 		
 		> a {
 			text-decoration: none;
-			display: block;
+			display: table-cell;
+			vertical-align: middle;
 			position: relative;
 			color: $menu-text--palm;
 			
@@ -125,17 +126,17 @@
 		}
 		
 		&:last-of-type {
-			height: $header-height;
-			position: absolute;
-			top: 0;
-			right: 0;
-			
-			> a {
+			@include media-query(palm) {
+				height: $header-height;
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: table;
 				
-			}
-			
-			@include media-query(lap-and-up) {
-				position: static;
+				> a {
+					line-height: 100%;
+					vertical-align: middle;
+				}
 			}
 		}
 	}

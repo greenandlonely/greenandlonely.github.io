@@ -19,17 +19,14 @@
 	}
 	
 	&__icon {
-		display: inline-block;
-		padding-top: 5px;
-		
 		@include media-query(lap-and-up) {
+			display: inline-block;
 			padding: 7px 5px 0 0;
 		}
 	}
 	
 	&__text {
 		vertical-align: top;
-		font-size: 18px;
 		display: none;
 		text-align: left;
 		
@@ -37,8 +34,12 @@
 			display: inline-block;
 		}
 		
+		@include media-query(lap) {
+			font-size: 15px;
+		}
+		
 		@include media-query(desk) {
-			font-size: 21px;
+			font-size: 18px;
 		}
 	}
 	

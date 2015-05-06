@@ -1,18 +1,15 @@
 
 .blogroll {
-//	display: flex;
-//	flex-direction: row;
-//	flex-wrap: wrap;
 	@include bare-list;
 	margin-left: -$gutter;
-	display: flex;
+	@include flexbox();
 	flex-wrap: wrap;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: center;
 	
 	> li {
-		flex: 1 25%;
-		padding: $gutter 0 0 $gutter;
+		@include flex(1 25%);
+		padding: 0 0 $gutter $gutter;
 	}
 	
 	a {
@@ -28,4 +25,9 @@
 			color: #fff;
 		}
 	}
+}
+.wrapper {
+}
+
+.item {
 }

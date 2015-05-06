@@ -1,5 +1,6 @@
 
 .post {
+	@extend .page;
 	text-align: left;
 	
 	@include media-query(lap-and-up) {
@@ -7,5 +8,6 @@
 	}
 	
 	&__title {
+		@extend .page__heading;
 	}
 }

@@ -819,6 +819,24 @@ img {
   max-width: 100%;
   height: auto; }
 
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 21px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 15px; }
+
+h5 {
+  font-size: 12px; }
+
+h6 {
+  font-size: 9px; }
+
 .header {
   width: 100%;
   background-color: #111;
@@ -831,16 +849,17 @@ img {
       height: 48px;
       background-color: #fff; } }
 
-.page {
+.page, .post {
   padding: 10px 0 0; }
   @media only screen and (min-width: 681px) {
-    .page {
+    .page, .post {
       padding: 48px 24px 0; } }
-  .page__heading {
+  .page__heading, .post__title {
     text-align: center;
-    margin: 0 0 15px; }
+    margin: 0 0 15px;
+    font-size: 21px; }
     @media only screen and (min-width: 1025px) {
-      .page__heading {
+      .page__heading, .post__title {
         position: fixed;
         top: 0;
         left: 50%;
@@ -910,13 +929,21 @@ img {
   margin: 0;
   padding: 0;
   margin-left: -24px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: center; }
   .blogroll > li {
+    -webkit-box-flex: 1 25%;
+    -moz-box-flex: 1 25%;
+    -webkit-flex: 1 25%;
+    -ms-flex: 1 25%;
     flex: 1 25%;
-    padding: 24px 0 0 24px; }
+    padding: 0 0 24px 24px; }
   .blogroll a {
     background-color: #eee;
     display: block;
@@ -942,23 +969,23 @@ img {
   @media only screen and (min-width: 1025px) {
     .logo {
       width: 30%; } }
-  .logo__icon {
-    display: inline-block;
-    padding-top: 5px; }
-    @media only screen and (min-width: 681px) {
-      .logo__icon {
-        padding: 7px 5px 0 0; } }
+  @media only screen and (min-width: 681px) {
+    .logo__icon {
+      display: inline-block;
+      padding: 7px 5px 0 0; } }
   .logo__text {
     vertical-align: top;
-    font-size: 18px;
     display: none;
     text-align: left; }
     @media only screen and (min-width: 681px) {
       .logo__text {
         display: inline-block; } }
+    @media only screen and (min-width: 681px) and (max-width: 1024px) {
+      .logo__text {
+        font-size: 15px; } }
     @media only screen and (min-width: 1025px) {
       .logo__text {
-        font-size: 21px; } }
+        font-size: 18px; } }
   .logo > a {
     text-decoration: none;
     color: #fff; }
@@ -1021,7 +1048,7 @@ img {
   .menu__item, .menu__item--active {
     float: left;
     height: 24px;
-    display: block;
+    display: table;
     width: 80px; }
     @media only screen and (min-width: 681px) {
       .menu__item, .menu__item--active {
@@ -1037,7 +1064,8 @@ img {
         width: auto; } }
     .menu__item > a, .menu__item--active > a {
       text-decoration: none;
-      display: block;
+      display: table-cell;
+      vertical-align: middle;
       position: relative;
       color: #fff; }
       @media only screen and (min-width: 681px) {
@@ -1081,17 +1109,21 @@ img {
       margin: 0; }
       .menu__item:last-child:after, .menu__item--active:last-child:after {
         display: none; }
-    .menu__item:last-of-type, .menu__item--active:last-of-type {
-      height: 48px;
-      position: absolute;
-      top: 0;
-      right: 0; }
-      @media only screen and (min-width: 681px) {
-        .menu__item:last-of-type, .menu__item--active:last-of-type {
-          position: static; } }
+    @media only screen and (max-width: 680px) {
+      .menu__item:last-of-type, .menu__item--active:last-of-type {
+        height: 48px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: table; }
+        .menu__item:last-of-type > a, .menu__item--active:last-of-type > a {
+          line-height: 100%;
+          vertical-align: middle; } }
 
 .paging {
-  width: 100%; }
+  width: 100%;
+  background-color: #fff;
+  height: 48px; }
   .paging__inner {
     position: relative; }
   .paging__next, .paging__prev {
