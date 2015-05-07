@@ -34,6 +34,7 @@
 		height: $header-height/2;
 		display: table;
 		width: $menu__item-width;
+		font-weight: bold;
 		
 		@include media-query(lap-and-up) {
 			display: inline-block;
@@ -41,7 +42,6 @@
 			line-height: $header-height;
 			position: relative;
 			padding-right: 15px;
-			font-weight: bold;
 			font-size: 16px;
 			float: none;
 			height: auto;
@@ -63,16 +63,32 @@
 				display: none;
 			}
 			
+			span {
+				display: inline-block;
+				padding: 3px 6px;
+			}
+			
 			&:hover,
 			&:focus,
 			&.is-active {
-				&:after {
-					content: "";
-					display: block;
-					position: absolute;
-					left: 0;
-					width: 100%;
-					border-bottom: 2px solid $menu-text;
+				span {
+					background-color: $menu-text--palm;
+					@include vendor(border-radius, 20px);
+				}
+				
+				@include media-query(lap-and-up) {
+					span {
+						background-color: transparent;
+					}
+					
+					&:after {
+						content: "";
+						display: block;
+						position: absolute;
+						left: 0;
+						width: 100%;
+						border-bottom: 2px solid $menu-text;
+					}
 				}
 			}
 			

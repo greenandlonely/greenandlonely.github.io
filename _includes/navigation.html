@@ -1,7 +1,7 @@
 {% for node in navigation %}{% if group == null or group == node.group %}{% if page.url == node.url %}
 	<li class="menu__item"><a href="{{node.url}}" class="is-active">{{node.menu_title}}</a></li>
 {% else %}
-	<li class="menu__item"><a href="{{node.url}}">{{node.menu_title}}</a></li>
+	<li class="menu__item"><a href="{{node.url}}"><span>{{node.menu_title}}</span></a></li>
 {% endif %}{% endif %}{% endfor %}
 {% assign navigation = nil %}
 {% assign group = nil %}

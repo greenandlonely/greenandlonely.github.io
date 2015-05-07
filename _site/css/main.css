@@ -854,12 +854,12 @@ h6 {
   @media only screen and (min-width: 681px) {
     .page, .post {
       padding: 48px 24px 0; } }
-  .page__heading, .post__title {
+  .page__heading {
     text-align: center;
     margin: 0 0 15px;
     font-size: 21px; }
     @media only screen and (min-width: 1025px) {
-      .page__heading, .post__title {
+      .page__heading {
         position: fixed;
         top: 0;
         left: 50%;
@@ -928,21 +928,21 @@ h6 {
   list-style: none outside none;
   margin: 0;
   padding: 0;
+  margin-top: 24px;
   margin-left: -24px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap;
   flex-flow: row wrap;
   justify-content: center; }
   .blogroll > li {
-    -webkit-box-flex: 1 25%;
-    -moz-box-flex: 1 25%;
-    -webkit-flex: 1 25%;
-    -ms-flex: 1 25%;
-    flex: 1 25%;
+    -webkit-box-flex: 1 225px;
+    -moz-box-flex: 1 225px;
+    -webkit-flex: 1 225px;
+    -ms-flex: 1 225px;
+    flex: 1 225px;
     padding: 0 0 24px 24px; }
   .blogroll a {
     background-color: #eee;
@@ -1049,7 +1049,8 @@ h6 {
     float: left;
     height: 24px;
     display: table;
-    width: 80px; }
+    width: 80px;
+    font-weight: bold; }
     @media only screen and (min-width: 681px) {
       .menu__item, .menu__item--active {
         display: inline-block;
@@ -1057,7 +1058,6 @@ h6 {
         line-height: 48px;
         position: relative;
         padding-right: 15px;
-        font-weight: bold;
         font-size: 16px;
         float: none;
         height: auto;
@@ -1073,13 +1073,26 @@ h6 {
           color: #111; } }
       .menu__item > a:after, .menu__item--active > a:after {
         display: none; }
-      .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        border-bottom: 2px solid #111; }
+      .menu__item > a span, .menu__item--active > a span {
+        display: inline-block;
+        padding: 3px 6px; }
+      .menu__item > a:hover span, .menu__item--active > a:hover span, .menu__item > a:focus span, .menu__item--active > a:focus span, .menu__item > a.is-active span, .menu__item--active > a.is-active span {
+        background-color: #fff;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        border-radius: 20px; }
+      @media only screen and (min-width: 681px) {
+        .menu__item > a:hover span, .menu__item--active > a:hover span, .menu__item > a:focus span, .menu__item--active > a:focus span, .menu__item > a.is-active span, .menu__item--active > a.is-active span {
+          background-color: transparent; }
+        .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          width: 100%;
+          border-bottom: 2px solid #111; } }
       .menu__item > a:after, .menu__item--active > a:after {
         bottom: 10px; }
     .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {

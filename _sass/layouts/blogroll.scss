@@ -1,14 +1,14 @@
 
 .blogroll {
 	@include bare-list;
+	margin-top: $gutter;
 	margin-left: -$gutter;
 	@include flexbox();
-	flex-wrap: wrap;
 	flex-flow: row wrap;
 	justify-content: center;
 	
 	> li {
-		@include flex(1 25%);
+		@include flex(1 225px);
 		padding: 0 0 $gutter $gutter;
 	}
 	
@@ -25,9 +25,4 @@
 			color: #fff;
 		}
 	}
-}
-.wrapper {
-}
-
-.item {
 }
