@@ -840,14 +840,16 @@ h6 {
 .header {
   width: 100%;
   background-color: #111;
-  margin: 0; }
+  margin: 0;
+  padding: 12px 0 0; }
   @media only screen and (min-width: 681px) {
     .header {
       position: fixed;
       top: 0;
       left: 0;
       height: 48px;
-      background-color: #fff; } }
+      background-color: #fff;
+      padding: 0; } }
 
 .page, .post {
   padding: 10px 0 0; }
@@ -931,7 +933,7 @@ h6 {
   margin-left: -24px; }
   @media only screen and (min-width: 681px) {
     .blogroll {
-      padding-top: 24px;
+      padding-top: 15px;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -983,7 +985,6 @@ h6 {
   margin: 0;
   display: inline-block;
   width: 100%;
-  padding-left: 10px;
   text-align: center; }
   @media only screen and (min-width: 681px) {
     .logo {
@@ -1025,7 +1026,7 @@ h6 {
       fill: #999; }
 
 .fuji {
-  width: 75px; }
+  width: 120px; }
   @media only screen and (min-width: 681px) {
     .fuji {
       width: 60px; } }
@@ -1068,18 +1069,16 @@ h6 {
     .menu {
       width: 30%; } }
   .menu__item, .menu__item--active {
-    font-weight: bold; }
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 48px; }
     @media only screen and (min-width: 681px) {
       .menu__item, .menu__item--active {
-        display: inline-block;
         vertical-align: middle;
-        line-height: 48px;
         position: relative;
-        padding-right: 15px;
-        font-size: 16px;
-        float: none;
-        height: auto;
-        width: auto; } }
+        padding: 0 15px 0 0; } }
     .menu__item > a, .menu__item--active > a {
       text-decoration: none;
       display: table-cell;
@@ -1106,7 +1105,10 @@ h6 {
         .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
           color: #a00; } }
       .menu__item > a[href^="/f/"]:hover:after, .menu__item--active > a[href^="/f/"]:hover:after, .menu__item > a[href^="/f/"]:focus:after, .menu__item--active > a[href^="/f/"]:focus:after, .menu__item > a[href^="/f/"].is-active:after, .menu__item--active > a[href^="/f/"].is-active:after {
-        border-color: #a00; }
+        border-color: #fff; }
+        @media only screen and (min-width: 681px) {
+          .menu__item > a[href^="/f/"]:hover:after, .menu__item--active > a[href^="/f/"]:hover:after, .menu__item > a[href^="/f/"]:focus:after, .menu__item--active > a[href^="/f/"]:focus:after, .menu__item > a[href^="/f/"].is-active:after, .menu__item--active > a[href^="/f/"].is-active:after {
+            border-color: #a00; } }
     .menu__item:after, .menu__item--active:after {
       content: "";
       width: 4px;

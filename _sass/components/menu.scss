@@ -26,17 +26,15 @@
 	
 	&__item {
 		font-weight: bold;
+		display: inline-block;
+		font-size: 16px;
+		padding: 0 5px;
+		line-height: $header-height;
 		
 		@include media-query(lap-and-up) {
-			display: inline-block;
 			vertical-align: middle;
-			line-height: $header-height;
 			position: relative;
-			padding-right: 15px;
-			font-size: 16px;
-			float: none;
-			height: auto;
-			width: auto;
+			padding: 0 15px 0 0;
 		}
 		
 		> a {
@@ -84,7 +82,11 @@
 			&:focus,
 			&.is-active {
 				&:after {
-					border-color: $menu-text--highlighted;
+					border-color: $menu-text--palm;
+					
+					@include media-query(lap-and-up) {
+						border-color: $menu-text--highlighted;
+					}
 				}
 			}
 		}	
