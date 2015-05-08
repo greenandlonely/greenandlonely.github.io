@@ -880,10 +880,10 @@ h6 {
 .favourites__list {
   list-style: none outside none;
   margin: 0;
-  padding: 0;
-  padding-bottom: 24px; }
+  padding: 0; }
   @media only screen and (min-width: 1025px) {
     .favourites__list {
+      padding-bottom: 24px;
       -moz-column-count: 2;
       -webkit-column-count: 2;
       column-count: 2;
@@ -900,9 +900,6 @@ h6 {
   text-align: center; }
   .favourites__item:first-child {
     margin: 0; }
-  @media only screen and (max-width: 680px) {
-    .favourites__item:last-child {
-      margin: 0; } }
   .favourites__item img {
     display: inline-block; }
 .favourites__item--double {
