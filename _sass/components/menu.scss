@@ -4,21 +4,16 @@
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	display: inline-block;
-	height: $header-height;
-	float: right;
-	position: relative;
-	padding-right: $menu__item-width;
-	width: $menu__item-width * 3;
+	display: block;
 	
 	@include media-query(lap-and-up) {
+		height: $header-height;
 		width: 60%;
 		position: absolute;
 		top: 0;
 		right: 0;
 		text-align: right;
 		padding: 0 $spacer 0 0;
-		display: block;
 	}
 	
 	@include media-query(lap) {
@@ -30,10 +25,6 @@
 	}
 	
 	&__item {
-		float: left;
-		height: $header-height/2;
-		display: table;
-		width: $menu__item-width;
 		font-weight: bold;
 		
 		@include media-query(lap-and-up) {
@@ -63,32 +54,16 @@
 				display: none;
 			}
 			
-			span {
-				display: inline-block;
-				padding: 3px 6px;
-			}
-			
 			&:hover,
 			&:focus,
 			&.is-active {
-				span {
-					background-color: $menu-text--palm;
-					@include vendor(border-radius, 20px);
-				}
-				
-				@include media-query(lap-and-up) {
-					span {
-						background-color: transparent;
-					}
-					
-					&:after {
-						content: "";
-						display: block;
-						position: absolute;
-						left: 0;
-						width: 100%;
-						border-bottom: 2px solid $menu-text;
-					}
+				&:after {
+					content: "";
+					display: block;
+					position: absolute;
+					left: 0;
+					width: 100%;
+					border-bottom: 2px solid $menu-text;
 				}
 			}
 			
@@ -138,21 +113,6 @@
 			
 			&:after {
 				display: none;
-			}
-		}
-		
-		&:last-of-type {
-			@include media-query(palm) {
-				height: $header-height;
-				position: absolute;
-				top: 0;
-				right: 0;
-				display: table;
-				
-				> a {
-					line-height: 100%;
-					vertical-align: middle;
-				}
 			}
 		}
 	}

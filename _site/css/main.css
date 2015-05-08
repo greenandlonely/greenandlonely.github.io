@@ -931,6 +931,7 @@ h6 {
   margin-left: -24px; }
   @media only screen and (min-width: 681px) {
     .blogroll {
+      padding-top: 24px;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -981,12 +982,14 @@ h6 {
 .logo {
   margin: 0;
   display: inline-block;
-  width: 90px;
-  padding-left: 10px; }
+  width: 100%;
+  padding-left: 10px;
+  text-align: center; }
   @media only screen and (min-width: 681px) {
     .logo {
       line-height: 48px;
-      padding-left: 24px; } }
+      padding-left: 24px;
+      text-align: left; } }
   @media only screen and (min-width: 681px) and (max-width: 1024px) {
     .logo {
       width: 50%; } }
@@ -1048,21 +1051,16 @@ h6 {
   text-align: center;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  height: 48px;
-  float: right;
-  position: relative;
-  padding-right: 80px;
-  width: 240px; }
+  display: block; }
   @media only screen and (min-width: 681px) {
     .menu {
+      height: 48px;
       width: 60%;
       position: absolute;
       top: 0;
       right: 0;
       text-align: right;
-      padding: 0 24px 0 0;
-      display: block; } }
+      padding: 0 24px 0 0; } }
   @media only screen and (min-width: 681px) and (max-width: 1024px) {
     .menu {
       width: 50%; } }
@@ -1070,10 +1068,6 @@ h6 {
     .menu {
       width: 30%; } }
   .menu__item, .menu__item--active {
-    float: left;
-    height: 24px;
-    display: table;
-    width: 80px;
     font-weight: bold; }
     @media only screen and (min-width: 681px) {
       .menu__item, .menu__item--active {
@@ -1097,26 +1091,13 @@ h6 {
           color: #111; } }
       .menu__item > a:after, .menu__item--active > a:after {
         display: none; }
-      .menu__item > a span, .menu__item--active > a span {
-        display: inline-block;
-        padding: 3px 6px; }
-      .menu__item > a:hover span, .menu__item--active > a:hover span, .menu__item > a:focus span, .menu__item--active > a:focus span, .menu__item > a.is-active span, .menu__item--active > a.is-active span {
-        background-color: #fff;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-        border-radius: 20px; }
-      @media only screen and (min-width: 681px) {
-        .menu__item > a:hover span, .menu__item--active > a:hover span, .menu__item > a:focus span, .menu__item--active > a:focus span, .menu__item > a.is-active span, .menu__item--active > a.is-active span {
-          background-color: transparent; }
-        .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
-          content: "";
-          display: block;
-          position: absolute;
-          left: 0;
-          width: 100%;
-          border-bottom: 2px solid #111; } }
+      .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid #111; }
       .menu__item > a:after, .menu__item--active > a:after {
         bottom: 10px; }
     .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
@@ -1146,16 +1127,6 @@ h6 {
       margin: 0; }
       .menu__item:last-child:after, .menu__item--active:last-child:after {
         display: none; }
-    @media only screen and (max-width: 680px) {
-      .menu__item:last-of-type, .menu__item--active:last-of-type {
-        height: 48px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: table; }
-        .menu__item:last-of-type > a, .menu__item--active:last-of-type > a {
-          line-height: 100%;
-          vertical-align: middle; } }
 
 .paging {
   width: 100%;
