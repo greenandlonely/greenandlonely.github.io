@@ -3,7 +3,7 @@
 	width: 100%;
 	background-color: $header-bg--palm;
 	margin: 0;
-	padding: 12px 0 0;
+	padding: 15px 0 0;
 	
 	@include media-query(lap-and-up) {
 		position: fixed;

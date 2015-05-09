@@ -841,7 +841,7 @@ h6 {
   width: 100%;
   background-color: #111;
   margin: 0;
-  padding: 12px 0 0; }
+  padding: 15px 0 0; }
   @media only screen and (min-width: 681px) {
     .header {
       position: fixed;
@@ -1124,11 +1124,12 @@ h6 {
         .menu__item:after, .menu__item--active:after {
           display: block;
           background-color: #a00; } }
-    .menu__item:last-child, .menu__item--active:last-child {
-      padding: 0;
-      margin: 0; }
-      .menu__item:last-child:after, .menu__item--active:last-child:after {
-        display: none; }
+    @media only screen and (min-width: 681px) {
+      .menu__item:last-child, .menu__item--active:last-child {
+        padding: 0;
+        margin: 0; } }
+    .menu__item:last-child:after, .menu__item--active:last-child:after {
+      display: none; }
 
 .paging {
   width: 100%;
