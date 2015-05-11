@@ -851,10 +851,10 @@ h6 {
       background-color: #fff;
       padding: 0; } }
 
-.page, .post {
+.page {
   padding: 10px 0 0; }
   @media only screen and (min-width: 681px) {
-    .page, .post {
+    .page {
       padding: 48px 24px 0; } }
   .page__heading {
     text-align: center;
@@ -1042,10 +1042,18 @@ h6 {
         fill: #fff; } }
 
 .post {
-  text-align: left; }
+  text-align: left;
+  padding-bottom: 24px; }
   @media only screen and (min-width: 681px) {
     .post {
       text-align: center; } }
+  .post__date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ccc; }
 
 .menu {
   text-transform: uppercase;
