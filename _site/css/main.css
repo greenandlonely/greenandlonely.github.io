@@ -837,6 +837,11 @@ h5 {
 h6 {
   font-size: 9px; }
 
+.is-hidden {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
 .header {
   width: 100%;
   background-color: #111;
@@ -871,13 +876,24 @@ h6 {
         line-height: 48px;
         vertical-align: middle; } }
 
-@media only screen and (min-width: 681px) {
-  .blog {
-    padding: 48px 60px 0; } }
-.blog__posts {
-  list-style: none outside none;
-  margin: 0;
-  padding: 0; }
+.footer {
+  padding-bottom: 40px;
+  text-align: center; }
+  .footer__rss {
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    bottom: 0; }
+
+.blog {
+  padding-bottom: 40px; }
+  @media only screen and (min-width: 681px) {
+    .blog {
+      padding: 48px 60px 0; } }
+  .blog__posts {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0; }
 
 .favourites__list {
   list-style: none outside none;
@@ -1042,15 +1058,16 @@ h6 {
         fill: #fff; } }
 
 .post {
-  text-align: left;
-  padding-bottom: 24px; }
+  text-align: left; }
   @media only screen and (min-width: 681px) {
     .post {
       text-align: center; } }
+  .post__content {
+    width: auto;
+    padding-bottom: 24px; }
+  .blog .post__title {
+    display: inline-block; }
   .post__date {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     color: #ccc; }
@@ -1142,7 +1159,13 @@ h6 {
 .paging {
   width: 100%;
   background-color: #fff;
-  height: 48px; }
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  z-index: 100; }
+  @media only screen and (min-width: 681px) {
+    .paging {
+      position: static; } }
   .paging__inner {
     position: relative; }
   .paging__next, .paging__prev {

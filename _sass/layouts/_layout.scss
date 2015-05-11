@@ -1,0 +1,53 @@
+
+.header {
+	width: 100%;
+	background-color: $header-bg--palm;
+	margin: 0;
+	padding: 15px 0 0;
+	
+	@include media-query(lap-and-up) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: $header-height;
+		background-color: $header-bg;
+		padding: 0;
+	}
+}
+
+.page {
+	@include media-query(lap-and-up) {
+		padding: $header-height $spacer 0;
+	}
+	
+	padding: 10px 0 0;
+	
+	&__heading {
+		text-align: center;
+		margin: 0 0 15px;
+		font-size: $h2-size;
+		
+		@include media-query(desk) {
+			position: fixed;
+			top: 0;
+			left: 50%;
+			width: 40%;
+			margin: 0;
+			margin-left: -20%;
+			line-height: $header-height;
+			vertical-align: middle;
+		}
+	}
+}
+
+.footer {
+	padding-bottom: $paging-height;
+	text-align: center;
+	
+	&__rss {
+		z-index: 1000;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+	}
+}

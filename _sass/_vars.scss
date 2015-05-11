@@ -1,0 +1,59 @@
+/*
+	Greenandlonely v3
+*/
+
+//settings
+$use-markup-fix: false;
+$use-silent-classes: true;
+
+//breakpoints
+$lap-start: 681px;
+$desk-start: 1025px;
+
+$breakpoints: (
+    'palm' '(max-width: 680px)',
+    'lap' '(min-width: 681px) and (max-width: 1024px)',
+    'portable' '(max-width: 1024px)',
+    'desk' '(min-width: 1025px)'
+);
+
+//fonts & font-sizes
+$base-font: 'Archivo Narrow', 'Arial Narrow', sans-serif;
+$h1-size: 24px;
+$h2-size: 21px;
+$h3-size: 18px;
+$h4-size: 15px;
+$h5-size: 12px;
+$h6-size: 9px;
+
+//colours
+$body-bg: #fff;
+$body-text: #111;
+$menu-text: #111;
+$menu-text--highlighted: #a00;
+$menu-text--palm: #fff;
+$header-bg: $body-bg;
+$header-bg--palm: #111;
+$logo-colour: #111;
+$logo-colour--palm: #fff;
+$paging__arrow-colour: #111;
+$fuji__primary-colour: #111;
+$fuji__secondary-colour: #fff;
+$post__date-colour: #ccc;
+$blogroll-bg: #eee;
+$blogroll-bg--hover: #111;
+$blogroll-text--hover: #fff;
+
+
+//metrics
+$spacer: 24px;
+$gutter: $spacer;
+$header-height: 48px;
+$paging-height: 40px;
+$menu__item-divider-size: 4px;
+$menu__item-width: 80px;
+$paging-size: 50px;
+$fuji-size: 120px;
+
+//multiples
+$divider: 1px solid #fff;

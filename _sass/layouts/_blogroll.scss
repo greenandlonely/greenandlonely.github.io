@@ -1,0 +1,64 @@
+
+.blogroll {
+	@include bare-list;
+	margin-left: -$gutter;
+	
+	@include media-query(lap-and-up) {
+		padding-top: 15px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-direction: normal;
+		-moz-box-direction: normal;
+		-webkit-box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: center;
+		-moz-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-align-content: flex-start;
+		-ms-flex-line-pack: start;
+		align-content: flex-start;
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		-webkit-align-items: flex-start;
+		-ms-flex-align: start;
+		align-items: flex-start;
+	}
+	
+	> li {
+		@include media-query(desk) {
+			width: 20%;
+		}
+		
+		@include media-query(lap) {
+			width: 33.33%;
+		}
+		
+		padding: 0 0 $gutter $gutter;
+		display: block;
+	}
+	
+	a {
+		background-color: $blogroll-bg;
+		display: block;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+		
+		&:hover,
+		&:focus {
+			background-color: $blogroll-bg--hover;
+			color: $blogroll-text--hover;
+		}
+	}
+}

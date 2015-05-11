@@ -1,0 +1,29 @@
+
+.post {
+	text-align: left;
+	
+	@include media-query(lap-and-up) {
+		text-align: center;
+	}
+	
+	&__content {
+		width: auto;
+		padding-bottom: $spacer;
+	}
+	
+	&__title {
+		.blog & {
+			display: inline-block;
+			
+		}
+	}
+	
+	&__date {
+		//position: absolute;
+		//bottom: 0;
+		//left: 0;
+		width: 100%;
+		text-align: center;
+		color: $post__date-colour;
+	}
+}
