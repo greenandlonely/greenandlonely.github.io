@@ -49,19 +49,20 @@
 			}
 			
 			&:after {
-				display: none;
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				border-bottom: 2px solid transparent;
+				@include transition(all $transition-speed ease-out);
 			}
 			
 			&:hover,
 			&:focus,
 			&.is-active {
 				&:after {
-					content: "";
-					display: block;
-					position: absolute;
-					left: 0;
-					width: 100%;
-					border-bottom: 2px solid $menu-text;
+					border-color: $menu-text;
 				}
 			}
 			

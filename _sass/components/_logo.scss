@@ -30,6 +30,7 @@
 		vertical-align: top;
 		display: none;
 		text-align: left;
+		@include transition(all $transition-speed ease-out);
 		
 		@include media-query(lap-and-up) {
 			display: inline-block;

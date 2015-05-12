@@ -1020,7 +1020,12 @@ h6 {
   .logo__text {
     vertical-align: top;
     display: none;
-    text-align: left; }
+    text-align: left;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out; }
     @media only screen and (min-width: 681px) {
       .logo__text {
         display: inline-block; } }
@@ -1114,14 +1119,19 @@ h6 {
         .menu__item > a, .menu__item--active > a {
           color: #111; } }
       .menu__item > a:after, .menu__item--active > a:after {
-        display: none; }
-      .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
         content: "";
         display: block;
         position: absolute;
         left: 0;
         width: 100%;
-        border-bottom: 2px solid #111; }
+        border-bottom: 2px solid transparent;
+        -webkit-transition: all 250ms ease-out;
+        -moz-transition: all 250ms ease-out;
+        -ms-transition: all 250ms ease-out;
+        -o-transition: all 250ms ease-out;
+        transition: all 250ms ease-out; }
+      .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
+        border-color: #111; }
       .menu__item > a:after, .menu__item--active > a:after {
         bottom: 10px; }
     .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
