@@ -5,9 +5,20 @@
     <description>James Clarke&#39;s photo blog</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 May 2015 16:31:27 +0100</pubDate>
-    <lastBuildDate>Tue, 12 May 2015 16:31:27 +0100</lastBuildDate>
+    <pubDate>Tue, 12 May 2015 22:53:27 +0100</pubDate>
+    <lastBuildDate>Tue, 12 May 2015 22:53:27 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Air</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.flickr.com/photos/greenandlonely/16601323040&quot; title=&quot;Untitled by James Clarke, on Flickr&quot;&gt;&lt;img src=&quot;https://c1.staticflickr.com/9/8708/16601323040_d5074ecb69_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;Untitled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Mar 2015 14:35:32 +0000</pubDate>
+        <link>http://localhost:4000/air/</link>
+        <guid isPermaLink="true">http://localhost:4000/air/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -27,8 +38,8 @@
 
 </description>
         <pubDate>Sun, 15 Feb 2015 14:35:32 +0000</pubDate>
-        <link>http://localhost:4000/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/welcome-to-jekyll/</guid>
+        <link>http://localhost:4000/welcome-to-jekyll%20copy/</link>
+        <guid isPermaLink="true">http://localhost:4000/welcome-to-jekyll%20copy/</guid>
         
         
         <category>jekyll</category>
@@ -143,17 +154,6 @@
         <pubDate>Wed, 23 Oct 2013 14:17:48 +0100</pubDate>
         <link>http://localhost:4000/malaysia-day/</link>
         <guid isPermaLink="true">http://localhost:4000/malaysia-day/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Hat party</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/greenandlonely/10299089615/&quot; title=&quot;Untitled by jclarke0206, on Flickr&quot;&gt;&lt;img src=&quot;/assets/10299089615_016d4d4ec2_b.jpg&quot; width=&quot;1024&quot; height=&quot;682&quot; alt=&quot;Untitled&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 15 Oct 2013 22:58:51 +0100</pubDate>
-        <link>http://localhost:4000/hat-party/</link>
-        <guid isPermaLink="true">http://localhost:4000/hat-party/</guid>
         
         
       </item>
