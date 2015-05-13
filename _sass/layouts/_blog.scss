@@ -1,9 +1,11 @@
 
 .blog {
 	padding-bottom: $paging-height;
+	max-width: 1024px;
+	margin: 0 auto;
 	
 	@include media-query(lap-and-up) {
-		padding: $header-height ($paging-size + 10) 0;
+		padding: $header-height 0 0;
 	}
 	
 	&__posts {

@@ -819,6 +819,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 24px; }
+
 h1 {
   font-size: 24px; }
 
@@ -846,7 +849,8 @@ h6 {
   width: 100%;
   background-color: #111;
   margin: 0;
-  padding: 15px 0 0; }
+  padding: 15px 0 0;
+  z-index: 10000000; }
   @media only screen and (min-width: 681px) {
     .header {
       position: fixed;
@@ -857,7 +861,9 @@ h6 {
       padding: 0; } }
 
 .page {
-  padding: 10px 0 0; }
+  padding-top: 48px;
+  max-width: 1024px;
+  margin: 0 auto; }
   @media only screen and (min-width: 681px) {
     .page {
       padding: 48px 24px 0; } }
@@ -886,10 +892,12 @@ h6 {
     bottom: 0; }
 
 .blog {
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  max-width: 1024px;
+  margin: 0 auto; }
   @media only screen and (min-width: 681px) {
     .blog {
-      padding: 48px 60px 0; } }
+      padding: 48px 0 0; } }
   .blog__posts {
     list-style: none outside none;
     margin: 0;
@@ -1063,19 +1071,25 @@ h6 {
         fill: #fff; } }
 
 .post {
-  text-align: left; }
+  text-align: left;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 48px; }
   @media only screen and (min-width: 681px) {
     .post {
       text-align: center; } }
   .post__content {
-    width: auto;
-    padding-bottom: 24px; }
-  .blog .post__title {
-    display: inline-block; }
+    padding-bottom: 24px;
+    position: relative; }
   .post__date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
     text-align: center;
     color: #ccc; }
+  .blog .post {
+    background-color: red; }
 
 .menu {
   text-transform: uppercase;
@@ -1167,22 +1181,10 @@ h6 {
       display: none; }
 
 .paging {
-  width: 100%;
-  background-color: #fff;
-  height: 40px;
-  position: fixed;
-  bottom: 0;
-  z-index: 100; }
+  width: 100%; }
   @media only screen and (min-width: 681px) {
     .paging {
       position: static; } }
-  .paging__inner {
-    position: relative; }
-  .paging__next, .paging__prev {
-    position: fixed;
-    bottom: 0;
-    width: 50px;
-    display: block; }
   .paging__next {
     right: 24px; }
   .paging__prev {
@@ -1191,3 +1193,6 @@ h6 {
     width: 50px; }
     .paging__arrow > * {
       fill: #111; }
+
+.paging--post {
+  position: static; }

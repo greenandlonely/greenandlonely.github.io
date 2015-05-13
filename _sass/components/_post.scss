@@ -1,29 +1,33 @@
 
 .post {
 	text-align: left;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-top: $header-height;
 	
 	@include media-query(lap-and-up) {
 		text-align: center;
 	}
 	
 	&__content {
-		width: auto;
 		padding-bottom: $spacer;
+		position: relative;
 	}
 	
 	&__title {
-		.blog & {
-			display: inline-block;
-			
-		}
+		//@extend .page__heading;
 	}
 	
 	&__date {
-		//position: absolute;
-		//bottom: 0;
-		//left: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
 		width: 100%;
 		text-align: center;
 		color: $post__date-colour;
+	}
+	
+	.blog & {
+		background-color: red;
 	}
 }
