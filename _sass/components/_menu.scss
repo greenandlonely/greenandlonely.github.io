@@ -83,14 +83,14 @@
 			&:focus,
 			&.is-active {
 				&:after {
-					border-color: $menu-text--palm;
+					border-color: $header-bg;
 					
 					@include media-query(lap-and-up) {
 						border-color: $menu-text--highlighted;
 					}
 				}
 			}
-		}	
+		}
 		
 		&:after {
 			content: "";
