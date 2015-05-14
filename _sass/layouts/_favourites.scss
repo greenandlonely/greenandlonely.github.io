@@ -1,5 +1,9 @@
 
 .favourites {
+	&__heading {
+		@extend .page__heading;
+	}
+	
 	&__list {
 		@include bare-list;
 		

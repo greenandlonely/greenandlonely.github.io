@@ -1,24 +1,23 @@
 
 .paging {
-	width: 100%;
-	
-	@include media-query(lap-and-up) {
-		position: static;
-	}
+	position: relative;
+	margin-top: 50px;
 	
 	&__inner {
 	}
 	
 	&__next,
 	&__prev {
+		position: absolute;
+		bottom: 0;
 	}
 	
 	&__next {
-		right: $gutter;
+		right: 0;
 	}
 	
 	&__prev {
-		left: $gutter;
+		left: 0;
 	}
 	
 	&__arrow {

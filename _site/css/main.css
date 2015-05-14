@@ -850,7 +850,7 @@ h6 {
   background-color: #111;
   margin: 0;
   padding: 15px 0 0;
-  z-index: 10000000; }
+  z-index: 10; }
   @media only screen and (min-width: 681px) {
     .header {
       position: fixed;
@@ -861,18 +861,17 @@ h6 {
       padding: 0; } }
 
 .page {
-  padding-top: 48px;
-  max-width: 1024px;
-  margin: 0 auto; }
+  padding-top: 48px; }
   @media only screen and (min-width: 681px) {
     .page {
       padding: 48px 24px 0; } }
-  .page__heading {
+  .page__heading, .favourites__heading {
     text-align: center;
     margin: 0 0 15px;
-    font-size: 21px; }
+    font-size: 21px;
+    z-index: 20; }
     @media only screen and (min-width: 1025px) {
-      .page__heading {
+      .page__heading, .favourites__heading {
         position: fixed;
         top: 0;
         left: 50%;
@@ -892,7 +891,7 @@ h6 {
     bottom: 0; }
 
 .blog {
-  padding-bottom: 40px;
+  padding-top: 48px;
   max-width: 1024px;
   margin: 0 auto; }
   @media only screen and (min-width: 681px) {
@@ -1071,10 +1070,7 @@ h6 {
         fill: #fff; } }
 
 .post {
-  text-align: left;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-top: 48px; }
+  text-align: left; }
   @media only screen and (min-width: 681px) {
     .post {
       text-align: center; } }
@@ -1088,8 +1084,6 @@ h6 {
     width: 100%;
     text-align: center;
     color: #ccc; }
-  .blog .post {
-    background-color: red; }
 
 .menu {
   text-transform: uppercase;
@@ -1181,14 +1175,15 @@ h6 {
       display: none; }
 
 .paging {
-  width: 100%; }
-  @media only screen and (min-width: 681px) {
-    .paging {
-      position: static; } }
+  position: relative;
+  margin-top: 50px; }
+  .paging__next, .paging__prev {
+    position: absolute;
+    bottom: 0; }
   .paging__next {
-    right: 24px; }
+    right: 0; }
   .paging__prev {
-    left: 24px; }
+    left: 0; }
   .paging__arrow {
     width: 50px; }
     .paging__arrow > * {

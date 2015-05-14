@@ -4,7 +4,7 @@
 	background-color: $header-bg--palm;
 	margin: 0;
 	padding: 15px 0 0;
-	z-index: 10000000;
+	z-index: 10;
 	
 	@include media-query(lap-and-up) {
 		position: fixed;
@@ -18,8 +18,6 @@
 
 .page {
 	padding-top: $header-height;
-	max-width: 1024px;
-	margin: 0 auto;
 	
 	@include media-query(lap-and-up) {
 		padding: $header-height $spacer 0;
@@ -29,6 +27,7 @@
 		text-align: center;
 		margin: 0 0 15px;
 		font-size: $h2-size;
+		z-index: 20;
 		
 		@include media-query(desk) {
 			position: fixed;
