@@ -1,11 +1,12 @@
 
 .blog {
-	padding-top: $header-height;
 	max-width: 1024px;
 	margin: 0 auto;
+	position: relative;
 	
 	@include media-query(lap-and-up) {
-		padding: $header-height 0 0;
+		padding-top: $header-height;
+		padding-bottom: 60px;
 	}
 	
 	&__posts {
