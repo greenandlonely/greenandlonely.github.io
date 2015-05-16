@@ -813,7 +813,8 @@ body {
   min-width: 320px; }
 
 a {
-  color: #111; }
+  color: #111;
+  outline: none; }
 
 img {
   max-width: 100%;
@@ -901,7 +902,7 @@ h6 {
   position: relative; }
   @media only screen and (min-width: 681px) {
     .blog {
-      padding-top: 48px;
+      padding-top: 53px;
       padding-bottom: 60px; } }
   .blog__posts {
     list-style: none outside none;
@@ -1076,20 +1077,48 @@ h6 {
         fill: #fff; } }
 
 .post {
-  text-align: left; }
-  @media only screen and (min-width: 681px) {
-    .post {
-      text-align: center; } }
-  .post__content {
-    padding-bottom: 24px;
+  text-align: left;
+  font-size: 16px;
+  text-align: center; }
+  .post__title {
+    margin-bottom: 5px;
+    display: inline-block;
     position: relative; }
+    .post__title > a {
+      text-decoration: none;
+      color: #111; }
+      .post__title > a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid transparent;
+        -webkit-transition: all 250ms ease-out;
+        -moz-transition: all 250ms ease-out;
+        -ms-transition: all 250ms ease-out;
+        -o-transition: all 250ms ease-out;
+        transition: all 250ms ease-out; }
+      .post__title > a:hover:after, .post__title > a:focus:after {
+        border-color: #111; }
   .post__date {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: block;
     width: 100%;
     text-align: center;
-    color: #ccc; }
+    color: #ccc;
+    margin-bottom: 10px;
+    font-size: 15px; }
+  .post__img, .post__img--portrait {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block; }
+    .post__img:last-of-type, .post__img--portrait:last-of-type {
+      margin-bottom: 0; }
+  .post__img--portrait {
+    max-width: 768px;
+    text-align: center; }
+  .blog__posts .post {
+    margin-bottom: 75px; }
 
 .menu {
   text-transform: uppercase;
@@ -1167,7 +1196,6 @@ h6 {
       margin-top: -2px;
       right: 4px;
       border-radius: 100%;
-      background-color: #fff;
       display: none; }
       @media only screen and (min-width: 681px) {
         .menu__item:after, .menu__item--active:after {

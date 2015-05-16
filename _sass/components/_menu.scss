@@ -101,7 +101,6 @@
 			margin-top: -($menu__item-divider-size/2);
 			right: $menu__item-divider-size;
 			border-radius: 100%;
-			background-color: $menu-text--palm;
 			display: none;
 			
 			@include media-query (lap-and-up) {

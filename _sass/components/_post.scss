@@ -1,30 +1,61 @@
 
 .post {
 	text-align: left;
-	
-	@include media-query(lap-and-up) {
-		text-align: center;
-	}
-	
-	&__content {
-		padding-bottom: $spacer;
-		position: relative;
-	}
+	font-size: 16px;
+	text-align: center;
 	
 	&__title {
-		//@extend .page__heading;
+		margin-bottom: 5px;
+		display: inline-block;
+		position: relative;
+		
+		> a {
+			text-decoration: none;
+			color: $body-text;
+			
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				border-bottom: 2px solid transparent;
+				@include transition(all $transition-speed ease-out);
+			}
+			
+			&:hover:after,
+			&:focus:after {
+				border-color: $body-text;
+			}
+		}
 	}
 	
 	&__date {
-		position: absolute;
-		bottom: 0;
-		left: 0;
+		display: block;
 		width: 100%;
 		text-align: center;
 		color: $post__date-colour;
+		margin-bottom: 10px;
+		font-size: 15px;
 	}
 	
-	.blog & {
-		//background-color: red;
+	&__img {
+		margin: 0 auto;
+		margin-bottom: 10px;
+		display: block;
+		
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	
+	&__img--portrait{
+		@extend .post__img;
+	    max-width: 768px;
+	    text-align: center;
+	}
+	
+	.blog__posts & {
+		margin-bottom: 75px;
 	}
 }
