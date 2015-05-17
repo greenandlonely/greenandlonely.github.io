@@ -1,11 +1,9 @@
 ---
 ---
 
-@import "helpers/grids";
-
 @import "vars";
 @import "mixins";
-@import "helpers";
+@import "helpers/grids";
 
 //Generic, base styles
 @import "generic/normalize";

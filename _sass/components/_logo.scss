@@ -30,6 +30,7 @@
 		vertical-align: top;
 		display: none;
 		text-align: left;
+		position: relative;
 		@include transition(all $transition-speed ease-out);
 		
 		@include media-query(lap-and-up) {
@@ -43,6 +44,17 @@
 		@include media-query(desk) {
 			font-size: 18px;
 		}
+		
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			height: 2px;
+			width: 100%;
+			background-color: transparent;
+			@include transition(all $transition-speed ease-out);
+		}
 	}
 	
 	> a {
@@ -55,12 +67,8 @@
 		
 		&:hover,
 		&:focus {
-			.logo__text {
-				color: $menu-text--highlighted;
-			}
-			
-			.fuji__top-bottom {
-				fill: #999;
+			.logo__text:after {
+				background-color: $menu-text;
 			}
 		}
 	}

@@ -2,14 +2,12 @@ $responsive:            true !default;
 
 $mobile-first:          true !default;
 
-$gutter:                24px !default;
-
 $use-silent-classes:    false !default;
 
 $push:                  false !default;
 $pull:                  false !default;
 
-$use-markup-fix:        false;
+$use-markup-fix:        false !default;
 
 $breakpoints: (
     'palm' '(max-width: 480px)',
@@ -52,11 +50,13 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 
 
 
-%grid {
+%grid,
+.grid {
     list-style:none;                /* [1] */
     margin:0;                       /* [2] */
     padding:0;                      /* [2] */
     margin-left:-$gutter;           /* [3] */
+    
     @if not $use-markup-fix {
         letter-spacing:-0.31em;
     }
@@ -65,52 +65,62 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 @if not $use-markup-fix {
     /* Opera hack */
     .opera:-o-prefocus,
-    %grid {
+    %grid,
+    .grid {
         word-spacing:-0.43em;
     }
 }
 
 
-    %grid__item {
+    %grid__item,
+    .grid__item {
         display:inline-block;           /* [1] */
         padding-left:$gutter;           /* [2] */
         vertical-align:top;             /* [3] */
+        
         @if $mobile-first {
             width:100%;                 /* [4] */
         }
         -webkit-box-sizing:border-box;  /* [5] */
            -moz-box-sizing:border-box;  /* [5] */
                 box-sizing:border-box;  /* [5] */
+        
         @if not $use-markup-fix {
             letter-spacing:normal;
             word-spacing:normal;
         }
     }
 
-%grid--rev {
+%grid--rev,
+.grid--rev {
     direction:rtl;
     text-align:left;
 
-    > %grid__item {
+    > %grid__item,
+    > .grid__item {
         direction:ltr;
         text-align:left;
     }
 }
 
 
-%grid--full {
+%grid--full,
+.grid--full {
     margin-left:0;
 
-    > %grid__item {
+    > %grid__item,
+    > .grid__item {
         padding-left:0;
     }
 }
 
 
-%grid--right {
+%grid--right,
+.grid--right {
     text-align:right;
 
-    > %grid__item {
+    > %grid__item,
+    > .grid__item {
         text-align:left;
     }
 }
@@ -120,10 +130,12 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
  * Centered grids align grid items centrally without needing to use push or pull
  * classes. Extends `.grid`.
  */
-%grid--center {
+%grid--center,
+.grid--center {
     text-align:center;
 
-    > %grid__item {
+    > %grid__item,
+    > .grid__item {
         text-align:left;
     }
 }
@@ -133,16 +145,20 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
  * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
  * `.grid`.
  */
-%grid--middle {
+%grid--middle,
+.grid--middle {
 
-    > %grid__item {
+    > %grid__item,
+    > .grid__item {
         vertical-align:middle;
     }
 }
 
-%grid--bottom {
+%grid--bottom,
+.grid--bottom {
 
-    > %grid__item {
+    > %grid__item,
+    > .grid__item {
         vertical-align:bottom;
     }
 }
@@ -151,10 +167,12 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 /**
  * Create grids with narrower gutters. Extends `.grid`.
  */
-%grid--narrow {
+%grid--narrow,
+.grid--narrow {
     margin-left:-($gutter / 2);
 
-    > %grid__item {
+    > %grid__item,
+    > .grid__item {
         padding-left:$gutter / 2;
     }
 }

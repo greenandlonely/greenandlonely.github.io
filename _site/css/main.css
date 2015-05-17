@@ -1,25 +1,113 @@
+/*
+	Greenandlonely v3
+*/
+/**
+* Media query mixin. Nicked from Harry Roberts (@csswizardry).
+*/
+.post__columns,
+.grid {
+  list-style: none;
+  /* [1] */
+  margin: 0;
+  /* [2] */
+  padding: 0;
+  /* [2] */
+  margin-left: -10px;
+  /* [3] */
+  letter-spacing: -0.31em; }
+
 /* Opera hack */
-.opera:-o-prefocus {
+.opera:-o-prefocus,
+.post__columns,
+.grid {
   word-spacing: -0.43em; }
+
+.post__columns .post__img, .post__columns .post__img--portrait,
+.grid__item {
+  display: inline-block;
+  /* [1] */
+  padding-left: 10px;
+  /* [2] */
+  vertical-align: top;
+  /* [3] */
+  width: 100%;
+  /* [4] */
+  -webkit-box-sizing: border-box;
+  /* [5] */
+  -moz-box-sizing: border-box;
+  /* [5] */
+  box-sizing: border-box;
+  /* [5] */
+  letter-spacing: normal;
+  word-spacing: normal; }
+
+.grid--rev {
+  direction: rtl;
+  text-align: left; }
+  .post__columns .grid--rev > .post__img,
+  .post__columns .grid--rev > .post__img--portrait,
+  .grid--rev > .grid__item {
+    direction: ltr;
+    text-align: left; }
+
+.grid--full {
+  margin-left: 0; }
+  .post__columns .grid--full > .post__img,
+  .post__columns .grid--full > .post__img--portrait,
+  .grid--full > .grid__item {
+    padding-left: 0; }
+
+.grid--right {
+  text-align: right; }
+  .post__columns .grid--right > .post__img,
+  .post__columns .grid--right > .post__img--portrait,
+  .grid--right > .grid__item {
+    text-align: left; }
 
 /**
  * Centered grids align grid items centrally without needing to use push or pull
  * classes. Extends `.grid`.
  */
+.grid--center {
+  text-align: center; }
+  .post__columns .grid--center > .post__img,
+  .post__columns .grid--center > .post__img--portrait,
+  .grid--center > .grid__item {
+    text-align: left; }
+
 /**
  * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
  * `.grid`.
  */
+.post__columns .grid--middle > .post__img,
+.post__columns .grid--middle > .post__img--portrait,
+.grid--middle > .grid__item {
+  vertical-align: middle; }
+
+.post__columns .grid--bottom > .post__img,
+.post__columns .grid--bottom > .post__img--portrait,
+.grid--bottom > .grid__item {
+  vertical-align: bottom; }
+
 /**
  * Create grids with narrower gutters. Extends `.grid`.
  */
+.grid--narrow {
+  margin-left: -5px; }
+  .post__columns .grid--narrow > .post__img,
+  .post__columns .grid--narrow > .post__img--portrait,
+  .grid--narrow > .grid__item {
+    padding-left: 5px; }
+
 /**
  * Create grids with wider gutters. Extends `.grid`.
  */
 .grid--wide {
-  margin-left: -48px; }
-  .grid--wide > .grid__item {
-    padding-left: 48px; }
+  margin-left: -20px; }
+  .grid--wide > .grid__item,
+  .post__columns .grid--wide > .post__img,
+  .post__columns .grid--wide > .post__img--portrait {
+    padding-left: 20px; }
 
 /*------------------------------------*\
     $WIDTHS
@@ -90,56 +178,56 @@
     .lap--one-fifth,
     .palm--one-fifth         { width:20%; }
     
-    .two-fifths        { width:40%; }
+    %two-fifths        { width:40%; }
     
-    .three-fifths      { width:60%; }
+    %three-fifths      { width:60%; }
     
-    .four-fifths       { width:80%; }
+    %four-fifths       { width:80%; }
 
 
-    .one-sixth         { width:16.666%; }
-    .two-sixths        { @extend .one-third; }
-    .three-sixths      { @extend .one-half; }
-    .four-sixths       { @extend .two-thirds; }
-    .five-sixths       { width:83.333%; }
+    %one-sixth         { width:16.666%; }
+    %two-sixths        { @extend %one-third; }
+    %three-sixths      { @extend %one-half; }
+    %four-sixths       { @extend %two-thirds; }
+    %five-sixths       { width:83.333%; }
 
 
-    .one-eighth        { width:12.5%; }
-    .two-eighths       { @extend .one-quarter; }
-    .three-eighths     { width:37.5%; }
-    .four-eighths      { @extend .one-half; }
-    .five-eighths      { width:62.5%; }
-    .six-eighths       { @extend .three-quarters; }
-    .seven-eighths     { width:87.5%; }
+    %one-eighth        { width:12.5%; }
+    %two-eighths       { @extend %one-quarter; }
+    %three-eighths     { width:37.5%; }
+    %four-eighths      { @extend %one-half; }
+    %five-eighths      { width:62.5%; }
+    %six-eighths       { @extend %three-quarters; }
+    %seven-eighths     { width:87.5%; }
 
 
-    .one-tenth         { width:10%; }
-    .two-tenths        { @extend .one-fifth; }
-    .three-tenths      { width:30%; }
-    .four-tenths       { @extend .two-fifths; }
-    .five-tenths       { @extend .one-half; }
-    .six-tenths        { @extend .three-fifths; }
-    .seven-tenths      { width:70%; }
-    .eight-tenths      { @extend .four-fifths; }
-    .nine-tenths       { width:90%; }
+    %one-tenth         { width:10%; }
+    %two-tenths        { @extend %one-fifth; }
+    %three-tenths      { width:30%; }
+    %four-tenths       { @extend %two-fifths; }
+    %five-tenths       { @extend %one-half; }
+    %six-tenths        { @extend %three-fifths; }
+    %seven-tenths      { width:70%; }
+    %eight-tenths      { @extend %four-fifths; }
+    %nine-tenths       { width:90%; }
 
 
-    .one-twelfth       { width:8.333%; }
-    .two-twelfths      { @extend .one-sixth; }
-    .three-twelfths    { @extend .one-quarter; }
-    .four-twelfths     { @extend .one-third; }
-    .five-twelfths     { width:41.666% }
-    .six-twelfths      { @extend .one-half; }
-    .seven-twelfths    { width:58.333%; }
-    .eight-twelfths    { @extend .two-thirds; }
-    .nine-twelfths     { @extend .three-quarters; }
-    .ten-twelfths      { @extend .five-sixths; }
-    .eleven-twelfths   { width:91.666%; }
+    %one-twelfth       { width:8.333%; }
+    %two-twelfths      { @extend %one-sixth; }
+    %three-twelfths    { @extend %one-quarter; }
+    %four-twelfths     { @extend %one-third; }
+    %five-twelfths     { width:41.666% }
+    %six-twelfths      { @extend %one-half; }
+    %seven-twelfths    { width:58.333%; }
+    %eight-twelfths    { @extend %two-thirds; }
+    %nine-twelfths     { @extend %three-quarters; }
+    %ten-twelfths      { @extend %five-sixths; }
+    %eleven-twelfths   { width:91.666%; }
     */
 /**
  * Our responsive classes, if we have enabled them.
  */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
   /**
    * Whole
    */
@@ -200,53 +288,53 @@
       .lap--one-fifth,
       .palm--one-fifth         { width:20%; }
       
-      .palm--two-fifths        { width:40%; }
+      %palm--two-fifths        { width:40%; }
       
-      .palm--three-fifths      { width:60%; }
+      %palm--three-fifths      { width:60%; }
       
-      .palm--four-fifths       { width:80%; }
+      %palm--four-fifths       { width:80%; }
   
   
-      .palm--one-sixth         { width:16.666%; }
-      .palm--two-sixths        { @extend .palm--one-third; }
-      .palm--three-sixths      { @extend .palm--one-half; }
-      .palm--four-sixths       { @extend .palm--two-thirds; }
-      .palm--five-sixths       { width:83.333%; }
+      %palm--one-sixth         { width:16.666%; }
+      %palm--two-sixths        { @extend %palm--one-third; }
+      %palm--three-sixths      { @extend %palm--one-half; }
+      %palm--four-sixths       { @extend %palm--two-thirds; }
+      %palm--five-sixths       { width:83.333%; }
   
   
-      .palm--one-eighth        { width:12.5%; }
-      .palm--two-eighths       { @extend .palm--one-quarter; }
-      .palm--three-eighths     { width:37.5%; }
-      .palm--four-eighths      { @extend .palm--one-half; }
-      .palm--five-eighths      { width:62.5%; }
-      .palm--six-eighths       { @extend .palm--three-quarters; }
-      .palm--seven-eighths     { width:87.5%; }
+      %palm--one-eighth        { width:12.5%; }
+      %palm--two-eighths       { @extend %palm--one-quarter; }
+      %palm--three-eighths     { width:37.5%; }
+      %palm--four-eighths      { @extend %palm--one-half; }
+      %palm--five-eighths      { width:62.5%; }
+      %palm--six-eighths       { @extend %palm--three-quarters; }
+      %palm--seven-eighths     { width:87.5%; }
   
   
-      .palm--one-tenth         { width:10%; }
-      .palm--two-tenths        { @extend .palm--one-fifth; }
-      .palm--three-tenths      { width:30%; }
-      .palm--four-tenths       { @extend .palm--two-fifths; }
-      .palm--five-tenths       { @extend .palm--one-half; }
-      .palm--six-tenths        { @extend .palm--three-fifths; }
-      .palm--seven-tenths      { width:70%; }
-      .palm--eight-tenths      { @extend .palm--four-fifths; }
-      .palm--nine-tenths       { width:90%; }
+      %palm--one-tenth         { width:10%; }
+      %palm--two-tenths        { @extend %palm--one-fifth; }
+      %palm--three-tenths      { width:30%; }
+      %palm--four-tenths       { @extend %palm--two-fifths; }
+      %palm--five-tenths       { @extend %palm--one-half; }
+      %palm--six-tenths        { @extend %palm--three-fifths; }
+      %palm--seven-tenths      { width:70%; }
+      %palm--eight-tenths      { @extend %palm--four-fifths; }
+      %palm--nine-tenths       { width:90%; }
   
   
-      .palm--one-twelfth       { width:8.333%; }
-      .palm--two-twelfths      { @extend .palm--one-sixth; }
-      .palm--three-twelfths    { @extend .palm--one-quarter; }
-      .palm--four-twelfths     { @extend .palm--one-third; }
-      .palm--five-twelfths     { width:41.666% }
-      .palm--six-twelfths      { @extend .palm--one-half; }
-      .palm--seven-twelfths    { width:58.333%; }
-      .palm--eight-twelfths    { @extend .palm--two-thirds; }
-      .palm--nine-twelfths     { @extend .palm--three-quarters; }
-      .palm--ten-twelfths      { @extend .palm--five-sixths; }
-      .palm--eleven-twelfths   { width:91.666%; }
+      %palm--one-twelfth       { width:8.333%; }
+      %palm--two-twelfths      { @extend %palm--one-sixth; }
+      %palm--three-twelfths    { @extend %palm--one-quarter; }
+      %palm--four-twelfths     { @extend %palm--one-third; }
+      %palm--five-twelfths     { width:41.666% }
+      %palm--six-twelfths      { @extend %palm--one-half; }
+      %palm--seven-twelfths    { width:58.333%; }
+      %palm--eight-twelfths    { @extend %palm--two-thirds; }
+      %palm--nine-twelfths     { @extend %palm--three-quarters; }
+      %palm--ten-twelfths      { @extend %palm--five-sixths; }
+      %palm--eleven-twelfths   { width:91.666%; }
       */ }
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media only screen and (min-width: 681px) and (max-width: 1024px) {
   /**
    * Whole
    */
@@ -307,53 +395,53 @@
       .lap--one-fifth,
       .palm--one-fifth         { width:20%; }
       
-      .lap--two-fifths        { width:40%; }
+      %lap--two-fifths        { width:40%; }
       
-      .lap--three-fifths      { width:60%; }
+      %lap--three-fifths      { width:60%; }
       
-      .lap--four-fifths       { width:80%; }
+      %lap--four-fifths       { width:80%; }
   
   
-      .lap--one-sixth         { width:16.666%; }
-      .lap--two-sixths        { @extend .lap--one-third; }
-      .lap--three-sixths      { @extend .lap--one-half; }
-      .lap--four-sixths       { @extend .lap--two-thirds; }
-      .lap--five-sixths       { width:83.333%; }
+      %lap--one-sixth         { width:16.666%; }
+      %lap--two-sixths        { @extend %lap--one-third; }
+      %lap--three-sixths      { @extend %lap--one-half; }
+      %lap--four-sixths       { @extend %lap--two-thirds; }
+      %lap--five-sixths       { width:83.333%; }
   
   
-      .lap--one-eighth        { width:12.5%; }
-      .lap--two-eighths       { @extend .lap--one-quarter; }
-      .lap--three-eighths     { width:37.5%; }
-      .lap--four-eighths      { @extend .lap--one-half; }
-      .lap--five-eighths      { width:62.5%; }
-      .lap--six-eighths       { @extend .lap--three-quarters; }
-      .lap--seven-eighths     { width:87.5%; }
+      %lap--one-eighth        { width:12.5%; }
+      %lap--two-eighths       { @extend %lap--one-quarter; }
+      %lap--three-eighths     { width:37.5%; }
+      %lap--four-eighths      { @extend %lap--one-half; }
+      %lap--five-eighths      { width:62.5%; }
+      %lap--six-eighths       { @extend %lap--three-quarters; }
+      %lap--seven-eighths     { width:87.5%; }
   
   
-      .lap--one-tenth         { width:10%; }
-      .lap--two-tenths        { @extend .lap--one-fifth; }
-      .lap--three-tenths      { width:30%; }
-      .lap--four-tenths       { @extend .lap--two-fifths; }
-      .lap--five-tenths       { @extend .lap--one-half; }
-      .lap--six-tenths        { @extend .lap--three-fifths; }
-      .lap--seven-tenths      { width:70%; }
-      .lap--eight-tenths      { @extend .lap--four-fifths; }
-      .lap--nine-tenths       { width:90%; }
+      %lap--one-tenth         { width:10%; }
+      %lap--two-tenths        { @extend %lap--one-fifth; }
+      %lap--three-tenths      { width:30%; }
+      %lap--four-tenths       { @extend %lap--two-fifths; }
+      %lap--five-tenths       { @extend %lap--one-half; }
+      %lap--six-tenths        { @extend %lap--three-fifths; }
+      %lap--seven-tenths      { width:70%; }
+      %lap--eight-tenths      { @extend %lap--four-fifths; }
+      %lap--nine-tenths       { width:90%; }
   
   
-      .lap--one-twelfth       { width:8.333%; }
-      .lap--two-twelfths      { @extend .lap--one-sixth; }
-      .lap--three-twelfths    { @extend .lap--one-quarter; }
-      .lap--four-twelfths     { @extend .lap--one-third; }
-      .lap--five-twelfths     { width:41.666% }
-      .lap--six-twelfths      { @extend .lap--one-half; }
-      .lap--seven-twelfths    { width:58.333%; }
-      .lap--eight-twelfths    { @extend .lap--two-thirds; }
-      .lap--nine-twelfths     { @extend .lap--three-quarters; }
-      .lap--ten-twelfths      { @extend .lap--five-sixths; }
-      .lap--eleven-twelfths   { width:91.666%; }
+      %lap--one-twelfth       { width:8.333%; }
+      %lap--two-twelfths      { @extend %lap--one-sixth; }
+      %lap--three-twelfths    { @extend %lap--one-quarter; }
+      %lap--four-twelfths     { @extend %lap--one-third; }
+      %lap--five-twelfths     { width:41.666% }
+      %lap--six-twelfths      { @extend %lap--one-half; }
+      %lap--seven-twelfths    { width:58.333%; }
+      %lap--eight-twelfths    { @extend %lap--two-thirds; }
+      %lap--nine-twelfths     { @extend %lap--three-quarters; }
+      %lap--ten-twelfths      { @extend %lap--five-sixths; }
+      %lap--eleven-twelfths   { width:91.666%; }
       */ }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
   /**
    * Whole
    */
@@ -414,53 +502,53 @@
       .lap--one-fifth,
       .palm--one-fifth         { width:20%; }
       
-      .portable--two-fifths        { width:40%; }
+      %portable--two-fifths        { width:40%; }
       
-      .portable--three-fifths      { width:60%; }
+      %portable--three-fifths      { width:60%; }
       
-      .portable--four-fifths       { width:80%; }
+      %portable--four-fifths       { width:80%; }
   
   
-      .portable--one-sixth         { width:16.666%; }
-      .portable--two-sixths        { @extend .portable--one-third; }
-      .portable--three-sixths      { @extend .portable--one-half; }
-      .portable--four-sixths       { @extend .portable--two-thirds; }
-      .portable--five-sixths       { width:83.333%; }
+      %portable--one-sixth         { width:16.666%; }
+      %portable--two-sixths        { @extend %portable--one-third; }
+      %portable--three-sixths      { @extend %portable--one-half; }
+      %portable--four-sixths       { @extend %portable--two-thirds; }
+      %portable--five-sixths       { width:83.333%; }
   
   
-      .portable--one-eighth        { width:12.5%; }
-      .portable--two-eighths       { @extend .portable--one-quarter; }
-      .portable--three-eighths     { width:37.5%; }
-      .portable--four-eighths      { @extend .portable--one-half; }
-      .portable--five-eighths      { width:62.5%; }
-      .portable--six-eighths       { @extend .portable--three-quarters; }
-      .portable--seven-eighths     { width:87.5%; }
+      %portable--one-eighth        { width:12.5%; }
+      %portable--two-eighths       { @extend %portable--one-quarter; }
+      %portable--three-eighths     { width:37.5%; }
+      %portable--four-eighths      { @extend %portable--one-half; }
+      %portable--five-eighths      { width:62.5%; }
+      %portable--six-eighths       { @extend %portable--three-quarters; }
+      %portable--seven-eighths     { width:87.5%; }
   
   
-      .portable--one-tenth         { width:10%; }
-      .portable--two-tenths        { @extend .portable--one-fifth; }
-      .portable--three-tenths      { width:30%; }
-      .portable--four-tenths       { @extend .portable--two-fifths; }
-      .portable--five-tenths       { @extend .portable--one-half; }
-      .portable--six-tenths        { @extend .portable--three-fifths; }
-      .portable--seven-tenths      { width:70%; }
-      .portable--eight-tenths      { @extend .portable--four-fifths; }
-      .portable--nine-tenths       { width:90%; }
+      %portable--one-tenth         { width:10%; }
+      %portable--two-tenths        { @extend %portable--one-fifth; }
+      %portable--three-tenths      { width:30%; }
+      %portable--four-tenths       { @extend %portable--two-fifths; }
+      %portable--five-tenths       { @extend %portable--one-half; }
+      %portable--six-tenths        { @extend %portable--three-fifths; }
+      %portable--seven-tenths      { width:70%; }
+      %portable--eight-tenths      { @extend %portable--four-fifths; }
+      %portable--nine-tenths       { width:90%; }
   
   
-      .portable--one-twelfth       { width:8.333%; }
-      .portable--two-twelfths      { @extend .portable--one-sixth; }
-      .portable--three-twelfths    { @extend .portable--one-quarter; }
-      .portable--four-twelfths     { @extend .portable--one-third; }
-      .portable--five-twelfths     { width:41.666% }
-      .portable--six-twelfths      { @extend .portable--one-half; }
-      .portable--seven-twelfths    { width:58.333%; }
-      .portable--eight-twelfths    { @extend .portable--two-thirds; }
-      .portable--nine-twelfths     { @extend .portable--three-quarters; }
-      .portable--ten-twelfths      { @extend .portable--five-sixths; }
-      .portable--eleven-twelfths   { width:91.666%; }
+      %portable--one-twelfth       { width:8.333%; }
+      %portable--two-twelfths      { @extend %portable--one-sixth; }
+      %portable--three-twelfths    { @extend %portable--one-quarter; }
+      %portable--four-twelfths     { @extend %portable--one-third; }
+      %portable--five-twelfths     { width:41.666% }
+      %portable--six-twelfths      { @extend %portable--one-half; }
+      %portable--seven-twelfths    { width:58.333%; }
+      %portable--eight-twelfths    { @extend %portable--two-thirds; }
+      %portable--nine-twelfths     { @extend %portable--three-quarters; }
+      %portable--ten-twelfths      { @extend %portable--five-sixths; }
+      %portable--eleven-twelfths   { width:91.666%; }
       */ }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
   /**
    * Whole
    */
@@ -521,58 +609,52 @@
       .lap--one-fifth,
       .palm--one-fifth         { width:20%; }
       
-      .desk--two-fifths        { width:40%; }
+      %desk--two-fifths        { width:40%; }
       
-      .desk--three-fifths      { width:60%; }
+      %desk--three-fifths      { width:60%; }
       
-      .desk--four-fifths       { width:80%; }
+      %desk--four-fifths       { width:80%; }
   
   
-      .desk--one-sixth         { width:16.666%; }
-      .desk--two-sixths        { @extend .desk--one-third; }
-      .desk--three-sixths      { @extend .desk--one-half; }
-      .desk--four-sixths       { @extend .desk--two-thirds; }
-      .desk--five-sixths       { width:83.333%; }
+      %desk--one-sixth         { width:16.666%; }
+      %desk--two-sixths        { @extend %desk--one-third; }
+      %desk--three-sixths      { @extend %desk--one-half; }
+      %desk--four-sixths       { @extend %desk--two-thirds; }
+      %desk--five-sixths       { width:83.333%; }
   
   
-      .desk--one-eighth        { width:12.5%; }
-      .desk--two-eighths       { @extend .desk--one-quarter; }
-      .desk--three-eighths     { width:37.5%; }
-      .desk--four-eighths      { @extend .desk--one-half; }
-      .desk--five-eighths      { width:62.5%; }
-      .desk--six-eighths       { @extend .desk--three-quarters; }
-      .desk--seven-eighths     { width:87.5%; }
+      %desk--one-eighth        { width:12.5%; }
+      %desk--two-eighths       { @extend %desk--one-quarter; }
+      %desk--three-eighths     { width:37.5%; }
+      %desk--four-eighths      { @extend %desk--one-half; }
+      %desk--five-eighths      { width:62.5%; }
+      %desk--six-eighths       { @extend %desk--three-quarters; }
+      %desk--seven-eighths     { width:87.5%; }
   
   
-      .desk--one-tenth         { width:10%; }
-      .desk--two-tenths        { @extend .desk--one-fifth; }
-      .desk--three-tenths      { width:30%; }
-      .desk--four-tenths       { @extend .desk--two-fifths; }
-      .desk--five-tenths       { @extend .desk--one-half; }
-      .desk--six-tenths        { @extend .desk--three-fifths; }
-      .desk--seven-tenths      { width:70%; }
-      .desk--eight-tenths      { @extend .desk--four-fifths; }
-      .desk--nine-tenths       { width:90%; }
+      %desk--one-tenth         { width:10%; }
+      %desk--two-tenths        { @extend %desk--one-fifth; }
+      %desk--three-tenths      { width:30%; }
+      %desk--four-tenths       { @extend %desk--two-fifths; }
+      %desk--five-tenths       { @extend %desk--one-half; }
+      %desk--six-tenths        { @extend %desk--three-fifths; }
+      %desk--seven-tenths      { width:70%; }
+      %desk--eight-tenths      { @extend %desk--four-fifths; }
+      %desk--nine-tenths       { width:90%; }
   
   
-      .desk--one-twelfth       { width:8.333%; }
-      .desk--two-twelfths      { @extend .desk--one-sixth; }
-      .desk--three-twelfths    { @extend .desk--one-quarter; }
-      .desk--four-twelfths     { @extend .desk--one-third; }
-      .desk--five-twelfths     { width:41.666% }
-      .desk--six-twelfths      { @extend .desk--one-half; }
-      .desk--seven-twelfths    { width:58.333%; }
-      .desk--eight-twelfths    { @extend .desk--two-thirds; }
-      .desk--nine-twelfths     { @extend .desk--three-quarters; }
-      .desk--ten-twelfths      { @extend .desk--five-sixths; }
-      .desk--eleven-twelfths   { width:91.666%; }
+      %desk--one-twelfth       { width:8.333%; }
+      %desk--two-twelfths      { @extend %desk--one-sixth; }
+      %desk--three-twelfths    { @extend %desk--one-quarter; }
+      %desk--four-twelfths     { @extend %desk--one-third; }
+      %desk--five-twelfths     { width:41.666% }
+      %desk--six-twelfths      { @extend %desk--one-half; }
+      %desk--seven-twelfths    { width:58.333%; }
+      %desk--eight-twelfths    { @extend %desk--two-thirds; }
+      %desk--nine-twelfths     { @extend %desk--three-quarters; }
+      %desk--ten-twelfths      { @extend %desk--five-sixths; }
+      %desk--eleven-twelfths   { width:91.666%; }
       */ }
-/*
-	Greenandlonely v3
-*/
-/**
-* Media query mixin. Nicked from Harry Roberts (@csswizardry).
-*/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -909,58 +991,60 @@ h6 {
     margin: 0;
     padding: 0; }
 
-.favourites__list {
-  list-style: none outside none;
-  margin: 0;
-  padding: 0; }
-  @media only screen and (min-width: 1025px) {
-    .favourites__list {
-      padding-bottom: 24px;
-      -moz-column-count: 2;
-      -webkit-column-count: 2;
-      column-count: 2;
-      -moz-column-gap: 24px;
-      -webkit-column-gap: 24px;
-      column-gap: 24px; } }
-.favourites__item {
-  break-inside: avoid-column;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid;
-  margin-top: 24px;
-  height: auto;
-  text-align: center; }
-  .favourites__item:first-child {
-    margin: 0; }
-  .favourites__item img {
-    display: inline-block; }
-.favourites__item--double {
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid; }
-  @media only screen and (min-width: 681px) {
-    .favourites__item--double {
-      -moz-column-count: 2;
-      -webkit-column-count: 2;
-      column-count: 2;
-      -moz-column-gap: 24px;
-      -webkit-column-gap: 24px;
-      column-gap: 24px;
-      margin-top: 24px; } }
-  @media only screen and (max-width: 680px) {
-    .favourites__item--double > a {
-      display: block;
-      margin-top: 24px;
-      height: auto;
-      text-align: center; } }
-  .favourites__item--double img {
-    display: inline-block; }
+.favourites {
+  padding-bottom: 10px; }
+  .favourites__list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0; }
+    @media only screen and (min-width: 1025px) {
+      .favourites__list {
+        padding-bottom: 24px;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 24px;
+        -webkit-column-gap: 24px;
+        column-gap: 24px; } }
+  .favourites__item {
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-top: 24px;
+    height: auto;
+    text-align: center; }
+    .favourites__item:first-child {
+      margin: 0; }
+    .favourites__item img {
+      display: block; }
+  .favourites__item--double {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
+    @media only screen and (min-width: 681px) {
+      .favourites__item--double {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 24px;
+        -webkit-column-gap: 24px;
+        column-gap: 24px;
+        margin-top: 24px; } }
+    @media only screen and (max-width: 680px) {
+      .favourites__item--double > a {
+        display: block;
+        margin-top: 24px;
+        height: auto;
+        text-align: center; } }
+    .favourites__item--double img {
+      display: block; }
 
 .blogroll {
   list-style: none outside none;
   margin: 0;
   padding: 0;
-  margin-left: -24px; }
+  margin-left: -10px; }
   @media only screen and (min-width: 681px) {
     .blogroll {
       padding-top: 15px;
@@ -993,7 +1077,7 @@ h6 {
       -ms-flex-align: start;
       align-items: flex-start; } }
   .blogroll > li {
-    padding: 0 0 24px 24px;
+    padding: 0 0 10px 10px;
     display: block; }
     @media only screen and (min-width: 1025px) {
       .blogroll > li {
@@ -1035,6 +1119,7 @@ h6 {
     vertical-align: top;
     display: none;
     text-align: left;
+    position: relative;
     -webkit-transition: all 250ms ease-out;
     -moz-transition: all 250ms ease-out;
     -ms-transition: all 250ms ease-out;
@@ -1049,16 +1134,27 @@ h6 {
     @media only screen and (min-width: 1025px) {
       .logo__text {
         font-size: 18px; } }
+    .logo__text:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: transparent;
+      -webkit-transition: all 250ms ease-out;
+      -moz-transition: all 250ms ease-out;
+      -ms-transition: all 250ms ease-out;
+      -o-transition: all 250ms ease-out;
+      transition: all 250ms ease-out; }
   .logo > a {
     text-decoration: none;
     color: #fff; }
     @media only screen and (min-width: 681px) {
       .logo > a {
         color: #111; } }
-    .logo > a:hover .logo__text, .logo > a:focus .logo__text {
-      color: #a00; }
-    .logo > a:hover .fuji__top-bottom, .logo > a:focus .fuji__top-bottom {
-      fill: #999; }
+    .logo > a:hover .logo__text:after, .logo > a:focus .logo__text:after {
+      background-color: #111; }
 
 .fuji {
   width: 120px; }
@@ -1080,8 +1176,10 @@ h6 {
   text-align: left;
   font-size: 16px;
   text-align: center; }
+  .post__header + p {
+    margin-top: 5px; }
   .post__title {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: inline-block;
     position: relative; }
     .post__title > a {
@@ -1092,26 +1190,40 @@ h6 {
         display: block;
         position: absolute;
         left: 0;
+        height: 2px;
         width: 100%;
-        border-bottom: 2px solid transparent;
+        background-color: 2px solid transparent;
         -webkit-transition: all 250ms ease-out;
         -moz-transition: all 250ms ease-out;
         -ms-transition: all 250ms ease-out;
         -o-transition: all 250ms ease-out;
         transition: all 250ms ease-out; }
       .post__title > a:hover:after, .post__title > a:focus:after {
-        border-color: #111; }
+        background-color: #111; }
   .post__date {
-    display: block;
-    width: 100%;
-    text-align: center;
+    display: inline-block;
+    text-align: left;
     color: #ccc;
-    margin-bottom: 10px;
-    font-size: 15px; }
+    font-size: 15px;
+    padding-left: 5px; }
+  .post__columns .post__img, .post__columns .post__img--portrait {
+    width: 100%;
+    display: inline-block; }
+    .post__columns .post__img img, .post__columns .post__img--portrait img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    @media only screen and (min-width: 681px) {
+      .post__columns .post__img, .post__columns .post__img--portrait {
+        width: 50%; } }
+    .post__columns .post__img:nth-of-type(even), .post__columns .post__img--portrait:nth-of-type(even) {
+      margin-right: 0; }
   .post__img, .post__img--portrait {
     margin: 0 auto;
     margin-bottom: 10px;
     display: block; }
+    .post__img img, .post__img--portrait img {
+      display: block; }
     .post__img:last-of-type, .post__img--portrait:last-of-type {
       margin-bottom: 0; }
   .post__img--portrait {
@@ -1119,6 +1231,8 @@ h6 {
     text-align: center; }
   .blog__posts .post {
     margin-bottom: 75px; }
+  .post p {
+    padding: 0 24px; }
 
 .menu {
   text-transform: uppercase;
