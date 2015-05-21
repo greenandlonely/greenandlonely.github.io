@@ -12,7 +12,7 @@
   /* [2] */
   padding: 0;
   /* [2] */
-  margin-left: -10px;
+  margin-left: -15px;
   /* [3] */
   letter-spacing: -0.31em; }
 
@@ -26,7 +26,7 @@
 .grid__item {
   display: inline-block;
   /* [1] */
-  padding-left: 10px;
+  padding-left: 15px;
   /* [2] */
   vertical-align: top;
   /* [3] */
@@ -99,23 +99,23 @@
  * Create grids with narrower gutters. Extends `.grid`.
  */
 .grid--narrow {
-  margin-left: -5px; }
+  margin-left: -7.5px; }
   .post__columns .grid--narrow > .post__img,
   .post__columns .grid--narrow > .post__img--portrait,
   .grid--narrow > .post__column,
   .grid--narrow > .grid__item {
-    padding-left: 5px; }
+    padding-left: 7.5px; }
 
 /**
  * Create grids with wider gutters. Extends `.grid`.
  */
 .grid--wide {
-  margin-left: -20px; }
+  margin-left: -30px; }
   .grid--wide > .grid__item,
   .post__columns .grid--wide > .post__img,
   .post__columns .grid--wide > .post__img--portrait,
   .grid--wide > .post__column {
-    padding-left: 20px; }
+    padding-left: 30px; }
 
 /*------------------------------------*\
     $WIDTHS
@@ -1000,26 +1000,26 @@ h6 {
     padding: 0; }
 
 .favourites {
-  padding-bottom: 10px; }
+  padding-bottom: 15px; }
   .favourites__list {
     list-style: none outside none;
     margin: 0;
     padding: 0; }
     @media only screen and (min-width: 1025px) {
       .favourites__list {
-        padding-bottom: 24px;
+        padding-bottom: 15px;
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
-        -moz-column-gap: 24px;
-        -webkit-column-gap: 24px;
-        column-gap: 24px; } }
+        -moz-column-gap: 15px;
+        -webkit-column-gap: 15px;
+        column-gap: 15px; } }
   .favourites__item {
     break-inside: avoid-column;
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
-    margin-top: 24px;
+    margin-top: 15px;
     height: auto;
     text-align: center; }
     .favourites__item:first-child {
@@ -1035,14 +1035,14 @@ h6 {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
-        -moz-column-gap: 24px;
-        -webkit-column-gap: 24px;
-        column-gap: 24px;
-        margin-top: 24px; } }
+        -moz-column-gap: 15px;
+        -webkit-column-gap: 15px;
+        column-gap: 15px;
+        margin-top: 15px; } }
     @media only screen and (max-width: 680px) {
       .favourites__item--double > a {
         display: block;
-        margin-top: 24px;
+        margin-top: 15px;
         height: auto;
         text-align: center; } }
     .favourites__item--double img {
@@ -1052,7 +1052,7 @@ h6 {
   list-style: none outside none;
   margin: 0;
   padding: 0;
-  margin-left: -10px; }
+  margin-left: -15px; }
   @media only screen and (min-width: 681px) {
     .blogroll {
       padding-top: 15px;
@@ -1085,7 +1085,7 @@ h6 {
       -ms-flex-align: start;
       align-items: flex-start; } }
   .blogroll > li {
-    padding: 0 0 10px 10px;
+    padding: 0 0 15px 15px;
     display: block; }
     @media only screen and (min-width: 1025px) {
       .blogroll > li {
@@ -1147,6 +1147,7 @@ h6 {
       display: block;
       position: absolute;
       left: 0;
+      bottom: 10px;
       height: 2px;
       width: 100%;
       background-color: transparent;
@@ -1184,7 +1185,7 @@ h6 {
   text-align: left;
   font-size: 16px;
   text-align: center; }
-  .post__header + p {
+  .post__header + p, .post__img + p, .post__img--portrait + p, .post__columns + p {
     margin-top: 5px; }
   .post__title {
     margin-bottom: 10px;
@@ -1234,7 +1235,7 @@ h6 {
       padding-left: 0; }
   .post__img, .post__img--portrait {
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: block; }
     .post__img img, .post__img--portrait img {
       display: block; }
@@ -1244,9 +1245,8 @@ h6 {
     .post__img--portrait img {
       margin: 0 auto; }
   .post__list {
-    margin: 0 auto;
+    margin: 0 auto 15px;
     text-align: left;
-    list-style-type: square;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
     padding: 15px 25px;
@@ -1257,6 +1257,19 @@ h6 {
     @media only screen and (min-width: 681px) and (max-width: 1024px) {
       .post__list {
         width: 60%; } }
+  .post__quote {
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+    margin: 0 auto 15px;
+    width: 80%; }
+    @media only screen and (min-width: 1025px) {
+      .post__quote {
+        width: 50%; } }
+    @media only screen and (min-width: 681px) and (max-width: 1024px) {
+      .post__quote {
+        width: 60%; } }
+  .post ul.post__list {
+    list-style-type: square; }
   .blog__posts .post {
     margin-bottom: 75px; }
   .post p {

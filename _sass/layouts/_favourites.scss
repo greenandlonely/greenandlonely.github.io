@@ -10,13 +10,13 @@
 		@include bare-list;
 		
 		@include media-query(desk) {
-			padding-bottom: $spacer;
+			padding-bottom: $gutter;
 			-moz-column-count: 2;
 			-webkit-column-count: 2;
 			column-count: 2;
-			-moz-column-gap: $spacer;
-			-webkit-column-gap: $spacer;
-			column-gap: $spacer;
+			-moz-column-gap: $gutter;
+			-webkit-column-gap: $gutter;
+			column-gap: $gutter;
 		}
 	}
 		
@@ -25,7 +25,7 @@
 		-webkit-column-break-inside: avoid;
 		page-break-inside: avoid;
 		break-inside: avoid;
-		margin-top: $spacer;
+		margin-top: $gutter;
 		height: auto;
 		text-align: center;
 		
@@ -44,10 +44,10 @@
 			-moz-column-count: 2;
 			-webkit-column-count: 2;
 			column-count: 2;
-			-moz-column-gap: $spacer;
-			-webkit-column-gap: $spacer;
-			column-gap: $spacer;
-			margin-top: $spacer;
+			-moz-column-gap: $gutter;
+			-webkit-column-gap: $gutter;
+			column-gap: $gutter;
+			margin-top: $gutter;
 		}
 		
 		-webkit-column-break-inside: avoid;
@@ -57,7 +57,7 @@
 		@include media-query(palm) {
 			> a {
 				display: block;
-				margin-top: $spacer;
+				margin-top: $gutter;
 				height: auto;
 				text-align: center;
 				//display: block;
