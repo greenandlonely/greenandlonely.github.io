@@ -956,13 +956,13 @@ h6 {
   @media only screen and (min-width: 681px) {
     .page {
       padding: 48px 24px 0; } }
-  .page__heading, .favourites__heading {
+  .page__heading, .favourites__heading, .post__title {
     text-align: center;
     margin: 0 0 15px;
     font-size: 21px;
     z-index: 20; }
     @media only screen and (min-width: 1025px) {
-      .page__heading, .favourites__heading {
+      .page__heading, .favourites__heading, .post__title {
         position: fixed;
         top: 0;
         left: 50%;
@@ -1189,8 +1189,7 @@ h6 {
     margin-top: 5px; }
   .post__title {
     margin-bottom: 10px;
-    display: inline-block;
-    position: relative; }
+    display: inline-block; }
     .post__title > a {
       text-decoration: none;
       color: #111; }
@@ -1214,7 +1213,8 @@ h6 {
     text-align: left;
     color: #ccc;
     font-size: 15px;
-    padding-left: 5px; }
+    padding-left: 5px;
+    margin-bottom: 10px; }
   .post__columns .post__img, .post__columns .post__img--portrait {
     width: 100%;
     display: inline-block; }
@@ -1272,6 +1272,12 @@ h6 {
     list-style-type: square; }
   .blog__posts .post {
     margin-bottom: 75px; }
+    .blog__posts .post .post__title {
+      position: relative;
+      width: auto !important;
+      margin-left: 0;
+      line-height: 32px;
+      left: auto; }
   .post p {
     padding: 0 24px; }
 

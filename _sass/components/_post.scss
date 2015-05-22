@@ -13,9 +13,9 @@
 	}
 	
 	&__title {
+		@extend .page__heading;
 		margin-bottom: 10px;
 		display: inline-block;
-		position: relative;
 		
 		> a {
 			text-decoration: none;
@@ -45,6 +45,7 @@
 		color: $post__date-colour;
 		font-size: 15px;
 		padding-left: 5px;
+		margin-bottom: 10px;
 	}
 	
 	&__columns {
@@ -143,6 +144,14 @@
 	
 	.blog__posts & {
 		margin-bottom: 75px;
+		
+		.post__title {
+			position: relative;
+			width: auto !important;
+			margin-left: 0;
+			line-height: 32px;
+			left: auto;
+		}
 	}
 	
 	p {
