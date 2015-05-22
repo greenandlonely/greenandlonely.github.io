@@ -1046,7 +1046,8 @@ h6 {
         height: auto;
         text-align: center; } }
     .favourites__item--double img {
-      display: block; }
+      display: block;
+      margin: 0 auto; }
 
 .blogroll {
   list-style: none outside none;
