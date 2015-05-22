@@ -1025,7 +1025,8 @@ h6 {
     .favourites__item:first-child {
       margin: 0; }
     .favourites__item img {
-      display: block; }
+      display: block;
+      margin: 0 auto; }
   .favourites__item--double {
     -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
