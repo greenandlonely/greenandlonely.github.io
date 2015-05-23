@@ -9,7 +9,7 @@ github_username: greenandlonely
 permalink: /:title/
 
 # Build settings
-paginate: 4
+paginate: 3
 paginate_path: /p/:num
 
 //markdown: rdiscount

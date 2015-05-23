@@ -1279,7 +1279,8 @@ h6 {
       width: auto !important;
       margin-left: 0;
       line-height: 32px;
-      left: auto; }
+      left: auto;
+      z-index: 1; }
   .post p {
     padding: 0 24px; }
 
