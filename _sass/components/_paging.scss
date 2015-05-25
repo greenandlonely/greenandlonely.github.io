@@ -10,6 +10,7 @@
 	&__prev {
 		position: absolute;
 		bottom: 0;
+		font-size: 26px;
 	}
 	
 	&__next {
@@ -18,14 +19,6 @@
 	
 	&__prev {
 		left: 0;
-	}
-	
-	&__arrow {
-		width: $paging-size;
-		
-		> * {
-			fill: $paging__arrow-colour;
-		}
 	}
 }
 
