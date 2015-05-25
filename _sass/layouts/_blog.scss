@@ -6,8 +6,8 @@
 	padding-top: 15px;
 	
 	@include media-query(lap-and-up) {
-		padding-top: $header-height;
-		padding-bottom: 60px;
+		padding-top: $header-height + 5;
+		//padding-bottom: 60px;
 	}
 	
 	&__posts {

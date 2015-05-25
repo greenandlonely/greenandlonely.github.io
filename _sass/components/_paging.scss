@@ -1,23 +1,28 @@
 
 .paging {
-	position: relative;
-	margin-top: 50px;
-	
-	&__inner {
-	}
+	margin: 40px 0 20px;
 	
 	&__next,
 	&__prev {
 		position: absolute;
 		bottom: 0;
-		font-size: 26px;
+		font-size: 28px;
+		text-decoration: none;
 	}
 	
 	&__next {
-		right: 0;
+		right: $gutter;
+		
+		@include media-query(desk) {
+			right: 0;
+		}
 	}
 	
 	&__prev {
-		left: 0;
+		left: $gutter;
+		
+		@include media-query(desk) {
+			left: 0;
+		}
 	}
 }

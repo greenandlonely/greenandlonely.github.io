@@ -17,7 +17,11 @@
 }
 
 .page {
-	padding-top: $header-height;
+	@include media-query(lap-and-up) {
+		padding-top: $header-height;
+	}
+	
+	padding-top: 15px;
 	
 	@include media-query(desk) {
 		padding: $header-height $spacer 0;
@@ -45,18 +49,16 @@
 .footer {
 	/*
 	padding-bottom: $paging-height;
-	text-align: center;
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100%;
 	height: 60px;
 	*/
+	text-align: center;
+	width: 100%;
 	
 	&__feed {
-		z-index: 1000;
-		position: absolute;
-		left: 50%;
-		bottom: 0;
+		font-size: 28px;
+		text-decoration: none;
 	}
 }
