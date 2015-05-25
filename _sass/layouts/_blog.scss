@@ -3,6 +3,7 @@
 	max-width: 1024px;
 	margin: 0 auto;
 	position: relative;
+	padding-top: 15px;
 	
 	@include media-query(lap-and-up) {
 		padding-top: $header-height;
