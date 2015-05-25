@@ -47,16 +47,9 @@
 }
 
 .footer {
-	/*
-	padding-bottom: $paging-height;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 60px;
-	*/
 	text-align: center;
 	width: 100%;
-	
+	margin-bottom: 30px;
 	&__feed {
 		font-size: 28px;
 		text-decoration: none;
