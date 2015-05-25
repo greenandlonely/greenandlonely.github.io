@@ -1108,7 +1108,12 @@ h6 {
     display: block;
     padding: 10px;
     text-align: center;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out; }
     .blogroll a:hover, .blogroll a:focus {
       background-color: #111;
       color: #fff; }
