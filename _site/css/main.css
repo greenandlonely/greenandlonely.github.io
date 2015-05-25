@@ -1000,7 +1000,7 @@ h6 {
   position: relative; }
   @media only screen and (min-width: 681px) {
     .blog {
-      padding-top: 53px;
+      padding-top: 48px;
       padding-bottom: 60px; } }
   .blog__posts {
     list-style: none outside none;
