@@ -6,6 +6,7 @@
 	
 	&__header,
 	&__img,
+	&__img--portrait,
 	&__columns {
 		& + p {
 			margin-top: 5px;
@@ -16,26 +17,28 @@
 		@extend .page__heading;
 		margin-bottom: 10px;
 		display: inline-block;
+	}
+	
+	&__link {
+		text-decoration: none;
+		position: relative;
+		color: $body-text;
 		
-		> a {
-			text-decoration: none;
-			color: $body-text;
-			
-			&:after {
-				content: "";
-				display: block;
-				position: absolute;
-				left: 0;
-				height: 2px;
-				width: 100%;
-				background-color: 2px solid transparent;
-				@include transition(all $transition-speed ease-out);
-			}
-			
-			&:hover:after,
-			&:focus:after {
-				background-color: $body-text;
-			}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: -1px;
+			height: 2px;
+			width: 100%;
+			background-color: 2px solid transparent;
+			@include transition(all $transition-speed ease-out);
+		}
+		
+		&:hover:after,
+		&:focus:after {
+			background-color: $body-text;
 		}
 	}
 	

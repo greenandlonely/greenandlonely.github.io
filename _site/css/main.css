@@ -1195,29 +1195,31 @@ h6 {
   text-align: left;
   font-size: 16px;
   text-align: center; }
-  .post__header + p, .post__img + p, .post__img--portrait + p, .post__columns + p {
+  .post__header + p, .post__img + p, .post__img--portrait + p, .post__img--portrait + p, .post__columns + p {
     margin-top: 5px; }
   .post__title {
     margin-bottom: 10px;
     display: inline-block; }
-    .post__title > a {
-      text-decoration: none;
-      color: #111; }
-      .post__title > a:after {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        background-color: 2px solid transparent;
-        -webkit-transition: all 250ms ease-out;
-        -moz-transition: all 250ms ease-out;
-        -ms-transition: all 250ms ease-out;
-        -o-transition: all 250ms ease-out;
-        transition: all 250ms ease-out; }
-      .post__title > a:hover:after, .post__title > a:focus:after {
-        background-color: #111; }
+  .post__link {
+    text-decoration: none;
+    position: relative;
+    color: #111; }
+    .post__link:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 2px;
+      width: 100%;
+      background-color: 2px solid transparent;
+      -webkit-transition: all 250ms ease-out;
+      -moz-transition: all 250ms ease-out;
+      -ms-transition: all 250ms ease-out;
+      -o-transition: all 250ms ease-out;
+      transition: all 250ms ease-out; }
+    .post__link:hover:after, .post__link:focus:after {
+      background-color: #111; }
   .post__date {
     display: inline-block;
     text-align: left;
@@ -1410,6 +1412,3 @@ h6 {
     right: 0; }
   .paging__prev {
     left: 0; }
-
-.paging--post {
-  position: static; }
