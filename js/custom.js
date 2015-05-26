@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	var prevLink = $('#prev');
 	var nextLink = $('#next');
