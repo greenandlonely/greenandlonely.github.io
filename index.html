@@ -7,14 +7,12 @@ layout: default
 		{% for post in paginator.posts %}
 		<li>
 			<article class="post">
-				<div class="post__content">
-					<header class="post__header">
-						<h2 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-						<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post__date">{{ post.date | date: "%d.%m.%Y" }}</time>
-					</header>
-					
-					{{ post.content }}
-				</div>
+				<header class="post__header">
+					<h2 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+					<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post__date">{{ post.date | date: "%d.%m.%Y" }}</time>
+				</header>
+				
+				{{ post.content }}
 			</article>
 		</li>
 		{% endfor %}
