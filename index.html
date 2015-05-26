@@ -11,7 +11,6 @@ layout: default
 					<h2 class="post__title"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 					<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post__date">{{ post.date | date: "%d.%m.%Y" }}</time>
 				</header>
-				
 				{{ post.content }}
 			</article>
 		</li>
@@ -19,22 +18,20 @@ layout: default
 	</ol>
 	
 	{% if paginator.total_pages > 1 %}
-	<footer class="footer">
-		<div class="paging">
-		{% if paginator.previous_page %}
-			<a id="prev" rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-				<i class="icon icon--back"></i>
-			</a>
-		{% endif %}
+	<footer class="paging">
+	{% if paginator.previous_page %}
+		<a id="prev" rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			<i class="icon icon--back"></i>
+		</a>
+	{% endif %}
+	
+	{% if paginator.next_page %}
+		<a id="next" rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			<i class="icon icon--next"></i>
+		</a>
+	{% endif %}
 		
-		{% if paginator.next_page %}
-			<a id="next" rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-				<i class="icon icon--next"></i>
-			</a>
-		{% endif %}
-		</div>
-		
-		<a title="subscribe via RSS" href="{{ "/feed/" | prepend: site.baseurl }}" class="footer__feed"><i class="icon icon--feed"></i></a>
+	<a title="subscribe via RSS" href="{{ "/feed/" | prepend: site.baseurl }}" class="feed"><i class="icon icon--feed"></i></a>
 	</footer>
 	{% endif %}
 </div>

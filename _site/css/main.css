@@ -981,13 +981,9 @@ h6 {
         line-height: 48px;
         vertical-align: middle; } }
 
-.footer {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 30px; }
-  .footer__feed {
-    font-size: 28px;
-    text-decoration: none; }
+.feed {
+  font-size: 28px;
+  text-decoration: none; }
 
 .blog {
   max-width: 1024px;
@@ -1402,7 +1398,9 @@ h6 {
     content: "\66"; }
 
 .paging {
-  margin: 40px 0 30px; }
+  margin: 40px 0 30px;
+  text-align: center;
+  width: 100%; }
   .paging__next, .paging__prev {
     position: absolute;
     bottom: 0;
