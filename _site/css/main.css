@@ -1337,6 +1337,7 @@ h6 {
         position: absolute;
         height: 2px;
         left: 0;
+        bottom: 10px;
         width: 100%;
         background-color: transparent;
         -webkit-transition: all 250ms ease-out;
@@ -1345,9 +1346,10 @@ h6 {
         -o-transition: all 250ms ease-out;
         transition: all 250ms ease-out; }
       .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
-        background-color: #111; }
-      .menu__item > a:after, .menu__item--active > a:after {
-        bottom: 10px; }
+        background-color: #fff; }
+        @media only screen and (min-width: 681px) {
+          .menu__item > a:hover:after, .menu__item--active > a:hover:after, .menu__item > a:focus:after, .menu__item--active > a:focus:after, .menu__item > a.is-active:after, .menu__item--active > a.is-active:after {
+            background-color: #111; } }
     .menu__item > a[href^="/f/"], .menu__item--active > a[href^="/f/"] {
       color: #fff; }
       @media only screen and (min-width: 681px) {

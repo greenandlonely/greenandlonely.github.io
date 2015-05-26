@@ -54,6 +54,7 @@
 				position: absolute;
 				height: 2px;
 				left: 0;
+				bottom: 10px;
 				width: 100%;
 				background-color: transparent;
 				@include transition(all $transition-speed ease-out);
@@ -63,12 +64,12 @@
 			&:focus,
 			&.is-active {
 				&:after {
-					background-color: $menu-text;
+					background-color: $menu-text--palm;
+					
+					@include media-query(lap-and-up) {
+						background-color: $menu-text;
+					}
 				}
-			}
-			
-			&:after {
-				bottom: 10px;
 			}
 		}
 		
