@@ -1,9 +1,11 @@
 
 .fuji {
-	width: $fuji-size;
+	width: $fuji-width;
+	height: $fuji-height;
 	
 	@include media-query(lap-and-up) {
-		width: $fuji-size/2;
+		width: $fuji-width/1.5;
+		height: $fuji-height/1.5;
 	}
 	
 	&__primary {

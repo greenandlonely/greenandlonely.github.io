@@ -22,7 +22,7 @@
 	&__icon {
 		@include media-query(lap-and-up) {
 			display: inline-block;
-			padding: 7px 5px 0 0;
+			padding: 5px 5px 0 0;
 		}
 	}
 	
@@ -37,11 +37,7 @@
 			display: inline-block;
 		}
 		
-		@include media-query(lap) {
-			font-size: 15px;
-		}
-		
-		@include media-query(desk) {
+		@include media-query(lap-and-up) {
 			font-size: 18px;
 		}
 		

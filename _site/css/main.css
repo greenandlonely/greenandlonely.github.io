@@ -923,7 +923,7 @@ h1 {
   font-size: 24px; }
 
 h2 {
-  font-size: 21px; }
+  font-size: 20px; }
 
 h3 {
   font-size: 18px; }
@@ -968,7 +968,7 @@ h6 {
   .page__heading, .favourites__heading, .post__title {
     text-align: center;
     margin: 0 0 15px;
-    font-size: 21px;
+    font-size: 20px;
     z-index: 20; }
     @media only screen and (min-width: 1025px) {
       .page__heading, .favourites__heading, .post__title {
@@ -1128,7 +1128,7 @@ h6 {
   @media only screen and (min-width: 681px) {
     .logo__icon {
       display: inline-block;
-      padding: 7px 5px 0 0; } }
+      padding: 5px 5px 0 0; } }
   .logo__text {
     vertical-align: top;
     display: none;
@@ -1142,10 +1142,7 @@ h6 {
     @media only screen and (min-width: 681px) {
       .logo__text {
         display: inline-block; } }
-    @media only screen and (min-width: 681px) and (max-width: 1024px) {
-      .logo__text {
-        font-size: 15px; } }
-    @media only screen and (min-width: 1025px) {
+    @media only screen and (min-width: 681px) {
       .logo__text {
         font-size: 18px; } }
     .logo__text:after {
@@ -1172,10 +1169,12 @@ h6 {
       background-color: #111; }
 
 .fuji {
-  width: 120px; }
+  width: 100px;
+  height: 56px; }
   @media only screen and (min-width: 681px) {
     .fuji {
-      width: 60px; } }
+      width: 66.66667px;
+      height: 37.33333px; } }
   .fuji__primary {
     fill: #fff; }
     @media only screen and (min-width: 681px) {
@@ -1337,7 +1336,7 @@ h6 {
         position: absolute;
         height: 2px;
         left: 0;
-        bottom: 10px;
+        bottom: 11px;
         width: 100%;
         background-color: transparent;
         -webkit-transition: all 250ms ease-out;
