@@ -10,7 +10,7 @@ permalink: /:title/
 
 # Build settings
 paginate: 3
-paginate_path: /p/:num
+paginate_path: /page/:num
 
 //markdown: rdiscount
 
