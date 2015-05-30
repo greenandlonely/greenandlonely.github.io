@@ -46,6 +46,39 @@
 	}
 }
 
+.blog {
+	max-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 15px;
+	
+	@include media-query(lap-and-up) {
+		padding-top: $header-height + 5;
+		//padding-bottom: 60px;
+	}
+	
+	&__posts {
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.pnf {
+	@extend .blog;
+	max-width: 800px;
+	padding-top: $spacer;
+	
+	&__heading {
+		display: inline-block;
+	}
+	
+	&__link {
+		display: inline-block;
+		padding-left: 20px;
+	}
+}
+
 .feed {
 	font-size: 28px;
 	text-decoration: none;
