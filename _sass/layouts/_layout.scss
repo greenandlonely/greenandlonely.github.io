@@ -67,7 +67,7 @@
 .pnf {
 	@extend .blog;
 	max-width: 800px;
-	padding-top: 0;
+	padding-top: $spacer;
 	
 	&__heading {
 		display: inline-block;
