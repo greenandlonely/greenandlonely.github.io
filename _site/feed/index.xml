@@ -5,9 +5,24 @@
     <description>James Clarke&#39;s photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Sep 2015 10:43:07 +0100</pubDate>
-    <lastBuildDate>Sun, 06 Sep 2015 10:43:07 +0100</lastBuildDate>
+    <pubDate>Sat, 12 Sep 2015 19:34:18 +0100</pubDate>
+    <lastBuildDate>Sat, 12 Sep 2015 19:34:18 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>B+W</title>
+        <description>&lt;div class=&quot;post__columns&quot;&gt;
+	&lt;a class=&quot;post__img--portrait&quot; href=&quot;https://www.flickr.com/photos/greenandlonely/21361318245/in/photostream/&quot; title=&quot;Untitled&quot;&gt;&lt;img src=&quot;https://farm1.staticflickr.com/667/21361318245_8d3f82d70f_b.jpg&quot; width=&quot;768&quot; height=&quot;1024&quot; alt=&quot;Untitled&quot;&gt;&lt;/a&gt;
+	
+	&lt;a class=&quot;post__img--portrait&quot; href=&quot;https://www.flickr.com/photos/greenandlonely/20740171583/in/photostream/&quot; title=&quot;Untitled&quot;&gt;&lt;img src=&quot;https://farm6.staticflickr.com/5822/20740171583_f632f34b3d_b.jpg&quot; width=&quot;768&quot; height=&quot;1024&quot; alt=&quot;Untitled&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 12 Sep 2015 00:00:00 +0100</pubDate>
+        <link>http://www.greenandlonely.co.uk/b+w/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/b+w/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Amsterdam</title>
@@ -133,21 +148,6 @@
         <pubDate>Sun, 31 May 2015 00:00:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/31-05-2014/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/31-05-2014/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Portrait</title>
-        <description>&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;a class=&quot;post__img--portrait&quot; href=&quot;https://www.flickr.com/photos/greenandlonely/18275217562&quot; title=&quot;Untitled by James Clarke, on Flickr&quot;&gt;&lt;img src=&quot;https://c1.staticflickr.com/9/8821/18275217562_71106e6d47_b.jpg&quot; width=&quot;768&quot; height=&quot;1024&quot; alt=&quot;Untitled&quot;&gt;&lt;/a&gt;
-	
-	&lt;a class=&quot;post__img--portrait&quot; href=&quot;https://www.flickr.com/photos/greenandlonely/18275186972&quot; title=&quot;Untitled by James Clarke, on Flickr&quot;&gt;&lt;img src=&quot;https://c4.staticflickr.com/8/7772/18275186972_6db0f3b248_b.jpg&quot; width=&quot;769&quot; height=&quot;1024&quot; alt=&quot;Untitled&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sat, 30 May 2015 00:00:00 +0100</pubDate>
-        <link>http://www.greenandlonely.co.uk/portrait/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/portrait/</guid>
         
         
       </item>
