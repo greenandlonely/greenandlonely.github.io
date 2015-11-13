@@ -18,9 +18,9 @@
 		margin: 0 0 15px;
 		font-size: $h2-size;
 		z-index: 20;
+		display: inline-block;
 		
 		@include media-query(desk) {
-			display: inline-block;
 			position: absolute;
 			top: -$header-height;
 			left: 50%;
