@@ -14,9 +14,28 @@
 	}
 	
 	&__title {
-		@extend .page__heading;
-		margin-bottom: 10px;
-		display: inline-block;
+		text-align: center;
+		margin: 0 0 15px;
+		font-size: $h2-size;
+		z-index: 20;
+		
+		@include media-query(desk) {
+			display: inline-block;
+			position: absolute;
+			top: -$header-height;
+			left: 50%;
+			width: 40%;
+			margin: 0;
+			margin-left: -20%;
+			line-height: $header-height;
+			vertical-align: middle;
+		}
+	}
+	
+	&__heading {
+		@include media-query(desk) {
+			top: 0 !important;
+		}
 	}
 	
 	&__link {
