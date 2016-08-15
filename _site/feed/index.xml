@@ -5,9 +5,24 @@
     <description>James Clarke&#39;s photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 10 Aug 2016 00:22:41 +0100</pubDate>
-    <lastBuildDate>Wed, 10 Aug 2016 00:22:41 +0100</lastBuildDate>
+    <pubDate>Mon, 15 Aug 2016 01:01:03 +0100</pubDate>
+    <lastBuildDate>Mon, 15 Aug 2016 01:01:03 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Gloucester</title>
+        <description>&lt;div class=&quot;post__columns&quot;&gt;
+	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/gloucester.jpg&quot; alt=&quot;&quot; /&gt;
+	
+	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/gloucester2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 15 Aug 2016 00:00:00 +0100</pubDate>
+        <link>http://www.greenandlonely.co.uk/gloucester/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/gloucester/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Blue</title>
@@ -195,17 +210,6 @@
         <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
         <link>http://www.greenandlonely.co.uk/hole/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/hole/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Osnabr&amp;uuml;ck Square</title>
-        <description>&lt;a class=&quot;post__img&quot; href=&quot;https://www.flickr.com/photos/greenandlonely/22924910430/&quot; title=&quot;Untitled&quot;&gt;&lt;img src=&quot;https://farm6.staticflickr.com/5714/22924910430_883912c9d6_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;Untitled&quot;&gt;&lt;/a&gt;
-</description>
-        <pubDate>Sun, 22 Nov 2015 00:00:00 +0000</pubDate>
-        <link>http://www.greenandlonely.co.uk/osnabruck-square/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/osnabruck-square/</guid>
         
         
       </item>
