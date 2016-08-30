@@ -5,9 +5,24 @@
     <description>James Clarke&#39;s photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 22 Aug 2016 14:43:11 +0100</pubDate>
-    <lastBuildDate>Mon, 22 Aug 2016 14:43:11 +0100</lastBuildDate>
+    <pubDate>Tue, 30 Aug 2016 23:55:49 +0100</pubDate>
+    <lastBuildDate>Tue, 30 Aug 2016 23:55:49 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Feeding time</title>
+        <description>&lt;div class=&quot;post__columns&quot;&gt;
+	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/feeding-time.jpg&quot; alt=&quot;&quot; /&gt;
+	
+	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/feeding-time2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 30 Aug 2016 00:00:00 +0100</pubDate>
+        <link>http://www.greenandlonely.co.uk/feeding-time/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/feeding-time/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Me and my bird</title>
@@ -130,31 +145,6 @@
         <pubDate>Sun, 31 Jul 2016 00:00:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/nom/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/nom/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Squares</title>
-        <description>&lt;p&gt;In a break from tradition, here are some photos.&lt;/p&gt;
-
-&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/squares.jpg&quot; alt=&quot;&quot; /&gt;
-	
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/squares2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/squares3.jpg&quot; alt=&quot;&quot; /&gt;
-	
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/squares4.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I did a weekly photo project last year - and really enjoyed it - so I&#39;ll be doing it again from now until, I dunno, let&#39;s aim for the end of the year and then see how it goes.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 27 Jul 2016 00:00:00 +0100</pubDate>
-        <link>http://www.greenandlonely.co.uk/squares/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/squares/</guid>
         
         
       </item>
