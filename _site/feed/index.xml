@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>James Clarke&#39;s photoblog</title>
-    <description>James Clarke&#39;s photoblog, with infrequent words.</description>
+    <title>James Clarke's photoblog</title>
+    <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Sep 2016 16:58:02 +0100</pubDate>
-    <lastBuildDate>Sun, 04 Sep 2016 16:58:02 +0100</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Mon, 19 Sep 2016 23:40:28 +0100</pubDate>
+    <lastBuildDate>Mon, 19 Sep 2016 23:40:28 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Attachment</title>
+        <description>&lt;div class=&quot;post__columns&quot;&gt;
+	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/attachment1.jpg&quot; alt=&quot;&quot; /&gt;
+	
+	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/attachment2.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 19 Sep 2016 00:00:00 +0100</pubDate>
+        <link>http://www.greenandlonely.co.uk/attachment/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/attachment/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Three</title>
@@ -70,7 +85,7 @@
 	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/parched2.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Really annoyed I couldn&#39;t get a better photo from that 1st scene. I&#39;m not sure it&#39;s obvious enough that the kid is drinking the stream of water that&#39;s coming off the gazebo. Mind you, it happened so quickly I&#39;m lucky I got anything at all, so I should stop complaining.&lt;/p&gt;
+&lt;p&gt;Really annoyed I couldn't get a better photo from that 1st scene. I'm not sure it's obvious enough that the kid is drinking the stream of water that's coming off the gazebo. Mind you, it happened so quickly I'm lucky I got anything at all, so I should stop complaining.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Aug 2016 22:00:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/parched/</link>
@@ -85,7 +100,7 @@
 
 &lt;img class=&quot;post__img&quot; src=&quot;/assets/england2.jpg&quot; alt=&quot;&quot; /&gt;
 
-&lt;p&gt;I&#39;m bad at naming these.&lt;/p&gt;
+&lt;p&gt;I'm bad at naming these.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Aug 2016 21:00:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/england/</link>
@@ -131,21 +146,6 @@
         <pubDate>Mon, 15 Aug 2016 00:00:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/gloucester/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/gloucester/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Blue</title>
-        <description>&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/blue.jpg&quot; alt=&quot;&quot; /&gt;
-	
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/blue2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 10 Aug 2016 00:00:00 +0100</pubDate>
-        <link>http://www.greenandlonely.co.uk/blue/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/blue/</guid>
         
         
       </item>

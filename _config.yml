@@ -1,3 +1,6 @@
+# Gems
+gems: [jekyll-paginate]
+
 # Site settings
 title: "James Clarke's photoblog"
 email: jclarke0206@gmail.com
@@ -14,5 +17,7 @@ paginate_path: /page/:num
 sass:
     style: :compressed
 
-//markdown: rdiscount
+#markdown: rdiscount
+
+exclude: [vendor]
 
