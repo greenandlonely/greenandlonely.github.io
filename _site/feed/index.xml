@@ -5,9 +5,20 @@
     <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Feb 2017 00:39:05 +0000</pubDate>
-    <lastBuildDate>Sun, 05 Feb 2017 00:39:05 +0000</lastBuildDate>
+    <pubDate>Sat, 11 Feb 2017 22:26:15 +0000</pubDate>
+    <lastBuildDate>Sat, 11 Feb 2017 22:26:15 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>1. Let's go!</title>
+        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/4/3897/32000970624_633284b9cd_b.jpg&quot; width=&quot;1024&quot; height=&quot;682&quot; alt=&quot;1&quot;&gt;
+</description>
+        <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
+        <link>http://www.greenandlonely.co.uk/1-lets-go/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/1-lets-go/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Attachment</title>
@@ -131,21 +142,6 @@
         <pubDate>Sun, 21 Aug 2016 19:00:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/waiting-for-customers/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/waiting-for-customers/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Gloucester</title>
-        <description>&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/gloucester.jpg&quot; alt=&quot;&quot; /&gt;
-	
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/gloucester2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Mon, 15 Aug 2016 00:00:00 +0100</pubDate>
-        <link>http://www.greenandlonely.co.uk/gloucester/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/gloucester/</guid>
         
         
       </item>
