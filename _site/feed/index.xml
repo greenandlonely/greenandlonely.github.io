@@ -5,9 +5,19 @@
     <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Feb 2017 01:40:01 +0000</pubDate>
-    <lastBuildDate>Thu, 16 Feb 2017 01:40:01 +0000</lastBuildDate>
+    <pubDate>Fri, 17 Feb 2017 23:24:48 +0000</pubDate>
+    <lastBuildDate>Fri, 17 Feb 2017 23:24:48 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>6. Paint</title>
+        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/3/2304/32144956493_7fd1ea22b9_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot;&gt;</description>
+        <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
+        <link>http://www.greenandlonely.co.uk/6-paint/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/6-paint/</guid>
+        
+        
+      </item>
     
       <item>
         <title>5. Play with me?</title>
@@ -117,17 +127,6 @@
         <pubDate>Sun, 21 Aug 2016 23:30:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/me-and-my-bird/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/me-and-my-bird/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Friday night in Leicester Square</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;/assets/friday-night-in-leicester-square.jpg&quot; alt=&quot;&quot; /&gt;
-</description>
-        <pubDate>Sun, 21 Aug 2016 23:00:00 +0100</pubDate>
-        <link>http://www.greenandlonely.co.uk/friday-night-in-leicester-square/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/friday-night-in-leicester-square/</guid>
         
         
       </item>
