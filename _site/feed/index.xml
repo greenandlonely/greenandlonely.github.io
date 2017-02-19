@@ -5,9 +5,35 @@
     <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 17 Feb 2017 23:24:48 +0000</pubDate>
-    <lastBuildDate>Fri, 17 Feb 2017 23:24:48 +0000</lastBuildDate>
+    <pubDate>Sat, 18 Feb 2017 23:59:17 +0000</pubDate>
+    <lastBuildDate>Sat, 18 Feb 2017 23:59:17 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>8. Re-enact</title>
+        <description>&lt;div class=&quot;post__columns&quot;&gt;
+	&lt;img class=&quot;post__img--column&quot; src=&quot;https://c1.staticflickr.com/1/371/32854445871_6ec95a0dd0_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;Untitled&quot;&gt;
+	&lt;img class=&quot;post__img--column&quot; src=&quot;https://c1.staticflickr.com/3/2462/32938195416_c253d9b2aa_b.jpg&quot; width=&quot;1024&quot; height=&quot;682&quot; alt=&quot;Untitled&quot;&gt;
+&lt;/div&gt;
+
+&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/1/580/32938205226_9cf6436597_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;8&quot;&gt;&lt;/a&gt;
+</description>
+        <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
+        <link>http://www.greenandlonely.co.uk/8-re-enact/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/8-re-enact/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>7. Paper</title>
+        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/3/2183/32854336601_408e5e8f9f_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot;&gt;</description>
+        <pubDate>Fri, 17 Feb 2017 00:00:00 +0000</pubDate>
+        <link>http://www.greenandlonely.co.uk/7-paper/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/7-paper/</guid>
+        
+        
+      </item>
     
       <item>
         <title>6. Paint</title>
@@ -97,36 +123,6 @@
         <pubDate>Sun, 04 Sep 2016 00:00:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/three/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/three/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Feeding time</title>
-        <description>&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/feeding-time.jpg&quot; alt=&quot;&quot; /&gt;
-	
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/feeding-time2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Tue, 30 Aug 2016 00:00:00 +0100</pubDate>
-        <link>http://www.greenandlonely.co.uk/feeding-time/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/feeding-time/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Me and my bird</title>
-        <description>&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/me-and-my-bird1.jpg&quot; alt=&quot;&quot; /&gt;
-	
-	&lt;img class=&quot;post__img--column&quot; src=&quot;/assets/me-and-my-bird2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Sun, 21 Aug 2016 23:30:00 +0100</pubDate>
-        <link>http://www.greenandlonely.co.uk/me-and-my-bird/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/me-and-my-bird/</guid>
         
         
       </item>
