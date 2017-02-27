@@ -19,19 +19,21 @@ layout: default
 	
 	{% if paginator.total_pages > 1 %}
 	<footer class="paging">
-	{% if paginator.previous_page %}
-		<a id="prev" rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-			<i class="icon icon--back"></i>
-		</a>
-	{% endif %}
-	
-	{% if paginator.next_page %}
-		<a id="next" rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-			<i class="icon icon--next"></i>
-		</a>
-	{% endif %}
+		<nav>
+		{% if paginator.previous_page %}
+			<a id="prev" rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+				<i class="icon icon--back"></i>
+			</a>
+		{% endif %}
 		
-	<a title="subscribe via RSS" href="http://feeds.feedburner.com/greenandlonely" class="feed"><i class="icon icon--feed"></i></a>
+		{% if paginator.next_page %}
+			<a id="next" rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+				<i class="icon icon--next"></i>
+			</a>
+		{% endif %}
+		</nav>
+		
+		<a title="subscribe via RSS" href="http://feeds.feedburner.com/greenandlonely" class="feed"><i class="icon icon--feed"></i></a>
 	</footer>
 	{% endif %}
 </div>
