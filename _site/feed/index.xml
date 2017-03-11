@@ -5,9 +5,19 @@
     <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 11 Mar 2017 22:40:16 +0000</pubDate>
-    <lastBuildDate>Sat, 11 Mar 2017 22:40:16 +0000</lastBuildDate>
+    <pubDate>Sat, 11 Mar 2017 23:20:36 +0000</pubDate>
+    <lastBuildDate>Sat, 11 Mar 2017 23:20:36 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>27. St. Martin's</title>
+        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/1/603/33002193040_fc2caa8bd6_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot;&gt;</description>
+        <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+        <link>http://www.greenandlonely.co.uk/27-st-martins/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/27-st-martins/</guid>
+        
+        
+      </item>
     
       <item>
         <title>26. Roadside logs</title>
@@ -107,17 +117,6 @@
         <pubDate>Sun, 26 Feb 2017 00:00:00 +0000</pubDate>
         <link>http://www.greenandlonely.co.uk/16-im-outta-here/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/16-im-outta-here/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>15. Boy</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/4/3755/32755103680_a1ca400509_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot;&gt;
-</description>
-        <pubDate>Sat, 25 Feb 2017 00:00:00 +0000</pubDate>
-        <link>http://www.greenandlonely.co.uk/15-boy/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/15-boy/</guid>
         
         
       </item>
