@@ -5,9 +5,19 @@
     <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 Mar 2017 23:53:19 +0000</pubDate>
-    <lastBuildDate>Wed, 22 Mar 2017 23:53:19 +0000</lastBuildDate>
+    <pubDate>Fri, 24 Mar 2017 14:28:43 +0000</pubDate>
+    <lastBuildDate>Fri, 24 Mar 2017 14:28:43 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>41. Low</title>
+        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/3/2837/33623667985_d6c15511c5_h.jpg&quot; width=&quot;1600&quot; height=&quot;1066&quot;&gt;</description>
+        <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+        <link>http://www.greenandlonely.co.uk/41-low/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/41-low/</guid>
+        
+        
+      </item>
     
       <item>
         <title>40. Visitor</title>
@@ -127,21 +137,6 @@
         <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
         <link>http://www.greenandlonely.co.uk/29-seed-hog/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/29-seed-hog/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>28. Day off</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/4/3808/33386186865_5ec9995daf_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot;&gt;
-
-&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;img class=&quot;post__img--column&quot; src=&quot;https://c1.staticflickr.com/3/2880/33003076980_a65813e5a3_b.jpg&quot; width=&quot;1024&quot; height=&quot;682&quot; alt=&quot;&quot;&gt;
-	&lt;img class=&quot;post__img--column&quot; src=&quot;https://c1.staticflickr.com/3/2899/33386170435_82464a789b_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;&quot;&gt;
-&lt;/div&gt;</description>
-        <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
-        <link>http://www.greenandlonely.co.uk/28-day-off/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/28-day-off/</guid>
         
         
       </item>
