@@ -5,9 +5,19 @@
     <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Mar 2017 22:55:35 +0100</pubDate>
-    <lastBuildDate>Tue, 28 Mar 2017 22:55:35 +0100</lastBuildDate>
+    <pubDate>Thu, 30 Mar 2017 15:23:48 +0100</pubDate>
+    <lastBuildDate>Thu, 30 Mar 2017 15:23:48 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>45. A44</title>
+        <description>&lt;img class=&quot;post__imgS&quot; src=&quot;https://c1.staticflickr.com/3/2905/32865394894_ddbde2be54_b.jpg&quot; width=&quot;1024&quot; height=&quot;768&quot; alt=&quot;&quot;&gt;</description>
+        <pubDate>Mon, 27 Mar 2017 00:00:00 +0100</pubDate>
+        <link>http://www.greenandlonely.co.uk/45-a44/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/45-a44/</guid>
+        
+        
+      </item>
     
       <item>
         <title>44. Watched</title>
@@ -116,29 +126,6 @@
         <pubDate>Wed, 15 Mar 2017 00:00:00 +0000</pubDate>
         <link>http://www.greenandlonely.co.uk/33-lunch/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/33-lunch/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>32. Recommendations</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://c1.staticflickr.com/3/2860/33114935940_63233594ab_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot;&gt;
-
-&lt;p&gt;I love pretty much all of these, but my favourites are:&lt;/p&gt;
-
-&lt;ul class=&quot;post__list&quot;&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.byseverinkoller.com/&quot;&gt;Vienna&lt;/a&gt; by Severin Koller&lt;/li&gt;
-	&lt;li&gt;On City Streets: Chicago, 1964-2004 by Gary Stochl&lt;/li&gt;
-	&lt;li&gt;Helen Levitt by Helen Levitt&lt;/li&gt;
-	&lt;li&gt;Exiles by Josef Koudelka&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.magcloud.com/browse/issue/816059&quot;&gt;On The Eve&lt;/a&gt; by Mary Berridge&lt;/li&gt;
-	&lt;li&gt;Sidewalk by Jeff Mermelstein&lt;/li&gt;
-	&lt;li&gt;Anything by &lt;a href=&quot;http://www.martinparr.com/books/&quot;&gt;Martin Parr&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 14 Mar 2017 00:00:00 +0000</pubDate>
-        <link>http://www.greenandlonely.co.uk/32-recommendations/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/32-recommendations/</guid>
         
         
       </item>
