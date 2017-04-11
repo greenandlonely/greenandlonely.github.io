@@ -5,8 +5,8 @@
     <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Apr 2017 14:23:15 +0100</pubDate>
-    <lastBuildDate>Mon, 10 Apr 2017 14:23:15 +0100</lastBuildDate>
+    <pubDate>Tue, 11 Apr 2017 21:42:48 +0100</pubDate>
+    <lastBuildDate>Tue, 11 Apr 2017 21:42:48 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -22,7 +22,9 @@
     
       <item>
         <title>55. Wait</title>
-        <description>&lt;img class=&quot;post__img--column&quot; src=&quot;https://c1.staticflickr.com/3/2858/33879605446_d3278c191c_b.jpg&quot; width=&quot;819&quot; height=&quot;1024&quot;&gt;
+        <description>&lt;div class=&quot;post__img--column&quot;&gt;
+	&lt;img src=&quot;https://c1.staticflickr.com/3/2858/33879605446_d3278c191c_b.jpg&quot; width=&quot;819&quot; height=&quot;1024&quot;&gt;
+&lt;/div&gt;
 
 &lt;p&gt;rose&lt;/p&gt;</description>
         <pubDate>Thu, 06 Apr 2017 00:00:00 +0100</pubDate>
