@@ -8,6 +8,7 @@
 		vertical-align: top;
 		padding-right: 10px;
 		margin-bottom: 10px;
+		font-size: 14px;
 		
 		@include media-query(lap-and-up) {
 			margin-bottom: 0;
