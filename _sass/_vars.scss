@@ -19,6 +19,8 @@ $breakpoints: (
 
 //fonts & font-sizes
 $base-font: 'Archivo Narrow', 'Arial Narrow', sans-serif;
+$cv-font: 'Merriweather', sans-serif;
+$cv-heading-font: 'Merriweather Sans', serif;
 $h1-size: 24px;
 $h2-size: 20px;
 $h3-size: 18px;
@@ -43,7 +45,10 @@ $post__date-colour: #bbb;
 $blogroll-bg: #eee;
 $blogroll-bg--hover: #111;
 $blogroll-text--hover: #fff;
+$cv-highlight: $menu-text--highlighted;
 
+//multiples
+$cv-divider: 1px solid #bbb;
 
 //metrics
 $spacer: 24px;
@@ -56,3 +61,4 @@ $paging-size: 50px;
 $fuji-width: 100px;
 $fuji-height: 56px;
 $transition-speed: 250ms;
+$cv__secondary-width: 250px;

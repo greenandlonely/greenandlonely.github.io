@@ -1,0 +1,46 @@
+
+.position {
+	@include bare-list;
+	margin-bottom: 30px;
+	
+	@include media-query(lap-and-up) {
+		margin-bottom: 45px;
+	}
+	
+	&__company {
+		margin-bottom: 5px;
+	}
+	
+	&__meta {
+		color: #aaa;
+		font-size: 13px;
+		text-transform: uppercase;
+		margin: 0 0 20px;
+		line-height: 1;
+		
+		> dd {
+			display: block;
+			padding: 6px 0;
+			margin: 0;
+			border-bottom: $cv-divider;
+			
+			@include media-query(desk) {
+				display: inline-block;
+				border-right: $cv-divider;
+				border-bottom: none;
+				padding: 0 7px 0 0;
+				margin: 0 5px 0 0;
+			}
+			
+			&:last-of-type {
+				border: none;
+				margin-right: 0;
+				padding-right: 0;
+			}
+		}
+	}
+	
+	&__url {
+		text-transform: none;
+	}
+}
