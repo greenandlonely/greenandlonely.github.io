@@ -119,6 +119,13 @@
 		}
 	}
 	
+	&__caption {
+		text-align: left;
+		margin-bottom: $gutter+5px;
+		margin-top: -($gutter/2);
+		padding: 0 10px;
+	}
+	
 	&__img--column {
 		@extend .post__img;
 	    max-width: 768px;

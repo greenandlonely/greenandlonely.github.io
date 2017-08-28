@@ -5,9 +5,36 @@
     <description>James Clarke's photoblog, with infrequent words.</description>
     <link>http://www.greenandlonely.co.uk/</link>
     <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 27 Aug 2017 01:40:09 +0100</pubDate>
-    <lastBuildDate>Sun, 27 Aug 2017 01:40:09 +0100</lastBuildDate>
+    <pubDate>Mon, 28 Aug 2017 22:58:12 +0100</pubDate>
+    <lastBuildDate>Mon, 28 Aug 2017 22:58:12 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Hyde Park</title>
+        <description>&lt;figure&gt;
+	&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4418/36046302223_cb5131a678_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
+	
+	&lt;figcaption class=&quot;post__caption&quot;&gt;Communal shower&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4403/36046281703_ac08893a8e_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
+	
+	&lt;figcaption class=&quot;post__caption&quot;&gt;Hide park&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure&gt;
+	&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4382/36715749211_663d5a3e44_h.jpg&quot; width=&quot;1600&quot; height=&quot;1066&quot; alt=&quot;&quot;&gt;
+	
+	&lt;figcaption class=&quot;post__caption&quot;&gt;Heron&lt;/figcaption&gt;
+&lt;/figure&gt;
+</description>
+        <pubDate>Mon, 28 Aug 2017 00:00:00 +0100</pubDate>
+        <link>http://www.greenandlonely.co.uk/hyde-park/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/hyde-park/</guid>
+        
+        
+      </item>
     
       <item>
         <title>A skyful</title>
@@ -113,17 +140,6 @@
         <pubDate>Sat, 17 Jun 2017 00:00:00 +0100</pubDate>
         <link>http://www.greenandlonely.co.uk/127-dogfish/</link>
         <guid isPermaLink="true">http://www.greenandlonely.co.uk/127-dogfish/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>126. Strings</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4231/35087882680_bece5afc14_h.jpg&quot; width=&quot;1600&quot; height=&quot;1199&quot; alt=&quot;&quot;&gt;
-</description>
-        <pubDate>Fri, 16 Jun 2017 00:00:00 +0100</pubDate>
-        <link>http://www.greenandlonely.co.uk/126-strings/</link>
-        <guid isPermaLink="true">http://www.greenandlonely.co.uk/126-strings/</guid>
         
         
       </item>

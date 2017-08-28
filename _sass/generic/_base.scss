@@ -54,6 +54,12 @@ h6 {
 	font-size: $h6-size;
 }
 
+figure,
+figcaption {
+	margin: 0;
+	padding: 0;
+}
+
 abbr[title] {
 	border: none;
 	cursor: help;
