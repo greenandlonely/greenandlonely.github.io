@@ -20,4 +20,3 @@ sass:
 #markdown: rdiscount
 
 exclude: [vendor]
-
