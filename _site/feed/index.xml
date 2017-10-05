@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>James Clarke</title>
-    <description>James Clarke's photos.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Oct 2017 13:07:24 +0100</pubDate>
-    <lastBuildDate>Mon, 02 Oct 2017 13:07:24 +0100</lastBuildDate>
+    <title>James Clarke's photoblog</title>
+    <description>James Clarke's photoblog, with infrequent words.</description>
+    <link>http://www.greenandlonely.co.uk/</link>
+    <atom:link href="http://www.greenandlonely.co.uk/feed/" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 05 Oct 2017 15:53:26 +0100</pubDate>
+    <lastBuildDate>Thu, 05 Oct 2017 15:53:26 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -30,8 +30,8 @@
 &lt;/figure&gt;
 </description>
         <pubDate>Mon, 28 Aug 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/hyde-park/</link>
-        <guid isPermaLink="true">http://localhost:4000/hyde-park/</guid>
+        <link>http://www.greenandlonely.co.uk/hyde-park/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/hyde-park/</guid>
         
         
       </item>
@@ -41,8 +41,8 @@
         <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4322/36176894211_029b8849ad_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
 </description>
         <pubDate>Sun, 27 Aug 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/a-skyful/</link>
-        <guid isPermaLink="true">http://localhost:4000/a-skyful/</guid>
+        <link>http://www.greenandlonely.co.uk/a-skyful/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/a-skyful/</guid>
         
         
       </item>
@@ -52,8 +52,8 @@
         <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4293/35504228553_15d9e141f4_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
 </description>
         <pubDate>Sat, 26 Aug 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/cornered/</link>
-        <guid isPermaLink="true">http://localhost:4000/cornered/</guid>
+        <link>http://www.greenandlonely.co.uk/cornered/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/cornered/</guid>
         
         
       </item>
@@ -63,8 +63,8 @@
         <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4327/36311295345_3dcb814a5c_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
 </description>
         <pubDate>Fri, 25 Aug 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/still/</link>
-        <guid isPermaLink="true">http://localhost:4000/still/</guid>
+        <link>http://www.greenandlonely.co.uk/still/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/still/</guid>
         
         
       </item>
@@ -80,8 +80,8 @@
 &lt;p&gt;Bye for now.&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Jun 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/133-134-end/</link>
-        <guid isPermaLink="true">http://localhost:4000/133-134-end/</guid>
+        <link>http://www.greenandlonely.co.uk/133-134-end/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/133-134-end/</guid>
         
         
       </item>
@@ -91,8 +91,8 @@
         <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4240/35406989642_18794d0927_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
 </description>
         <pubDate>Thu, 22 Jun 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/132-meeting/</link>
-        <guid isPermaLink="true">http://localhost:4000/132-meeting/</guid>
+        <link>http://www.greenandlonely.co.uk/132-meeting/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/132-meeting/</guid>
         
         
       </item>
@@ -105,8 +105,8 @@
 	&lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://farm5.staticflickr.com/4215/35382667131_91707bc748_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</description>
         <pubDate>Wed, 21 Jun 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/130-131-too-hot/</link>
-        <guid isPermaLink="true">http://localhost:4000/130-131-too-hot/</guid>
+        <link>http://www.greenandlonely.co.uk/130-131-too-hot/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/130-131-too-hot/</guid>
         
         
       </item>
@@ -116,8 +116,8 @@
         <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4234/34672142954_29f40237f4_h.jpg&quot; width=&quot;1600&quot; height=&quot;1066&quot; alt=&quot;&quot;&gt;
 </description>
         <pubDate>Mon, 19 Jun 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/129-bunch/</link>
-        <guid isPermaLink="true">http://localhost:4000/129-bunch/</guid>
+        <link>http://www.greenandlonely.co.uk/129-bunch/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/129-bunch/</guid>
         
         
       </item>
@@ -127,8 +127,8 @@
         <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4260/34703776523_7e1d36c38a_h.jpg&quot; width=&quot;1600&quot; height=&quot;1065&quot; alt=&quot;&quot;&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/128-damselfly/</link>
-        <guid isPermaLink="true">http://localhost:4000/128-damselfly/</guid>
+        <link>http://www.greenandlonely.co.uk/128-damselfly/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/128-damselfly/</guid>
         
         
       </item>
@@ -138,8 +138,8 @@
         <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4229/34664510143_d8cb3f544a_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
 </description>
         <pubDate>Sat, 17 Jun 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/127-dogfish/</link>
-        <guid isPermaLink="true">http://localhost:4000/127-dogfish/</guid>
+        <link>http://www.greenandlonely.co.uk/127-dogfish/</link>
+        <guid isPermaLink="true">http://www.greenandlonely.co.uk/127-dogfish/</guid>
         
         
       </item>

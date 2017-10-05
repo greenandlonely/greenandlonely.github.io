@@ -4,7 +4,6 @@
 	
 	&__heading {
 		display: inline-block;
-		font-family: $cv-heading-font;
 		vertical-align: top;
 		padding-right: 10px;
 		margin-bottom: 10px;
@@ -20,7 +19,7 @@
 		vertical-align: top;
 		@include bare-list;
 		font-size: 13px;
-		color: #aaa;
+		color: #333;
 		
 		> li {
 			display: inline-block;

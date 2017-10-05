@@ -9,10 +9,10 @@
 	
 	&__company {
 		margin-bottom: 5px;
+		font-size: 17px;
 	}
 	
 	&__meta {
-		color: #aaa;
 		font-size: 13px;
 		text-transform: uppercase;
 		margin: 0 0 17px;
@@ -22,20 +22,41 @@
 			display: block;
 			padding: 6px 0;
 			margin: 0;
-			border-bottom: $cv-divider;
 			
 			@include media-query(desk) {
 				display: inline-block;
-				border-right: $cv-divider;
 				border-bottom: none;
-				padding: 0 7px 0 0;
-				margin: 0 5px 0 0;
+				padding: 0;
+				margin: 0 15px 0 0;
 			}
 			
 			&:last-of-type {
-				border: none;
+				//border: none;
 				margin-right: 0;
 				padding-right: 0;
+			}
+		}
+	}
+	
+	&__title {
+		padding: 3px;
+		position: relative;
+		
+		&::after {
+			position: absolute;
+			display: none;
+			line-height: 1;
+			content: '';
+			bottom: -3px;
+			left: -5%;
+			background-color: #fff;
+			height: 13px;
+			z-index: -1;
+			animation: highlight 0.5s ease-in;
+			
+			@include media-query(desk) {
+				width: 108%;
+				display: block;
 			}
 		}
 	}

@@ -2,19 +2,14 @@
 .cv {
 	font-family: $cv-font;
 	line-height: 1.5;
-	
-	@include media-query(lap-and-up) {
+	color: $cv-text-colour;
+	border: 20px solid #fff;
+	background-color: #f0f0f0;
 		
-	}
-	
 	&__inner {
-		max-width: 1024px;
+		max-width: 1050px;
+		padding: 30px;
 		margin: 0 auto;
-		padding: 25px 15px;
-		
-		@include media-query(lap-and-up) {
-			padding: 40px 25px;
-		}
 	}
 	
 	&__header {
@@ -22,16 +17,13 @@
 	}
 	
 	&__heading {
-		font-family: $cv-heading-font;
-		border-bottom: $cv-divider;
+		font-weight: 700;
 		line-height: 1;
-		text-align: center;
-		//display: inline-block;
 		margin: 0 auto;
-		//letter-spacing: -1px;
-		font-size: 21px;
+		letter-spacing: -1px;
+		font-size: 24px;
 		text-transform: uppercase;
-		padding: 0 10px 40px;
+		padding: 20px 0 0;
 		
 		@include media-query(lap-and-up) {
 			font-size: 30px;
@@ -41,10 +33,9 @@
 	&__sub-heading {
 		display: block;
 		padding-top: 5px;
-		font-family: $cv-font;
-		color: $cv-highlight;
 		text-transform: none;
-		font-size: 15px;
+		font-size: 16px;
+		font-weight: 300;
 		
 		@include media-query(lap-and-up) {
 			font-size: 18px;
@@ -57,6 +48,7 @@
 		@include media-query(lap-and-up) {
 			@include flexbox;
 			@include flex-direction(row);
+			padding-top: 65px;
 		}
 	}
 	
@@ -65,10 +57,10 @@
 		
 		@include media-query(lap-and-up) {
 			width: calc(100% - #{$cv__secondary-width});
-			padding-right: 30px;
+			padding-right: 45px;
 		}
 		@include media-query(desk) {
-			padding-right: 50px;
+			padding-right: 75px;
 		}
 	}
 	
@@ -83,9 +75,8 @@
 	}
 	
 	&__section-heading {
-		font-size: 21px;
+		font-size: 20px;
 		margin-bottom: 15px;
-		font-family: $cv-heading-font;
 		text-transform: uppercase;
 		line-height: 1;
 	}
@@ -94,16 +85,74 @@
 		@include bare-list;
 	}
 	
+	&__skills {
+		@include bare-list;
+		
+	}
+	
 	&__list {
 		@include bare-list;
 		
 		> li {
 			border-bottom: $cv-divider;
 			padding: 7px 3px 6px;
-			
-			&:last-of-type {
-				border: none;
+		}
+	}
+	
+	&__skill {
+		margin-bottom: 6px;
+		
+		> span {
+			position: relative;
+			 
+			&::after {
+				position: absolute;
+				width: 108%;
+				display: block;
+				content: '';
+				bottom: -2px;
+				left: -5%;
+				background-color: #fff;
+				height: 13px;
+				z-index: -1;
+				animation: highlight 0.75s ease-in;
 			}
+		}
+		
+		&:nth-of-type(5n+1) {
+			> span::after {
+				transform: rotate(-1deg);
+				bottom: 0;
+				height: 15px;
+				animation-duration: 1s
+			}
+		}
+		
+		&:nth-of-type(5n+2) {
+			> span::after {
+				transform: rotate(1deg);
+				height: 14px;
+				bottom: -4px;
+			}
+		}
+		
+		&:nth-of-type(5n+3) {
+			> span::after {
+				height: 16px;
+				bottom: -1px;
+				animation-duration: 1.5s
+			}
+		}
+		
+		&:nth-of-type(5n+4) {
+			> span::after {
+				transform: rotate(-1deg);
+				height: 15px;
+			}
+		}
+		
+		&:last-of-type {
+			border: none;
 		}
 	}
 	
