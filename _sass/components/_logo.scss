@@ -1,70 +1,18 @@
 
 .logo {
 	margin: 0;
+	font-size: 15px;
 	display: inline-block;
-	width: 100%;
-	text-align: center;
 	
 	@include media-query(lap-and-up) {
-		line-height: $header-height;
-		padding-left: $spacer;
-		text-align: left;
+		text-align: right;
 	}
 	
-	@include media-query(lap) {
-		width: 50%;
-	}
-	
-	@include media-query(desk) {
-		width: 30%;
-	}
-	
-	&__icon {
-		@include media-query(lap-and-up) {
-			display: inline-block;
-			padding: 5px 5px 0 0;
-		}
-	}
-	
-	&__text {
-		vertical-align: top;
-		display: none;
-		text-align: left;
-		position: relative;
-		@include transition(all $transition-speed ease-out);
-		
-		@include media-query(lap-and-up) {
-			display: inline-block;
-		}
-		
-		@include media-query(lap-and-up) {
-			font-size: 18px;
-		}
-		
-		&:after {
-			content: "";
-			display: block;
-			position: absolute;
-			left: 0;
-			bottom: 10px;
-			height: 2px;
-			width: 100%;
-			background-color: transparent;
-			@include transition(all $transition-speed ease-out);
-		}
-	}
-	
-	> a {
-		text-decoration: none;
-		color: $logo-colour--palm;
-		
-		@include media-query(lap-and-up) {
-			color: $logo-colour;
-		}
-		
-		&:hover,
-		&:focus {
-			.logo__text:after {
+	.is-active & {
+		.menu__link {
+			color: #fff;
+			
+			> span {
 				background-color: $menu-text;
 			}
 		}

@@ -1,128 +1,48 @@
 
 .menu {
-	text-transform: uppercase;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	display: block;
-	
-	@include media-query(lap-and-up) {
-		height: $header-height;
-		width: 60%;
-		position: absolute;
-		top: 0;
-		right: 0;
-		text-align: right;
-		padding: 0 $spacer 0 0;
-	}
-	
-	@include media-query(lap) {
-		width: 50%;
-	}
-	
-	@include media-query(desk) {
-		width: 30%;
-	}
+	width: 100%;
+	@include bare-list;
 	
 	&__item {
-		font-weight: bold;
-		display: inline-block;
-		font-size: 16px;
-		padding: 0 5px;
-		line-height: $header-height;
+		font-size: 15px;
+		//text-align: center;
+		margin-bottom: 10px;
+		color: $menu-text;
 		
 		@include media-query(lap-and-up) {
-			vertical-align: middle;
-			position: relative;
-			padding: 0 15px 0 0;
+			text-align: right;
 		}
-		
-		> a {
-			text-decoration: none;
-			display: table-cell;
-			vertical-align: middle;
-			position: relative;
-			color: $menu-text--palm;
-			
-			@include media-query(lap-and-up) {
-				color: $menu-text;
-			}
-			
-			&:after {
-				content: "";
-				display: block;
-				position: absolute;
-				height: 2px;
-				left: 0;
-				bottom: 11px;
-				width: 100%;
-				background-color: transparent;
-				@include transition(all $transition-speed ease-out);
-			}
-			
-			&:hover,
-			&:focus,
-			&.is-active {
-				&:after {
-					background-color: $menu-text--palm;
 					
-					@include media-query(lap-and-up) {
-						background-color: $menu-text;
-					}
+		&.is-active {
+			//text-decoration: line-through;
+			
+			.menu__link {
+				color: #fff;
+				
+				> span {
+					background-color: $menu-text;
 				}
 			}
 		}
 		
-		> a[href^="/f/"] {
-			color: $menu-text--palm;
-			
-			@include media-query(lap-and-up) {
-				color: $menu-text--highlighted;
-			}
-			
-			&:hover,
-			&:focus,
-			&.is-active {
-				&:after {
-					background-color: $header-bg;
-					
-					@include media-query(lap-and-up) {
-						background-color: $menu-text--highlighted;
-					}
-				}
-			}
-		}
-		
-		&:after {
-			content: "";
-			width: $menu__item-divider-size;
-			height: $menu__item-divider-size;
-			position: absolute;
-			top: 50%;
-			margin-top: -($menu__item-divider-size/2);
-			right: $menu__item-divider-size;
-			border-radius: 100%;
-			display: none;
-			
-			@include media-query (lap-and-up) {
-				display: block;
-				background-color: $menu-text--highlighted;
-			}
-		}
-		
-		&:last-child {
-			@include media-query(lap-and-up) {
-				padding: 0;
-				margin: 0;
-			}
-			
-			&:after {
-				display: none;
-			}
+		&:last-of-type {
+			margin-bottom: 0;
 		}
 	}
 	
-	&__item--active {
-		@extend .menu__item;
+	&__link {
+		text-decoration: none;
+		color: $menu-text;
+		display: block;
+		
+		> span {
+			display: inline-block;
+			padding: 2px;
+		}
+		
+		&:hover,
+		&:focus {
+			color: $link-hover-colour;
+		}
 	}
 }

@@ -1,81 +1,47 @@
 
 .post {
-	text-align: left;
-	font-size: 16px;
-	text-align: center;
+	font-size: 15px;
+	text-align: right;
 	
-	&__header,
-	&__img,
-	&__img--column,
-	&__columns {
-		& + p {
-			margin-top: 5px;
-		}
+	&__header {
+		margin-right: $spacer--minor;
+		border-bottom: 1px solid black;
+		display: inline-block;
+		//text-align: right;
+		margin-bottom: 8px;
 	}
 	
 	&__title {
-		text-align: center;
-		margin: 0;
-		font-size: $h2-size;
-		z-index: 20;
+		margin-bottom: 4px;
+		font-size: 15px;
 		display: inline-block;
-		
-		@include media-query(desk) {
-			position: absolute;
-			top: -$header-height;
-			left: 50%;
-			width: 40%;
-			margin: 0;
-			margin-left: -20%;
-			line-height: $header-height;
-			vertical-align: middle;
-		}
-	}
-	
-	&__heading {
-		@include media-query(desk) {
-			top: 0 !important;
-		}
-	}
-	
-	&__link {
-		text-decoration: none;
-		position: relative;
-		color: $body-text;
-		
-		&:after {
-			content: "";
-			display: block;
-			position: absolute;
-			left: 0;
-			bottom: -2px;
-			height: 2px;
-			width: 100%;
-			background-color: 2px solid transparent;
-			@include transition(all $transition-speed ease-out);
-		}
-		
-		&:hover:after,
-		&:focus:after {
-			background-color: $body-text;
-		}
 	}
 	
 	&__date {
 		display: inline-block;
 		text-align: left;
-		color: $post__date-colour;
-		font-size: 16px;
-		padding-left: 5px;
-		margin-bottom: 10px;
+		font-size: 15px;
 		vertical-align: baseline;
+		
+		&::before {
+			content: ".... ";
+		}
+	}
+	
+	&__link {
+		text-decoration: none;
 	}
 	
 	&__columns {
 		@extend %grid;
+		margin-left: -1px !important;
+		font-size: 0;
+		text-align: right;
+		//@include inline-block-fix;
 		
 		.post__img {
 			@extend %grid__item;
+			padding-left: 1px !important;
 			width: 100%;
 			display: inline-block;
 			
@@ -93,6 +59,7 @@
 	
 	&__column {
 		@extend %grid__item;
+		padding-left: 1px !important;
 		width: 100%;
 		
 		@include media-query(lap-and-up) {
@@ -106,8 +73,8 @@
 	}
 	
 	&__img {
-		margin: 0 auto;
-		margin-bottom: $gutter;
+		margin: 0 0 0 auto;
+		margin-top: 1px;
 		display: block;
 		
 		img {
@@ -120,27 +87,42 @@
 	}
 	
 	&__caption {
-		text-align: left;
-		margin-bottom: $gutter+5px;
-		margin-top: -($gutter/2);
-		padding: 0 10px;
+		display: block;
+		//text-align: right;
+		margin-top: 10px;
+		margin-bottom: 25px;
+		padding: 0 $spacer--minor 0 5px;
+	}
+	
+	&__img--portrait {
+		@extend .post__img;
+	    max-width: 768px;
+	    text-align: right !important;
+	    
+	    img {
+			margin: 0 0 0 auto;
+			
+			@include media-query(desk) {
+			    height: 100vh;
+			    max-height: 960px;
+				width: auto !important;
+			}
+	    }
 	}
 	
 	&__img--column {
 		@extend .post__img;
+		//margin: 0 auto;
 	    max-width: 768px;
-	    text-align: center;
 	    
 	    img {
-		    margin: 0 auto;
+			margin: 0 auto;
 	    }
 	}
 	
 	&__list {
-		margin: 0 auto $gutter;
+		margin: 0 0 $gutter auto;
 		text-align: left;
-		border-top: 2px solid #eee;
-		border-bottom: 2px solid #eee;
 		padding: 15px 25px;
 		width: 90%;
 		
@@ -173,7 +155,7 @@
 	}
 	
 	.blog__posts & {
-		margin-bottom: 75px;
+		margin-bottom: $post-margin;
 		
 		.post__title {
 			position: relative;
@@ -187,9 +169,10 @@
 	}
 	
 	p {
-		padding: 0 $spacer;
-		max-width: 700px;
+		padding: 0 $spacer--minor;
+		max-width: 800px;
 		margin-left: auto;
-		margin-right: auto;
+		line-height: 1.35;
+		text-align: right;
 	}
 }

@@ -2,8 +2,8 @@ $(document).ready(function(){
 	var prevLink = $('#prev');
 	var nextLink = $('#next');
 	
-	$(document).on('keydown', function (event) {
-	    if (event.which == 37) {
+	$(document).on('keydown', function (e) {
+	    if (e.which == 37) {
 			if(prevLink.length){
 	        	window.location = prevLink.attr('href');
 	        }
@@ -15,5 +15,6 @@ $(document).ready(function(){
 	});
 	
 	
-	$('.blogroll > li').shuffle();	
+	$('.blogroll > li').shuffle();
+	$('.wall__list > li').shuffle();
 });

@@ -14,11 +14,22 @@ body {
 	color: $body-text;
 	position: relative;
 	min-width: 320px;
+	font-weight: normal;
 }
 
 a {
 	color: $body-text;
 	outline: none;
+	text-decoration: underline;
+	
+	&:hover,
+	&:focus {
+		color: $link-hover-colour;
+	}
+	
+	&[target=_blank] {
+		cursor: alias;
+	}
 }
 
 img {
@@ -28,6 +39,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 $spacer;
+	font-weight: normal;
 }
 
 h1 {

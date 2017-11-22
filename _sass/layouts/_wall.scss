@@ -1,0 +1,132 @@
+
+.wall {
+	padding-bottom: $wall-gutter;
+	max-width: 1700px;
+	
+	@include media-query(lap-and-up) {
+		padding-left: $site-head-width;
+	}
+	
+	
+	&__heading {
+		@extend .is-visuallyhidden;
+	}
+	
+	&__list {
+		@include bare-list;
+		margin-bottom: -$wall-gutter;
+		
+		@include media-query(desk) {
+			padding-bottom: $wall-gutter;
+			-moz-column-count: 3;
+			-webkit-column-count: 3;
+			column-count: 3;
+			-moz-column-gap: $wall-gutter;
+			-webkit-column-gap: $wall-gutter;
+			column-gap: $wall-gutter;
+			//background-color: #eee;
+		}
+		
+		&--major {
+			@include media-query(desk) {
+				-moz-column-count: 2;
+				-webkit-column-count: 2;
+				column-count: 2;
+			}
+		}
+	}
+	
+	&__row {
+		@extend %grid;
+		margin-left: -$wall-gutter !important;
+		font-size: 0;
+		margin-bottom: $wall-gutter;
+		
+		&:last-of-type {
+			margin-bottom: -$wall-gutter;
+		}
+		
+		.wall__brick {
+			@extend %grid__item;
+			padding-left: 1px !important;
+			display: inline-block;
+			
+			@include media-query(lap-and-up) {
+				width: 50%;
+				margin-top: 0 !important;
+			}
+		}
+		
+		&--portrait {
+			.wall__brick {
+				@include media-query(lap-and-up) {
+					width: 33.333%;
+				}
+			}
+		}
+	}
+	
+	&__brick {
+		break-inside: avoid-column;
+		-webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		break-inside: avoid;
+		margin-top: $wall-gutter;
+		height: auto;
+		text-align: center;
+		
+		&:first-child {
+			margin: 0;
+		}
+		
+		img {
+			//display: inline-block;
+			display: block;
+			margin: 0 auto;
+		}
+		
+		a {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	
+	&__brick--double {
+		@include media-query(lap-and-up) {
+			-moz-column-count: 2;
+			-webkit-column-count: 2;
+			column-count: 2;
+			-moz-column-gap: $wall-gutter;
+			-webkit-column-gap: $gutter;
+			column-gap: $wall-gutter;
+			margin-top: $wall-gutter;
+		}
+		
+		-webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		break-inside: avoid;
+		
+		@include media-query(palm) {
+			> a {
+				display: block;
+				margin-top: $wall-gutter;
+				height: auto;
+				text-align: center;
+			}
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		
+		@include media-query(portable) {
+			//margin-bottom: $gutter;
+		}
+	}
+
+	
+	img {
+		//display: block;
+	}
+}

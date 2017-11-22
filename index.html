@@ -1,39 +1,33 @@
 ---
 layout: default
+flag: home
+navigation_order: 1
 ---
 
-<div class="blog">
-	<ol class="blog__posts">
-		{% for post in paginator.posts %}
-		<li>
-			<article class="post">
-				<header class="post__header">
-					<h2 class="post__title post__heading"><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-					<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post__date">{{ post.date | date: "%d.%m.%Y" }}</time>
-				</header>
-				{{ post.content }}
-			</article>
-		</li>
-		{% endfor %}
-	</ol>
+<div class="wall">
+	{% comment %}
+	<ul class="wall__list wall__list--major">
+		<li class="wall__brick"><img src="https://farm9.staticflickr.com/8507/8416284277_51e1b7d5c1_b.jpg" width="1024" height="683" alt=""></li>
+		<li class="wall__brick"><img src="https://farm7.staticflickr.com/6029/6016026814_364fc2c726_b.jpg" width="1024" height="683" alt=""></li>
+		<li class="wall__brick"><img src="https://farm8.staticflickr.com/7392/9027416727_434fe5eb58_b.jpg" width="1024" height="683" alt=""></li>
+		<li class="wall__brick"><img src="https://c1.staticflickr.com/6/5714/22924910430_883912c9d6_b.jpg" width="1024" height="683" alt=""></li>
+	</ul>
 	
-	{% if paginator.total_pages > 1 %}
-	<footer class="paging">
-		<nav>
-		{% if paginator.previous_page %}
-			<a id="prev" rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." class="paging__prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-				<i class="icon icon--back"></i>
-			</a>
-		{% endif %}
-		
-		{% if paginator.next_page %}
-			<a id="next" rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." class="paging__next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-				<i class="icon icon--next"></i>
-			</a>
-		{% endif %}
-		</nav>
-		
-		<a title="subscribe via RSS" href="http://feeds.feedburner.com/greenandlonely" class="feed"><i class="icon icon--feed"></i></a>
-	</footer>
-	{% endif %}
+	<ul class="wall__list wall__list--major">
+		<li class="wall__brick"><img src="https://farm3.staticflickr.com/2889/34212206462_91c1432be1_b.jpg" width="1024" height="683" alt=""></li>
+		<li class="wall__brick"><img src="https://farm9.staticflickr.com/8003/7184902015_886cc81226_b.jpg" width="1024" height="683" alt=""></li>
+		<li class="wall__brick"><img src="https://farm7.staticflickr.com/6013/6006382016_9da323abc5_b.jpg" width="1024" height="683" alt=""></li>
+		<li class="wall__brick"><img src="https://farm5.staticflickr.com/4270/35038470096_e4e07c8b9d_b.jpg" width="1024" height="682" alt=""></li>
+	</ul>
+	{% endcomment %}
+	
+	<div class="wall__row">
+		<div class="wall__brick"><img src="https://farm7.staticflickr.com/6153/6163814729_7b5e4f605d_b.jpg" width="1024" height="683" alt=""></div>
+		<div class="wall__brick"><img src="https://farm3.staticflickr.com/2927/33686754975_27375e6e65_b.jpg" width="1024" height="683" alt=""></div>
+	</div>
+	<div class="wall__row wall__row--portrait">
+		<div class="wall__brick"><img src="assets/blackandwhite2.jpg" width="819" height="1024" alt=""></div>
+		<div class="wall__brick"><img src="assets/blackandwhite1.jpg" width="819" height="1024" alt=""></div>
+		<div class="wall__brick"><img src="https://farm5.staticflickr.com/4192/34522893232_213a14ab37_b.jpg" width="819" height="1024" alt=""></div>
+	</div>
 </div>

@@ -1,0 +1,46 @@
+---
+layout: default
+title: Blog
+flag: blog
+---
+
+<h2 class="is-visuallyhidden">Blog - page {{ paginator.page }}</h2>
+
+<!-- <a class="post__link" href="{{ post.url | prepend: site.baseurl }}"> -->
+
+<div class="blog">
+	<ol class="blog__posts">
+		{% for post in paginator.posts %}
+		<li>
+			<article class="post">
+				<header class="post__header">
+					<h2 class="post__title post__heading">{{ post.title }}</h2>
+					<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post__date">{{ post.date | date: "%d.%m.%Y" }}</time>
+				</header>
+				{{ post.content }}
+			</article>
+		</li>
+		{% endfor %}
+	</ol>
+	
+	{% if paginator.total_pages > 1 %}
+	<footer class="paging">
+		<ul class="paging__list">
+		{% if paginator.next_page %}
+			<li class="paging__item paging__next">
+				<a class="paging__link" id="next" rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+					Next page
+				</a>
+			</li>
+		{% endif %}
+		{% if paginator.previous_page %}
+			<li class="paging__item paging__prev">
+				<a class="paging__link" id="prev" rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+					Previous page
+				</a>
+			</li>
+		{% endif %}
+		</ul>
+	</footer>
+	{% endif %}
+</div>

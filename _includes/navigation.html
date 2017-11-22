@@ -1,7 +1,44 @@
-{% for node in navigation %}{% if group == null or group == node.group %}{% if page.url == node.url %}
-	<li class="menu__item"><a href="{{node.url}}" class="is-active">{{node.menu_title}}</a></li>
+{% if page.url contains "blog/" %}
+	<li class="menu__item is-active">
+		<a class="menu__link" href="/blog/" title="Page 1 of the blog">
+			<span>Blog</span>
+		</a>
+	</li>
 {% else %}
-	<li class="menu__item"><a href="{{node.url}}">{{node.menu_title}}</a></li>
-{% endif %}{% endif %}{% endfor %}
+	<li class="menu__item">
+		<a class="menu__link" href="/blog/" title="Page 1 of the blog">
+			<span>Blog</span>
+		</a>
+	</li>
+{% endif %}
+
+{% for node in navigation %}
+	{% if group == null or group == node.group %}
+		{% if page.url == node.url %}
+			<li class="menu__item is-active">
+				<span class="menu__link">
+					<span>{{node.menu_title}}</span>
+				</span>
+			</li>
+		{% else %}
+			<li class="menu__item">
+				<a class="menu__link" href="{{node.url}}">
+					<span>{{node.menu_title}}</span>
+				</a>
+			</li>
+		{% endif %}
+	{% endif %}
+{% endfor %}
+<li class="menu__item">
+	<a class="menu__link" href="http://www.instagram.com/greenandlonely" target="_blank" title="Opens in a new window/tab">
+		<span>Instagram</span>
+	</a>
+</li>
+<li class="menu__item">
+	<a class="menu__link" href="http://feeds.feedburner.com/greenandlonely" target="_blank" title="Opens in a new window/tab">
+		<span>RSS feed</span>
+	</a>
+</li>
+
 {% assign navigation = nil %}
 {% assign group = nil %}

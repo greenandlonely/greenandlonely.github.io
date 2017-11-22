@@ -7,14 +7,17 @@ permalink: /404.html
 	{% include head.html %}
 	
 	<body>
-		<div class="pnf">
+		<article class="pnf">
 			<div class="pnf__inner">	
-				<img class="post__img" src="/assets/404.jpg" width="1024" height="768" alt="404" />
-				
-				<h1 class="pnf__heading">Page not found. Sorry, that's probably my fault.</h1>
-				<a href="/" class="pnf__link" title="Page 1 of the blog">Homepage</a>
+				<div class="pnf__heading">
+					<h1>Page not found</h1>
+					<p>Sorry, that's probably my fault.</p>
+				</div>
+				<a href="/" class="pnf__link">Homepage</a>
+
+				<img class="pnf__img" src="/assets/404.jpg" width="1024" height="768" alt="404" />
 			</div>
-		</div>
+		</article>
 		
 		{% include footer.html %}
 	</body>
