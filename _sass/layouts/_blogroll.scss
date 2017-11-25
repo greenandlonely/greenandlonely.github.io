@@ -5,9 +5,14 @@
 	padding-bottom: 20px;
 	//margin-left: -$gutter;
 	
-	> li {
+	&__item {
 		padding: 0 0 $gutter $gutter;
 		display: block;
+		
+		@include media-query(desk) {
+			display: inline-block;
+			width: 49%;
+		}
 	}
 	
 	&__link {
@@ -47,22 +52,5 @@
 	
 	&__address {
 		font-size: 13px;
-	}
-	
-	a {
-		/*
-		background-color: $blogroll-bg;
-		display: block;
-		padding: 10px;
-		text-align: center;
-		text-decoration: none;
-		@include transition(all $transition-speed ease-out);
-		
-		&:hover,
-		&:focus {
-			background-color: $blogroll-bg--hover;
-			color: $blogroll-text--hover;
-		}
-		*/
 	}
 }
