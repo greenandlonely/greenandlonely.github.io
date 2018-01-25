@@ -59,6 +59,7 @@
 			width: calc(100% - #{$cv__secondary-width});
 			padding-right: 45px;
 		}
+		
 		@include media-query(desk) {
 			padding-right: 75px;
 		}
@@ -158,7 +159,7 @@
 	
 	&__refs,
 	&__education {
-		margin-top: 30px;
+		margin-top: 50px;
 	}
 }
 
