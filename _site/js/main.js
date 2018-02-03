@@ -16,5 +16,5 @@ $(document).ready(function(){
 	
 	
 	$('.blogroll > li').shuffle();
-	$('.wall__list > li').shuffle();
+	//$('.wall__list > li').shuffle();
 });

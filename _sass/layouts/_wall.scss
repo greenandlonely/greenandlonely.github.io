@@ -2,6 +2,11 @@
 .wall {
 	padding-bottom: $wall-gutter;
 	max-width: 1700px;
+	margin-top: 70px;
+	
+	&:first-of-type {
+		margin-top: 25px;
+	}
 	
 	@include media-query(lap-and-up) {
 		padding-left: $site-head-width;
@@ -10,6 +15,12 @@
 	
 	&__heading {
 		@extend .is-visuallyhidden;
+	}
+	
+	&__sub-heading {
+		text-align: right;
+		font-size: 15px;
+		margin: 0 $spacer--minor 4px 0;
 	}
 	
 	&__list {
