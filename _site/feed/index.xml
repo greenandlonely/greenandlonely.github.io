@@ -5,9 +5,19 @@
     <description>James Clarke's photos</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Feb 2018 02:15:36 +0000</pubDate>
-    <lastBuildDate>Mon, 05 Feb 2018 02:15:36 +0000</lastBuildDate>
+    <pubDate>Mon, 05 Feb 2018 21:23:47 +0000</pubDate>
+    <lastBuildDate>Mon, 05 Feb 2018 21:23:47 +0000</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Cloud</title>
+        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4749/39390049944_3a2ed158fd_h.jpg&quot; width=&quot;1600&quot; height=&quot;1066&quot; alt=&quot;&quot;&gt;</description>
+        <pubDate>Mon, 05 Feb 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/blog/cloud/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/cloud/</guid>
+        
+        
+      </item>
     
       <item>
         <title>17</title>
@@ -162,17 +172,6 @@
         <pubDate>Mon, 19 Jun 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/129-bunch/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/129-bunch/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>128. Damselfly</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://farm5.staticflickr.com/4260/34703776523_7e1d36c38a_h.jpg&quot; width=&quot;1600&quot; height=&quot;1065&quot; alt=&quot;&quot;&gt;
-</description>
-        <pubDate>Sun, 18 Jun 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/blog/128-damselfly/</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/128-damselfly/</guid>
         
         
       </item>
