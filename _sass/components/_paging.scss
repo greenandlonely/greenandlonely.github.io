@@ -1,90 +1,88 @@
-
 .paging {
-	text-align: right;
-	background-color: $site-head-bg;
-	padding: 15px $site-head-gutter 0 10px;
-	display: block;
-	margin: 25px 0;
-	
-	@include media-query(lap-and-up) {
-		width: $site-head-width;
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		z-index: 100;
-		margin: 0;
-	}
-	
-	&__list {
-		@include bare-list;
-	}
-	
-	&__next {
-		@include media-query(lap-and-up) {
-			bottom: 50px;
-			right: $site-head-gutter;
-		}
-		
-		&::after {
-			content: "/";
-		}
-	}
-	
-	&__prev {
-		@include media-query(lap-and-up) {
-			bottom: 20px;
-			right: $site-head-gutter;
-		}
-	}
-	
-	&__item {
-		margin-bottom: 12px;
-		
-		@include media-query(lap-and-up) {
-			position: absolute;
-		}
-		
-		&:only-child {
-			&::after {
-				content: "";
-			}
-		}
-	}
-	
-	&__link {
-		font-size: 15px;
-		text-decoration: none;
-		padding: 10px 0;
-	}
-	
-	
-	&--post {
-		position: static;
-		bottom: auto;
-		left: auto;
-		width: auto;
-		padding: 25px $spacer--minor 25px 0;
-		
-		.paging__item {
-			position: static;
-			bottom: auto;
-			right: auto;
-			display: inline-block;
-		}
-		
-		.paging__next {
-			&::after {
-				//content: "";
-			}
-		}
-		
-		.paging__previous {
-			&::after {
-				//content: "/";
-			}
-			&::before {
-				//content: "";
-			}
-		}
-	}
+  text-align: right;
+  background-color: $site-head-bg;
+  padding: 15px $site-head-gutter 0 10px;
+  display: block;
+  margin: 25px 0;
+
+  @include media-query(lap-and-up) {
+    width: $site-head-width;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0;
+  }
+
+  &__list {
+    @include bare-list;
+  }
+
+  &__next {
+    @include media-query(lap-and-up) {
+      bottom: 50px;
+      right: $site-head-gutter;
+    }
+
+    &::after {
+      content: "/";
+    }
+  }
+
+  &__prev {
+    @include media-query(lap-and-up) {
+      bottom: 20px;
+      right: $site-head-gutter;
+    }
+  }
+
+  &__item {
+    margin-bottom: 12px;
+
+    @include media-query(lap-and-up) {
+      position: absolute;
+    }
+
+    &:only-child {
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+
+  &--post {
+    position: static;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    padding: 25px $spacer--minor 25px 0;
+
+    .paging__item {
+      position: static;
+      bottom: auto;
+      right: auto;
+      display: inline-block;
+    }
+
+    .paging__prev {
+      &::after {
+        content: "/";
+      }
+    }
+
+    .paging__next {
+      &::after {
+        content: "";
+      }
+      &::before {
+        //content: "";
+      }
+    }
+  }
 }

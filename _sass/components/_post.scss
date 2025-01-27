@@ -1,183 +1,174 @@
-
 .post {
-	font-size: 15px;
-	text-align: right;
-	
-	&__header {
-		margin-right: $spacer--minor;
-		border-bottom: 1px solid black;
-		display: inline-block;
-		//text-align: right;
-		margin-bottom: 8px;
-	}
-	
-	&__title {
-		margin-bottom: 4px;
-		font-size: 15px;
-		display: inline-block;
-	}
-	
-	&__date {
-		display: inline-block;
-		text-align: left;
-		font-size: 15px;
-		vertical-align: baseline;
-		
-		&::before {
-			content: ".... ";
-		}
-	}
-	
-	&__link {
-		text-decoration: none;
-	}
-	
-	&__columns {
-		@extend %grid;
-		margin-left: -1px !important;
-		font-size: 0;
-		text-align: right;
-		
-		.post__img {
-			@extend %grid__item;
-			padding-left: 1px !important;
-			width: 100%;
-			display: inline-block;
-			
-			img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-			
-			@include media-query(desk) {
-				width: 50%;
-			}
-		}
-	}
-	
-	&__column {
-		@extend %grid__item;
-		padding-left: 1px !important;
-		width: 100%;
-		
-		@include media-query(lap-and-up) {
-			width: 50%;
-		}
-		
-		.post__img {
-			width: 100%;
-			padding-left: 0 !important;
-		}
-	}
-	
-	&__img {
-		margin: 0 0 0 auto;
-		margin-top: 1px;
-		display: block;
-		
-		&--top-gap {
-			@include media-query(desk) {
-				margin-top: 2px;
-			}
-		}
-		
-		img {
-			display: block;
-		}
-		
-		&:last-child {
-			//margin-bottom: 0;
-		}
-	}
-	
-	&__caption {
-		display: block;
-		//text-align: right;
-		margin-top: 10px;
-		margin-bottom: 25px;
-		padding: 0 $spacer--minor 0 5px;
-	}
-	
-	&__img--portrait {
-		@extend .post__img;
-	    max-width: 768px;
-	    text-align: right !important;
-	    
-	    img {
-			margin: 0 0 0 auto;
-			
-			@include media-query(desk) {
-			    height: 100vh;
-			    max-height: 960px;
-				width: auto !important;
-			}
-	    }
-	}
-	
-	&__img--column {
-		@extend .post__img;
-		//margin: 0 auto;
-	    max-width: 768px;
-	    
-	    img {
-			margin: 0 auto;
-	    }
-	}
-	
-	&__list {
-		margin: 0 0 $gutter auto;
-		text-align: left;
-		padding: 15px 25px;
-		width: 90%;
-		
-		@include media-query(desk) {
-			width: 40%;
-		}
-		
-		@include media-query(lap) {
-			width: 60%;
-		}
-	}
-	
-	&__quote {
-		border-left: 2px solid #eee;
-		border-right: 2px solid #eee;
-		margin: 0 auto $gutter;
-		width: 80%;
-		
-		@include media-query(desk) {
-			width: 50%;
-		}
-		
-		@include media-query(lap) {
-			width: 60%;
-		}
-	}
-	
-	ul.post__list {
-		list-style-type: square;
-	}
-	
-	.blog__posts & {
-		margin-bottom: $post-margin;
-		
-		.post__title {
-			position: relative;
-			width: auto !important;
-			margin-left: 0;
-			line-height: 1;
-			left: auto;
-			z-index: 1;
-			vertical-align: baseline;
-		}
-	}
-	
-	p {
-		padding: 0 $spacer--minor;
-		max-width: 800px;
-		margin-left: auto;
-		line-height: 1.35;
-		text-align: right;
-	}
+  font-size: 15px;
+  text-align: right;
+
+  &__header {
+    margin-right: $spacer--minor;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  &__date {
+    display: inline-block;
+    text-align: left;
+    font-size: 15px;
+    vertical-align: baseline;
+
+    &::before {
+      content: ".... ";
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__columns {
+    @extend %grid;
+    margin-left: -1px !important;
+    font-size: 0;
+    text-align: right;
+
+    .post__img {
+      @extend %grid__item;
+      padding-left: 1px !important;
+      width: 100%;
+      display: inline-block;
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @include media-query(desk) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__column {
+    @extend %grid__item;
+    padding-left: 1px !important;
+    width: 100%;
+
+    @include media-query(lap-and-up) {
+      width: 50%;
+    }
+
+    .post__img {
+      width: 100%;
+      padding-left: 0 !important;
+    }
+  }
+
+  &__img {
+    margin: 0 0 0 auto;
+    margin-top: 1px;
+    display: block;
+
+    &--top-gap {
+      @include media-query(desk) {
+        margin-top: 2px;
+      }
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &__caption {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 25px;
+    padding: 0 $spacer--minor 0 5px;
+  }
+
+  &__img--portrait {
+    @extend .post__img;
+    max-width: 768px;
+    text-align: right !important;
+
+    img {
+      margin: 0 0 0 auto;
+
+      @include media-query(desk) {
+        height: 100vh;
+        max-height: 960px;
+        width: auto !important;
+      }
+    }
+  }
+
+  &__img--column {
+    @extend .post__img;
+    max-width: 768px;
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  &__list {
+    margin: 0 0 $gutter auto;
+    text-align: left;
+    padding: 15px 25px;
+    width: 90%;
+
+    @include media-query(desk) {
+      width: 40%;
+    }
+
+    @include media-query(lap) {
+      width: 60%;
+    }
+  }
+
+  &__quote {
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+    margin: 0 auto $gutter;
+    width: 80%;
+
+    @include media-query(desk) {
+      width: 50%;
+    }
+
+    @include media-query(lap) {
+      width: 60%;
+    }
+  }
+
+  ul.post__list {
+    list-style-type: square;
+  }
+
+  .blog__posts & {
+    margin-bottom: $post-margin;
+
+    .post__title {
+      position: relative;
+      width: auto !important;
+      margin-left: 0;
+      line-height: 1;
+      left: auto;
+      z-index: 1;
+      vertical-align: baseline;
+    }
+  }
+
+  p {
+    padding: 0 $spacer--minor;
+    max-width: 800px;
+    margin-left: auto;
+    line-height: 1.35;
+    text-align: right;
+  }
 }

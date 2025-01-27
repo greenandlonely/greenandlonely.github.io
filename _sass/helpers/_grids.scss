@@ -1,130 +1,119 @@
-$responsive:            true !default;
+$responsive: true !default;
 
-$mobile-first:          true !default;
+$mobile-first: true !default;
 
-$use-silent-classes:    false !default;
+$use-silent-classes: false !default;
 
-$push:                  false !default;
-$pull:                  false !default;
+$push: false !default;
+$pull: false !default;
 
-$use-markup-fix:        false !default;
+$use-markup-fix: false !default;
 
 $breakpoints: (
-    'palm' '(max-width: 480px)',
-    'lap' '(min-width: 481px) and (max-width: 1023px)',
-    'portable' '(max-width: 1023px)',
-    'desk' '(min-width: 1024px)'
+  "palm" "(max-width: 480px)",
+  "lap" "(min-width: 481px) and (max-width: 1023px)",
+  "portable" "(max-width: 1023px)",
+  "desk" "(min-width: 1024px)"
 ) !default;
 
-$breakpoint-has-widths: ('palm', 'lap', 'portable', 'desk') !default;
-$breakpoint-has-push:   ('palm', 'lap', 'portable', 'desk') !default;
-$breakpoint-has-pull:   ('palm', 'lap', 'portable', 'desk') !default;
-
+$breakpoint-has-widths: ("palm", "lap", "portable", "desk") !default;
+$breakpoint-has-push: ("palm", "lap", "portable", "desk") !default;
+$breakpoint-has-pull: ("palm", "lap", "portable", "desk") !default;
 
 $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 
-
-
-
-
 @mixin grid-media-query($media-query) {
-    $breakpoint-found: false;
+  $breakpoint-found: false;
 
-    @each $breakpoint in $breakpoints {
-        $name: nth($breakpoint, 1);
-        $declaration: nth($breakpoint, 2);
+  @each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
 
-        @if $media-query == $name and $declaration {
-            $breakpoint-found: true;
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
 
-            @media only screen and #{$declaration} {
-                @content;
-            }
-        }
+      @media only screen and #{$declaration} {
+        @content;
+      }
     }
+  }
 
-    @if not $breakpoint-found {
-        @warn "Breakpoint ‘#{$media-query}’ does not exist";
-    }
+  @if not $breakpoint-found {
+    @warn "Breakpoint ‘#{$media-query}’ does not exist";
+  }
 }
-
-
 
 %grid,
 .grid {
-    list-style:none;                /* [1] */
-    margin:0;                       /* [2] */
-    padding:0;                      /* [2] */
-    margin-left:-$gutter;           /* [3] */
-    
-    @if not $use-markup-fix {
-        letter-spacing:-0.31em;
-    }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -$gutter;
+
+  @if not $use-markup-fix {
+    letter-spacing: -0.31em;
+  }
 }
 
 @if not $use-markup-fix {
-    /* Opera hack */
-    .opera:-o-prefocus,
-    %grid,
-    .grid {
-        word-spacing:-0.43em;
-    }
+  /* Opera hack */
+  .opera:-o-prefocus,
+  %grid,
+  .grid {
+    word-spacing: -0.43em;
+  }
 }
 
+%grid__item,
+.grid__item {
+  display: inline-block;
+  padding-left: $gutter;
+  vertical-align: top;
 
-    %grid__item,
-    .grid__item {
-        display:inline-block;           /* [1] */
-        padding-left:$gutter;           /* [2] */
-        vertical-align:top;             /* [3] */
-        
-        @if $mobile-first {
-            width:100%;                 /* [4] */
-        }
-        -webkit-box-sizing:border-box;  /* [5] */
-           -moz-box-sizing:border-box;  /* [5] */
-                box-sizing:border-box;  /* [5] */
-        
-        @if not $use-markup-fix {
-            letter-spacing:normal;
-            word-spacing:normal;
-        }
-    }
+  @if $mobile-first {
+    width: 100%;
+  }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  @if not $use-markup-fix {
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+}
 
 %grid--rev,
 .grid--rev {
-    direction:rtl;
-    text-align:left;
+  direction: rtl;
+  text-align: left;
 
-    > %grid__item,
-    > .grid__item {
-        direction:ltr;
-        text-align:left;
-    }
+  > %grid__item,
+  > .grid__item {
+    direction: ltr;
+    text-align: left;
+  }
 }
-
 
 %grid--full,
 .grid--full {
-    margin-left:0;
+  margin-left: 0;
 
-    > %grid__item,
-    > .grid__item {
-        padding-left:0;
-    }
+  > %grid__item,
+  > .grid__item {
+    padding-left: 0;
+  }
 }
-
 
 %grid--right,
 .grid--right {
-    text-align:right;
+  text-align: right;
 
-    > %grid__item,
-    > .grid__item {
-        text-align:left;
-    }
+  > %grid__item,
+  > .grid__item {
+    text-align: left;
+  }
 }
-
 
 /**
  * Centered grids align grid items centrally without needing to use push or pull
@@ -132,14 +121,13 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
  */
 %grid--center,
 .grid--center {
-    text-align:center;
+  text-align: center;
 
-    > %grid__item,
-    > .grid__item {
-        text-align:left;
-    }
+  > %grid__item,
+  > .grid__item {
+    text-align: left;
+  }
 }
-
 
 /**
  * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
@@ -147,52 +135,45 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
  */
 %grid--middle,
 .grid--middle {
-
-    > %grid__item,
-    > .grid__item {
-        vertical-align:middle;
-    }
+  > %grid__item,
+  > .grid__item {
+    vertical-align: middle;
+  }
 }
 
 %grid--bottom,
 .grid--bottom {
-
-    > %grid__item,
-    > .grid__item {
-        vertical-align:bottom;
-    }
+  > %grid__item,
+  > .grid__item {
+    vertical-align: bottom;
+  }
 }
-
 
 /**
  * Create grids with narrower gutters. Extends `.grid`.
  */
 %grid--narrow,
 .grid--narrow {
-    margin-left:-($gutter / 2);
+  margin-left: -($gutter / 2);
 
-    > %grid__item,
-    > .grid__item {
-        padding-left:$gutter / 2;
-    }
+  > %grid__item,
+  > .grid__item {
+    padding-left: $gutter / 2;
+  }
 }
-
 
 /**
  * Create grids with wider gutters. Extends `.grid`.
  */
 %grid--wide,
 .grid--wide {
-    margin-left:-($gutter * 2);
+  margin-left: -($gutter * 2);
 
-    > .grid__item,
-    > %grid__item {
-        padding-left:$gutter * 2;
-    }
+  > .grid__item,
+  > %grid__item {
+    padding-left: $gutter * 2;
+  }
 }
-
-
-
 
 /*------------------------------------*\
     $WIDTHS
@@ -200,60 +181,71 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
 /**
  * Create our width classes, prefixed by the specified namespace.
  */
-@mixin device-type($namespace:"") {
-    $prefix: $class-type + $namespace;
+@mixin device-type($namespace: "") {
+  $prefix: $class-type + $namespace;
 
-    /**
+  /**
      * Whole
      */
-    .desk--one-whole,
-    .lap--one-whole,
-    .palm--one-whole,
-    .one-whole         { width:100%; }
+  .desk--one-whole,
+  .lap--one-whole,
+  .palm--one-whole,
+  .one-whole {
+    width: 100%;
+  }
 
-
-    /**
+  /**
      * Halves
      */
-    .desk--one-whole,
-    .lap--one-half,
-    .palm--one-half,
-    .one-half          { width:50%; }
+  .desk--one-whole,
+  .lap--one-half,
+  .palm--one-half,
+  .one-half {
+    width: 50%;
+  }
 
-
-    /**
+  /**
      * Thirds
      */
-    .one-third,
-    .desk--one-third,
-    .lap--one-third,
-    .palm--one-third         { width:33.333%; }
-    
-    .two-thirds,
-    .desk--two-thirds,
-    .lap--two-thirds,
-    .palm--two-thirds        { width:66.666%; }
+  .one-third,
+  .desk--one-third,
+  .lap--one-third,
+  .palm--one-third {
+    width: 33.333%;
+  }
 
+  .two-thirds,
+  .desk--two-thirds,
+  .lap--two-thirds,
+  .palm--two-thirds {
+    width: 66.666%;
+  }
 
-    /**
+  /**
      * Quarters
      */
-    .one-quarter,
-    .desk--one-quarter,
-    .lap--one-quarter,
-    .palm--one-quarter,			{ width:25%; }
-    
-    .two-quarters,
-    .desk--two-quarters,
-    .lap--two-quarters,
-    .palm--two-quarters      { width: 50%; }
-    
-    .three-quarters,
-    .desk--three-quarters,
-    .lap--three-quarters,
-    .palm--three-quarters    { width:75%; }
+  .one-quarter,
+  .desk--one-quarter,
+  .lap--one-quarter,
+  .palm--one-quarter {
+    width: 25%;
+  }
 
-	/*
+  .two-quarters,
+  .desk--two-quarters,
+  .lap--two-quarters,
+  .palm--two-quarters {
+    width: 50%;
+  }
+
+  .three-quarters,
+  .desk--three-quarters,
+  .lap--three-quarters,
+  .palm--three-quarters {
+    width: 75%;
+  }
+
+  /*
     .one-fifth,
     .desk--one-fifth,
     .lap--one-fifth,
@@ -307,21 +299,18 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
     */
 }
 
-
 /**
  * Our regular, non-responsive width classes.
  */
 @include device-type;
 
-
 /**
  * Our responsive classes, if we have enabled them.
  */
 @if $responsive {
-
-    @each $name in $breakpoint-has-widths {
-        @include grid-media-query($name) {
-           @include device-type('#{$name}--');
-        }
+  @each $name in $breakpoint-has-widths {
+    @include grid-media-query($name) {
+      @include device-type("#{$name}--");
     }
+  }
 }
