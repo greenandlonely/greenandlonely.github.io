@@ -24,7 +24,7 @@ flag: blog
 	</ol>
 	
 	{% if paginator.total_pages > 1 %}
-	<footer class="paging">
+	<nav aria-label="blog pagination" class="paging">
 		<ul class="paging__list">
 		{% if paginator.next_page %}
 			<li class="paging__item paging__next">
@@ -41,6 +41,6 @@ flag: blog
 			</li>
 		{% endif %}
 		</ul>
-	</footer>
+	</nav>
 	{% endif %}
 </div>
