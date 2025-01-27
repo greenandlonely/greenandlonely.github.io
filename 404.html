@@ -4,21 +4,25 @@ permalink: /404.html
 
 <!DOCTYPE html>
 <html>
-	{% include head.html %}
-	
-	<body>
-		<article class="pnf">
-			<div class="pnf__inner">	
-				<div class="pnf__heading">
-					<h1>Page not found</h1>
-					<p>Sorry, that's probably my fault.</p>
-				</div>
-				<a href="/" class="pnf__link">Homepage</a>
+  {% include head.html %}
 
-				<img class="pnf__img" src="/assets/404.jpg" width="1024" height="768" alt="404" />
-			</div>
-		</article>
-		
-		{% include footer.html %}
-	</body>
+  <body>
+    <article class="pnf">
+      <div class="pnf__inner">
+        <img
+          class="pnf__img"
+          src="/assets/404.jpg"
+          width="1024"
+          height="768"
+          alt="404"
+        />
+
+        <div class="pnf__heading">
+          <h1>Page not found</h1>
+          <p>Sorry, that's probably my fault.</p>
+        </div>
+        <a href="/" class="pnf__link">Go to homepage</a>
+      </div>
+    </article>
+  </body>
 </html>
