@@ -4,7 +4,6 @@
 @import "vars";
 @import "mixins";
 @import "helpers/grids";
-@import "helpers/animations";
 
 //Generic, base styles
 @import "generic/normalize";
@@ -16,7 +15,6 @@
 @import "layouts/layout";
 @import "layouts/wall";
 @import "layouts/blogroll";
-@import "layouts/cv";
 
 //Components
 @import "components/logo";
@@ -24,6 +22,3 @@
 @import "components/menu";
 @import "components/icon";
 @import "components/paging";
-@import "components/position";
-@import "components/examples";
-
