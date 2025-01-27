@@ -1,39 +1,32 @@
-{% if page.url contains "blog/" %}
-	<li class="menu__item is-active">
-		<a class="menu__link" href="/blog/" title="Page 1 of the blog">
-			<span>Blog</span>
-		</a>
-	</li>
-{% else %}
-	<li class="menu__item">
-		<a class="menu__link" href="/blog/" title="Page 1 of the blog">
-			<span>Blog</span>
-		</a>
-	</li>
-{% endif %}
-{% if page.url contains "blogroll/" %}
-    <li class="menu__item is-active">
-        <a href="/blogroll/" class="menu__link">
-            <span>Blogroll</span>
-        </a>
-    </li>
-{% else %}
-    <li class="menu__item">
-        <a class="menu__link" href="/blogroll/">
-            <span>Blogroll</span>
-        </a>
-    </li>
-{% endif %}
-<li class="menu__item">
-	<a class="menu__link" href="http://www.instagram.com/greenandlonely" target="_blank" title="Opens in a new window/tab">
-		<span>Instagram</span>
-	</a>
+<li class="menu__item{% if page.url contains 'blog/' %} is-active{% endif %}">
+  <a class="menu__link" href="/blog/" aria-label="Page 1 of the blog">
+    <span>Blog</span>
+  </a>
+</li>
+<li
+  class="menu__item{% if page.url contains 'blogroll/' %} is-active{% endif %}"
+>
+  <a href="/blogroll/" class="menu__link" aria-current="page">
+    <span>Blogroll</span>
+  </a>
 </li>
 <li class="menu__item">
-	<a class="menu__link" href="http://feeds.feedburner.com/greenandlonely" target="_blank" title="Opens in a new window/tab">
-		<span>RSS feed</span>
-	</a>
+  <a
+    class="menu__link"
+    href="http://www.instagram.com/greenandlonely"
+    rel="external"
+  >
+    <span>Instagram</span>
+  </a>
+</li>
+<li class="menu__item">
+  <a
+    class="menu__link"
+    href="http://feeds.feedburner.com/greenandlonely"
+    rel="external"
+  >
+    <span>RSS feed</span>
+  </a>
 </li>
 
-{% assign navigation = nil %}
-{% assign group = nil %}
+{% assign navigation = nil %} {% assign group = nil %}

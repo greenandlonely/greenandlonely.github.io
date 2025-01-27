@@ -1,24 +1,27 @@
 <header class="site-head">
-	<nav class="site-head__inner">
-		<ul class="menu">
-			{% if page.flag == 'home' %}
-				<li class="menu__item is-active">
-					<h1 class="logo menu__link">
-						<span>James Clarke's photos</span>
-					</h1>
-				</li>
-			{% else %}
-				<li class="menu__item">
-					<h1 class="logo">
-						<a class="menu__link" href="/" title="Home page">
-							<span>James Clarke's photos</span>
-						</a>
-					</h1>
-				</li>
-			{% endif %}
-			{% assign navigation = site.pages | sort:"navigation_order" %}
-			{% assign group = 'navigation' %}
-			{% include navigation.html %}
-		</ul>
-	</nav>
+  <nav class="site-head__inner">
+    <ul class="menu">
+      {% if page.flag == 'home' %}
+      <li class="menu__item is-active">
+        <h1 class="logo menu__link">
+          <span>James Clarke's photos</span>
+        </h1>
+      </li>
+      {% else %}
+      <li class="menu__item">
+        <h1 class="logo">
+          <a
+            class="menu__link"
+            href="/"
+            aria-label="Home page"
+            aria-current="page"
+          >
+            <span>James Clarke's photos</span>
+          </a>
+        </h1>
+      </li>
+      {% endif %} {% assign navigation = site.pages | sort:"navigation_order" %}
+      {% assign group = 'navigation' %} {% include navigation.html %}
+    </ul>
+  </nav>
 </header>
