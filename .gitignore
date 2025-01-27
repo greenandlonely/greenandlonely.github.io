@@ -1,3 +1,5 @@
 
-greenandlonely.code-workspace
-greenandlonely.github.io.code-workspace
+*.code-workspace
+.sass-cache
+.jekyll-cache
+.DS_Store
