@@ -3,31 +3,43 @@ layout: default
 ---
 
 <div class="blog">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="page__heading post__title">{{ page.title }}</h1>
-			<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post__date">{{ page.date | date: "%d.%m.%Y" }}</time>
-		</header>
-		
-		{{ content }}
-		
-		<footer class="paging paging--post">
-			<ul class="paging__list">
-				{% if page.next %}
-					<li class="paging__item paging__prev">
-						<a class="paging__link" id="prev" rel="prev" title="Go to the previous post. You can also press the left arrow on your keyboard." href="{{ page.next.url }}">
-							Previous post
-						</a>
-					</li>
-				{% endif %}
-				{% if page.previous %}
-					<li class="paging__item paging__next">
-						<a id="next" class="paging__link" rel="next" title="Go to the next post. You can also press the right arrow on your keyboard." href="{{ page.previous.url }}">
-							Next post
-						</a>
-					</li>
-				{% endif %}
-			</ul>
-		</footer>
-	</article>
+  <div class="post">
+    <article>
+      <header class="post__header">
+        <h1 class="page__heading post__title">{{ page.title }}</h1>
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="post__date"
+          >{{ page.date | date: "%d.%m.%Y" }}</time
+        >
+      </header>
+
+      {{ content }}
+    </article>
+    <nav aria-label="blog post pagination" class="paging paging--post">
+      <ul class="paging__list">
+        {% if page.next %}
+        <li class="paging__item paging__prev">
+          <a
+            class="paging__link"
+            id="prev"
+            rel="prev"
+            href="{{ page.next.url }}"
+          >
+            Previous post
+          </a>
+        </li>
+        {% endif %} {% if page.previous %}
+        <li class="paging__item paging__next">
+          <a
+            id="next"
+            class="paging__link"
+            rel="next"
+            href="{{ page.previous.url }}"
+          >
+            Next post
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
 </div>
