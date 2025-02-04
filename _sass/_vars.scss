@@ -11,16 +11,14 @@ $lap-start: 681px;
 $desk-start: 1025px;
 
 $breakpoints: (
-    'palm' '(max-width: 680px)',
-    'lap' '(min-width: 681px) and (max-width: 1024px)',
-    'portable' '(max-width: 1024px)',
-    'desk' '(min-width: 1025px)'
+  "palm" "(max-width: 680px)",
+  "lap" "(min-width: 681px) and (max-width: 1024px)",
+  "portable" "(max-width: 1024px)",
+  "desk" "(min-width: 1025px)"
 );
 
-
 //fonts & font-sizes
-$base-font: 'PT Mono', monospace;//'Archivo Narrow', 'Arial Narrow', sans-serif;
-$cv-font: 'Merriweather Sans', sans-serif;
+$base-font: "PT Mono", monospace;
 $h1-size: 24px;
 $h2-size: 20px;
 $h3-size: 18px;
@@ -32,7 +30,10 @@ $h6-size: 9px;
 $body-bg: #fff;
 $body-text: #000;
 $menu-text: #000;
-$link-hover-colour: #43BFFF;
+$body-bg--inverted: #000;
+$body-text--inverted: #fff;
+$menu-text--inverted: #fff;
+$link-hover-colour: #43bfff;
 $menu-text--palm: #fff;
 $site-head-bg: $body-bg;
 $header-bg--palm: #111;
@@ -50,8 +51,8 @@ $site-max-width: 1550px;
 $spacer: 24px;
 $spacer--minor: 15px;
 $gutter: 15px;
-$wall-gutter: 1px;
-$site-head-width: 260px;
+$wall-gutter: 2px;
+$site-head-width: 300px;
 $site-head-gutter: 25px;
 $paging-height: 40px;
 $menu__item-divider-size: 4px;

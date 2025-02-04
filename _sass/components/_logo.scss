@@ -1,20 +1,19 @@
-
 .logo {
-	margin: 0;
-	font-size: 15px;
-	display: inline-block;
-	
-	@include media-query(lap-and-up) {
-		text-align: right;
-	}
-	
-	.is-active & {
-		.menu__link {
-			color: #fff;
-			
-			> span {
-				background-color: $menu-text;
-			}
-		}
-	}
+  margin: 0;
+  font-size: 18px;
+  display: inline-block;
+
+  @include media-query(lap-and-up) {
+    text-align: right;
+  }
+
+  .is-active & {
+    .menu__link {
+      color: #fff;
+
+      > span {
+        background-color: $menu-text;
+      }
+    }
+  }
 }

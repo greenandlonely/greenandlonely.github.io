@@ -1,6 +1,5 @@
 .paging {
   text-align: right;
-  background-color: $site-head-bg;
   padding: 15px $site-head-gutter 0 10px;
   display: block;
   margin: 25px 0;
@@ -51,7 +50,7 @@
   }
 
   &__link {
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     padding: 10px 0;
   }

@@ -1,78 +1,91 @@
-
 * {
-	@include vendor(box-sizing, border-box);
+  @include vendor(box-sizing, border-box);
 }
 
 html {
-	font-family: $base-font;
+  font-family: $base-font;
 }
 
 body {
-	font-size: 14px;
-	margin: 0;
-	background-color: $body-bg;
-	color: $body-text;
-	position: relative;
-	min-width: 320px;
-	font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+  position: relative;
+  min-width: 320px;
+  font-weight: normal;
+  background-color: $body-bg;
+  color: $body-text;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $body-bg--inverted;
+    color: $body-text--inverted;
+  }
 }
 
 a {
-	color: $body-text;
-	outline: none;
-	text-decoration: underline;
-	
-	&:hover,
-	&:focus {
-		color: $link-hover-colour;
-	}
-	
-	&[target=_blank] {
-		cursor: alias;
-	}
+  outline: none;
+  text-decoration: underline;
+  color: $body-text;
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: $body-text--inverted;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-hover-colour;
+  }
+
+  &[target="_blank"] {
+    cursor: alias;
+  }
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 $spacer;
-	font-weight: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 $spacer;
+  font-weight: normal;
 }
 
 h1 {
-	font-size: $h1-size;
+  font-size: $h1-size;
 }
 
 h2 {
-	font-size: $h2-size;
+  font-size: $h2-size;
 }
 
 h3 {
-	font-size: $h3-size;
+  font-size: $h3-size;
 }
 
 h4 {
-	font-size: $h4-size;
+  font-size: $h4-size;
 }
 
 h5 {
-	font-size: $h5-size;
+  font-size: $h5-size;
 }
 
 h6 {
-	font-size: $h6-size;
+  font-size: $h6-size;
 }
 
 figure,
 figcaption {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 abbr[title] {
-	border: none;
-	cursor: help;
+  border: none;
+  cursor: help;
 }
