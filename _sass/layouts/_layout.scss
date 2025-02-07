@@ -12,10 +12,10 @@
     height: 100vh;
     background-color: $site-head-bg;
     padding: 46px $site-head-gutter 20px 10px;
+  }
 
-    @media screen and (prefers-color-scheme: dark) {
-      background-color: $body-bg--inverted;
-    }
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $body-bg--inverted;
   }
 }
 

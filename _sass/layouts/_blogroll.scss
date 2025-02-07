@@ -1,56 +1,57 @@
-
 .blogroll {
-	@include bare-list;
-	padding-top: 35px;
-	padding-bottom: 20px;
-	//margin-left: -$gutter;
-	
-	&__item {
-		padding: 0 0 $gutter $gutter;
-		display: block;
-		
-		@include media-query(desk) {
-			display: inline-block;
-			width: 49%;
-		}
-	}
-	
-	&__link {
-		text-decoration: none;
-		
-		> * {
-			display: block;
-			
-			@include media-query(lap-and-up) {
-				display: inline-block;
-				width: 50%;
-			}
-		}
-		
-		&:hover,
-		&:focus {
-			.blogroll__name {
-				color: $body-text;
-			}
-			
-			.blogroll__address {
-				text-decoration: underline;
-			}
-		}
-	}
-	
-	&__name {
-		@include media-query(lap-and-up) {
-			text-align: right;
-		}
-		
-		&::after {
-			content: ".......";
-			margin: 0 10px;
-		}
-	}
-	
-	&__address {
-		font-size: 13px;
-	}
+  @include bare-list;
+  padding-top: 35px;
+  padding-bottom: 20px;
+
+  &__item {
+    padding: 0 0 $gutter $gutter;
+    display: block;
+
+    @include media-query(desk) {
+      display: inline-block;
+      width: 49%;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    > * {
+      display: block;
+
+      @include media-query(lap-and-up) {
+        display: inline-block;
+        width: 50%;
+      }
+    }
+
+    &:hover {
+      .blogroll__name {
+        color: $body-text;
+
+        @media screen and (prefers-color-scheme: dark) {
+          color: $body-text--inverted;
+        }
+      }
+
+      .blogroll__address {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__name {
+    @include media-query(lap-and-up) {
+      text-align: right;
+    }
+
+    &::after {
+      content: ".......";
+      margin: 0 10px;
+    }
+  }
+
+  &__address {
+    font-size: 13px;
+  }
 }
