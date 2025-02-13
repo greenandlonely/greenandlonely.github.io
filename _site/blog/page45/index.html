@@ -24,31 +24,41 @@
 
   <body>
     <header class="site-head">
+    <h1 class="is-visuallyhidden">James Clarke's photos</h1>
   <nav class="site-head__inner">
     <ul class="menu">
-      
-      <li class="menu__item">
-        <h1 class="logo">
+      <li class="menu__item menu__item--major">
           <a
             class="menu__link"
             href="/"
-            aria-label="Home page"
-            aria-current="page"
+             
+            aria-label="Home page" 
           >
             <span>James Clarke's photos</span>
           </a>
-        </h1>
       </li>
+      
        
-       <li class="menu__item is-active">
-  <a class="menu__link" href="/blog/" aria-label="Page 1 of the blog">
+ 
+
+<li class="menu__item is-active">
+  <a class="menu__link" href="/blog/" aria-label="Page 1 of the blog" >
     <span>Blog</span>
   </a>
+  
+  <ul class="menu__sub-menu">
+    <li class="menu__item">
+      <a class="menu__link" href="http://feeds.feedburner.com/greenandlonely" rel="external">
+        <span>RSS feed</span>
+      </a>
+    </li>
+  </ul>
+  
 </li>
 <li
   class="menu__item"
 >
-  <a href="/blogroll/" class="menu__link" aria-current="page">
+  <a href="/blogroll/" class="menu__link">
     <span>Blogroll</span>
   </a>
 </li>
@@ -61,15 +71,6 @@
     <span>Instagram</span>
   </a>
 </li>
-<li class="menu__item">
-  <a
-    class="menu__link"
-    href="http://feeds.feedburner.com/greenandlonely"
-    rel="external"
-  >
-    <span>RSS feed</span>
-  </a>
-</li>
 
  
 
@@ -78,7 +79,7 @@
 </header>
 
 
-    <main><h2 class="is-visuallyhidden">Blog - page 45</h2>
+    <main class="site-main"><h2 class="is-visuallyhidden">Blog - page 45</h2>
 
 <!-- <a class="post__link" href=""> -->
 
@@ -199,17 +200,13 @@
 	<nav aria-label="blog pagination" class="paging">
 		<ul class="paging__list">
 		
-			<li class="paging__item paging__next">
-				<a class="paging__link" id="next" rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." href="/blog/page46">
-					Next page
-				</a>
+			<li class="paging__item paging__prev">
+				<a class="paging__link" id="prev" rel="prev" href="/blog/page44">Previous page</a>
 			</li>
 		
 		
-			<li class="paging__item paging__prev">
-				<a class="paging__link" id="prev" rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." href="/blog/page44">
-					Previous page
-				</a>
+			<li class="paging__item paging__next">
+				<a class="paging__link" id="next" rel="next" href="/blog/page46">Next page</a>
 			</li>
 		
 		</ul>
