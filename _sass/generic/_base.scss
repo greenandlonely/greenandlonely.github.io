@@ -3,7 +3,7 @@
 }
 
 :focus-visible {
-  outline: 4px double #ff38a5;
+  outline: 4px double $pink;
 }
 
 html {
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   position: relative;
   min-width: 320px;
