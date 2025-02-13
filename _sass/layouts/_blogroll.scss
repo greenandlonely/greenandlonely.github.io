@@ -1,57 +1,53 @@
 .blogroll {
   @include bare-list;
-  padding-top: 35px;
-  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: $spacer--minor;
+  padding: 0 $page-gutter 20px;
 
-  &__item {
-    padding: 0 0 $gutter $gutter;
-    display: block;
-
-    @include media-query(desk) {
-      display: inline-block;
-      width: 49%;
-    }
+  @include media-query(lap-and-up) {
+    padding: 0 0 20px;
   }
 
   &__link {
     text-decoration: none;
-
-    > * {
-      display: block;
-
-      @include media-query(lap-and-up) {
-        display: inline-block;
-        width: 50%;
-      }
-    }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0 0.2rem;
 
     &:hover {
       .blogroll__name {
-        color: $body-text;
-
-        @media screen and (prefers-color-scheme: dark) {
-          color: $body-text--inverted;
-        }
-      }
-
-      .blogroll__address {
         text-decoration: underline;
       }
     }
   }
 
   &__name {
-    @include media-query(lap-and-up) {
-      text-align: right;
-    }
+    font-size: 1rem;
 
-    &::after {
-      content: ".......";
-      margin: 0 10px;
+    @include media-query(lap-and-up) {
+      font-size: 1.1rem;
     }
   }
 
   &__address {
-    font-size: 13px;
+    font-size: 0.825rem;
+    display: none;
+
+    @include media-query(desk) {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+
+  &__dots {
+    font-size: 1.2rem;
+    display: none;
+    // overflow: hidden;
+
+    @include media-query(desk) {
+      display: block;
+    }
   }
 }
