@@ -5,8 +5,8 @@
     <description>James Clarke&apos;s photos</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Feb 2025 12:03:22 +0000</pubDate>
-    <lastBuildDate>Thu, 13 Feb 2025 12:03:22 +0000</lastBuildDate>
+    <pubDate>Thu, 13 Feb 2025 14:07:36 +0000</pubDate>
+    <lastBuildDate>Thu, 13 Feb 2025 14:07:36 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -32,47 +32,164 @@
     
       <item>
         <title>17</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4599/38652297444_9f66f169c1_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;A boy peeks out from a hedge&quot;&gt;
+        <description>&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4599/38652297444_9f66f169c1_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1067&quot;
+  alt=&quot;Photo of a young boy peeking out from a hedge&quot;
+/&gt;
 
 &lt;div class=&quot;post__columns&quot;&gt;
-    &lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4687/38483215735_89e31fb578_b.jpg&quot; width=&quot;1024&quot; height=&quot;767&quot; alt=&quot;2 people hug as a man carries a double bass on his shoulder&quot;&gt;
+  &lt;img
+    class=&quot;post__img&quot;
+    src=&quot;https://live.staticflickr.com/4687/38483215735_89e31fb578_b.jpg&quot;
+    width=&quot;1024&quot;
+    height=&quot;767&quot;
+    alt=&quot;Photo of 2 people greeting eachother with a hug as a man carries a double bass on his shoulder&quot;
+  /&gt;
 
-    &lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4644/39367295532_beda74cda1_b.jpg&quot; width=&quot;1024&quot; height=&quot;768&quot; alt=&quot;A woman lies on a bench&quot;&gt;
+  &lt;img
+    class=&quot;post__img&quot;
+    src=&quot;https://live.staticflickr.com/4644/39367295532_beda74cda1_b.jpg&quot;
+    width=&quot;1024&quot;
+    height=&quot;768&quot;
+    alt=&quot;Photo taken from above of a woman lying on a bench&quot;
+  /&gt;
 &lt;/div&gt;
 
-&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4588/24496393917_0c4be95e6b_h.jpg&quot; width=&quot;1600&quot; height=&quot;1200&quot; alt=&quot;A man feeding bread to some swans&quot;&gt;
+&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4588/24496393917_0c4be95e6b_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1200&quot;
+  alt=&quot;Photo of a man feeding bread to some swans&quot;
+/&gt;
 
 &lt;div class=&quot;post__columns&quot;&gt;
-    &lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4687/27620282119_6a7fb82599_b.jpg&quot; width=&quot;819&quot; height=&quot;1024&quot; alt=&quot;A man in fancy-dress drinks alcohol outside a pub&quot;&gt;&lt;/div&gt;&lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4646/27620266289_5fe9b6a45e_b.jpg&quot; width=&quot;819&quot; height=&quot;1024&quot; alt=&quot;A man pretends to play a magazine like a recorder&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;post__img--column&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4687/27620282119_6a7fb82599_b.jpg&quot;
+      width=&quot;819&quot;
+      height=&quot;1024&quot;
+      alt=&quot;Photo of a man in fancy-dress drinking alcohol outside a pub in London&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;post__img--column&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4646/27620266289_5fe9b6a45e_b.jpg&quot;
+      width=&quot;819&quot;
+      height=&quot;1024&quot;
+      alt=&quot;Photo of a man pretending to play a magazine like a recorder&quot;
+    /&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4690/25527310648_ceeccae967_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;A man checks a woman&apos;s face&quot;&gt;
+&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4690/25527310648_ceeccae967_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1067&quot;
+  alt=&quot;Photo of a man checking a woman&apos;s face as they stand on a street in London&quot;
+/&gt;
 
-&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4733/39367553172_911269a885_h.jpg&quot; width=&quot;1600&quot; height=&quot;1066&quot; alt=&quot;A young girl stretches to touch her toes&quot;&gt;
+&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4733/39367553172_911269a885_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1066&quot;
+  alt=&quot;Photo of a young girl stretching to touch her toes right in front of the Albert Memorial in London&quot;
+/&gt;
 
 &lt;div class=&quot;post__columns&quot;&gt;
-    &lt;div class=&quot;post__img&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4684/25527371998_36ecdce9b3_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;A boy sits on some steps with some swans&quot;&gt;&lt;/div&gt;&lt;div class=&quot;post__img&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4731/39397606301_83cf5a0f64_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;A lamb and a dog stand facing eachother&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;post__img&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4684/25527371998_36ecdce9b3_b.jpg&quot;
+      width=&quot;1024&quot;
+      height=&quot;683&quot;
+      alt=&quot;Photo of a boy sitting on some steps next to a river with his back to some swans&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;post__img&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4731/39397606301_83cf5a0f64_b.jpg&quot;
+      width=&quot;1024&quot;
+      height=&quot;683&quot;
+      alt=&quot;Photo of a lamb and a dog standing facing eachother as he dog&apos;s owner stands holding the dog&apos;s lead&quot;
+    /&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4685/39367541112_315ebbf439_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
+&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4685/39367541112_315ebbf439_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1067&quot;
+  alt=&quot;Photo of two human statue street performers, one dressed in all silver and the other dressed in all gold, greeting eachother as a few pedestrians stand watching&quot;
+/&gt;
 
 &lt;div class=&quot;post__columns&quot;&gt;
-    &lt;div class=&quot;post__img&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4633/39399108001_0b23033b63_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;Two seagulls fly&quot;&gt;&lt;/div&gt;&lt;div class=&quot;post__img&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4646/25528840188_389362a611_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;A skateboarder jumps over a rail&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;post__img&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4633/39399108001_0b23033b63_b.jpg&quot;
+      width=&quot;1024&quot;
+      height=&quot;683&quot;
+      alt=&quot;Photo taken looking up at two seagulls flying through the blue sky. The seagulls are slightly obscured up a metal railing in the foreground&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;post__img&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4646/25528840188_389362a611_b.jpg&quot;
+      width=&quot;1024&quot;
+      height=&quot;683&quot;
+      alt=&quot;Photo taken looking down at a skateboarder jumping over a railing&quot;
+    /&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4679/25528866248_4fdd0a40b5_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;Black bulls run through a gate&quot;&gt;
+&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4679/25528866248_4fdd0a40b5_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1067&quot;
+  alt=&quot;Photo of a herd of black bulls running through a gate&quot;
+/&gt;
 
 &lt;div class=&quot;post__columns&quot;&gt;
-    &lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4684/25546394528_838b98c8da_b.jpg&quot; width=&quot;819&quot; height=&quot;1024&quot; alt=&quot;The back of a man&apos;s head&quot;&gt;&lt;/div&gt;
-    
-    &lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4645/27639168149_e856454da8_b.jpg&quot; width=&quot;819&quot; height=&quot;1026&quot; alt=&quot;Newlyweds kiss on an Oxford street&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;post__img--column&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4684/25546394528_838b98c8da_b.jpg&quot;
+      width=&quot;819&quot;
+      height=&quot;1024&quot;
+      alt=&quot;Photo of the back of a man&apos;s head. The man is wearing a blue cap with a white feather in it&quot;
+    /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;post__img--column&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4645/27639168149_e856454da8_b.jpg&quot;
+      width=&quot;819&quot;
+      height=&quot;1026&quot;
+      alt=&quot;Photo of 2 newlyweds kissing on an Oxford street, with the Hertford Bridge in the background&quot;
+    /&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4643/25546413688_768fa4ffb1_h.jpg&quot; width=&quot;1600&quot; height=&quot;1200&quot; alt=&quot;Man holds homemade &apos;Jesus&apos; sign on the street&quot;&gt;
+&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4643/25546413688_768fa4ffb1_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1200&quot;
+  alt=&quot;Photo of a man holding a sign reading &apos;Jesus&apos;, with the London Eye in the background&quot;
+/&gt;
 </description>
         <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
         <link>http://localhost:4000/blog/17/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/17/</guid>
+        
+        <category>street</category>
+        
+        <category>fauna</category>
         
         
       </item>
@@ -85,7 +202,7 @@
     src=&quot;https://live.staticflickr.com/4418/36046302223_ae2b3b0cae_h.jpg&quot;
     width=&quot;1600&quot;
     height=&quot;1067&quot;
-    alt=&quot;&quot;
+    alt=&quot;Photo of 3 swans on a lake in Hyde Park refreshing themselves under a water pump outlet&quot;
   /&gt;
 
   &lt;figcaption class=&quot;post__caption&quot;&gt;Communal shower&lt;/figcaption&gt;
@@ -97,7 +214,7 @@
     src=&quot;https://live.staticflickr.com/4403/36046281703_7704949953_h.jpg&quot;
     width=&quot;1600&quot;
     height=&quot;1067&quot;
-    alt=&quot;&quot;
+    alt=&quot;Photo of 5 swans burying their faces in their bodies as they rest beside Round Pond in Hyde Park &quot;
   /&gt;
 
   &lt;figcaption class=&quot;post__caption&quot;&gt;Hide park&lt;/figcaption&gt;
@@ -109,7 +226,7 @@
     src=&quot;https://live.staticflickr.com/4382/36715749211_2c1851cd2a_h.jpg&quot;
     width=&quot;1600&quot;
     height=&quot;1066&quot;
-    alt=&quot;&quot;
+    alt=&quot;Photo of a heron standing on top of &apos;The Arch&apos; sculpture in Hyde Park, with a late afternoon sky in the background&quot;
   /&gt;
 
   &lt;figcaption class=&quot;post__caption&quot;&gt;Heron&lt;/figcaption&gt;
@@ -119,38 +236,64 @@
         <link>http://localhost:4000/blog/hyde-park/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/hyde-park/</guid>
         
+        <category>fauna</category>
+        
         
       </item>
     
       <item>
         <title>A skyful</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4322/36176894211_e3c52bc243_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
+        <description>&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4322/36176894211_e3c52bc243_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1067&quot;
+  alt=&quot;Photo of a flock of birds in the sky, with some trees in the background&quot;
+/&gt;
 </description>
         <pubDate>Sun, 27 Aug 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/a-skyful/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/a-skyful/</guid>
+        
+        <category>fauna</category>
         
         
       </item>
     
       <item>
         <title>Cornered</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4293/35504228553_15d9e141f4_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
+        <description>&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4293/35504228553_15d9e141f4_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1067&quot;
+  alt=&quot;Photo of a boy sitting next to a river, surrounded by many swans and a few pigeons&quot;
+/&gt;
 </description>
         <pubDate>Sat, 26 Aug 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/cornered/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/cornered/</guid>
+        
+        <category>fauna</category>
         
         
       </item>
     
       <item>
         <title>Still</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4327/36311295345_39a4fa5ddb_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
+        <description>&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4327/36311295345_39a4fa5ddb_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1067&quot;
+  alt=&quot;Photo of a black cockapoo dog sitting balancing a dog biscuit on its nose&quot;
+/&gt;
 </description>
         <pubDate>Fri, 25 Aug 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/still/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/still/</guid>
+        
+        <category>fauna</category>
         
         
       </item>
@@ -158,7 +301,22 @@
       <item>
         <title>133 &amp; 134. End</title>
         <description>&lt;div class=&quot;post__columns&quot;&gt;
-	&lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4242/35187961210_a5ffffc14d_b.jpg&quot; width=&quot;819&quot; height=&quot;1024&quot; alt=&quot;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4238/35187972160_a2bf105c1c_b.jpg&quot; width=&quot;819&quot; height=&quot;1024&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;post__img--column&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4242/35187961210_a5ffffc14d_b.jpg&quot;
+      width=&quot;819&quot;
+      height=&quot;1024&quot;
+      alt=&quot;Photo of a man in old-fashioned costume walking past a wall next to Worcester Cathedral&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;post__img--column&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4238/35187972160_a2bf105c1c_b.jpg&quot;
+      width=&quot;819&quot;
+      height=&quot;1024&quot;
+      alt=&quot;Photo of Worcester Cathedral, with the bright sky in the background and some of Worcester town centre in the foreground&quot;
+    /&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Bye for now.&lt;/p&gt;
@@ -172,11 +330,19 @@
     
       <item>
         <title>132. Meeting</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4240/35406989642_4646b96c4c_h.jpg&quot; width=&quot;1600&quot; height=&quot;1067&quot; alt=&quot;&quot;&gt;
+        <description>&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4240/35406989642_4646b96c4c_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1067&quot;
+  alt=&quot;Photo of a grey cat standing on a wall as a black cockapoo dog stretches from the pavement to reach it&quot;
+/&gt;
 </description>
         <pubDate>Thu, 22 Jun 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/132-meeting/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/132-meeting/</guid>
+        
+        <category>fauna</category>
         
         
       </item>
@@ -184,25 +350,49 @@
       <item>
         <title>130 &amp; 131. Too hot</title>
         <description>&lt;div class=&quot;post__columns&quot;&gt;
-    &lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4262/34672153174_c13f22e5bc_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
-	
-	&lt;div class=&quot;post__img--column&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/4215/35382667131_91707bc748_b.jpg&quot; width=&quot;1024&quot; height=&quot;683&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;post__img--column&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4262/34672153174_c13f22e5bc_b.jpg&quot;
+      width=&quot;1024&quot;
+      height=&quot;683&quot;
+      alt=&quot;Photo of a thermometer, on a wooden wall, reading 40.6 degrees Celsius&quot;
+    /&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;post__img--column&quot;&gt;
+    &lt;img
+      src=&quot;https://live.staticflickr.com/4215/35382667131_91707bc748_b.jpg&quot;
+      width=&quot;1024&quot;
+      height=&quot;683&quot;
+      alt=&quot;Photo of a black cockapoo lying on a patio, trying to stay cool in the heat&quot;
+    /&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 21 Jun 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/130-131-too-hot/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/130-131-too-hot/</guid>
         
+        <category>fauna</category>
+        
         
       </item>
     
       <item>
         <title>129. Bunch</title>
-        <description>&lt;img class=&quot;post__img&quot; src=&quot;https://live.staticflickr.com/4234/34672142954_a42a6538d1_h.jpg&quot; width=&quot;1600&quot; height=&quot;1066&quot; alt=&quot;&quot;&gt;
+        <description>&lt;img
+  class=&quot;post__img&quot;
+  src=&quot;https://live.staticflickr.com/4234/34672142954_a42a6538d1_h.jpg&quot;
+  width=&quot;1600&quot;
+  height=&quot;1066&quot;
+  alt=&quot;Photo taken from behimd a man and woman who are walking beside a river on a bright evening. The man is pushing a pushchair and the woman is holding a freshsly-picked bunch of wild flowers&quot;
+/&gt;
 </description>
         <pubDate>Mon, 19 Jun 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/blog/129-bunch/</link>
         <guid isPermaLink="true">http://localhost:4000/blog/129-bunch/</guid>
+        
+        <category>street</category>
         
         
       </item>
