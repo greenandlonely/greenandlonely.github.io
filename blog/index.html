@@ -26,18 +26,14 @@ flag: blog
 	{% if paginator.total_pages > 1 %}
 	<nav aria-label="blog pagination" class="paging">
 		<ul class="paging__list">
-		{% if paginator.next_page %}
-			<li class="paging__item paging__next">
-				<a class="paging__link" id="next" rel="next" title="Go to the next page. You can also press the right arrow on your keyboard." href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-					Next page
-				</a>
-			</li>
-		{% endif %}
 		{% if paginator.previous_page %}
 			<li class="paging__item paging__prev">
-				<a class="paging__link" id="prev" rel="prev" title="Go to the previous page. You can also press the left arrow on your keyboard." href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-					Previous page
-				</a>
+				<a class="paging__link" id="prev" rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous page</a>
+			</li>
+		{% endif %}
+		{% if paginator.next_page %}
+			<li class="paging__item paging__next">
+				<a class="paging__link" id="next" rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next page</a>
 			</li>
 		{% endif %}
 		</ul>
