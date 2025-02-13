@@ -1,27 +1,25 @@
 .post {
-  font-size: 16px;
-  text-align: right;
+  font-size: 1rem;
 
   &__header {
-    margin-right: $spacer--minor;
+    margin: 0 0 0.33rem $page-gutter;
     display: inline-block;
-    margin-bottom: 8px;
   }
 
   &__title {
     margin-bottom: 4px;
-    font-size: 18px;
+    font-size: 1.2rem;
     display: inline-block;
   }
 
   &__date {
     display: inline-block;
     text-align: left;
-    font-size: 15px;
+    font-size: 1rem;
     vertical-align: baseline;
 
     &::before {
-      content: ".... ";
+      content: "...... ";
     }
   }
 
@@ -31,13 +29,13 @@
 
   &__columns {
     @extend %grid;
-    margin-left: -1px !important;
+    margin-left: -2px !important;
     font-size: 0;
     text-align: right;
 
     .post__img {
       @extend %grid__item;
-      padding-left: 1px !important;
+      padding-left: 2px !important;
       width: 100%;
       display: inline-block;
 
@@ -55,7 +53,7 @@
 
   &__column {
     @extend %grid__item;
-    padding-left: 1px !important;
+    padding-left: 2px !important;
     width: 100%;
 
     @include media-query(lap-and-up) {
@@ -70,7 +68,7 @@
 
   &__img {
     margin: 0 0 0 auto;
-    margin-top: 1px;
+    margin-top: 2px;
     display: block;
 
     &--top-gap {
@@ -167,8 +165,6 @@
   p {
     padding: 0 $spacer--minor;
     max-width: 800px;
-    margin-left: auto;
     line-height: 1.35;
-    text-align: right;
   }
 }
