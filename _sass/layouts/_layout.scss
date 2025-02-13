@@ -1,16 +1,16 @@
 .site-head {
   width: 100%;
   margin: 0;
-  padding: 20px 20px 30px;
+  padding: 1.25rem $page-gutter 3.5rem;
   z-index: 10;
 
-  @include media-query(lap-and-up) {
+  @include media-query(desk) {
     position: fixed;
     top: 0;
     left: 0;
     width: $site-head-width;
     height: 100vh;
-    background-color: $site-head-bg;
+    background-color: $body-bg;
     padding: 46px $site-head-gutter 20px 10px;
   }
 
@@ -19,23 +19,17 @@
   }
 }
 
-.page {
+.site-main {
   max-width: $site-max-width;
-  padding-top: 15px;
 
-  @include media-query(lap-and-up) {
+  @include media-query(desk) {
+    padding-top: $spacer--double;
     padding-left: $site-head-width;
   }
 }
 
 .blog {
-  max-width: $site-max-width;
   position: relative;
-  padding-top: 15px;
-
-  @include media-query(lap-and-up) {
-    padding-left: $site-head-width;
-  }
 
   &__posts {
     list-style: none outside none;
@@ -49,26 +43,24 @@
 }
 
 .pnf {
-  margin: 0 auto;
-  max-width: 1100px;
-  padding-top: 30px;
+  max-width: 1024px;
+
+  @include media-query(lap-and-up) {
+    margin: 0 auto;
+  }
+
+  &__content {
+    padding: 2rem 1rem;
+  }
 
   &__heading {
-    padding-left: 15px;
-    padding-right: 10px;
-    margin-bottom: 15px;
-    display: inline-block;
-
-    > * {
-      font-size: 14px;
-    }
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
   }
 
   &__link {
-    padding-left: 10px;
-    font-size: 14px;
-    margin-bottom: 20px;
-    @include transition(all $transition-speed ease-out);
     display: inline-block;
+    font-size: 1rem;
+    margin-top: 2rem;
   }
 }
