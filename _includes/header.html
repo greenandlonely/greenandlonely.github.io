@@ -1,26 +1,18 @@
 <header class="site-head">
+    <h1 class="is-visuallyhidden">James Clarke's photos</h1>
   <nav class="site-head__inner">
     <ul class="menu">
-      {% if page.flag == 'home' %}
-      <li class="menu__item is-active">
-        <h1 class="logo menu__link">
-          <span>James Clarke's photos</span>
-        </h1>
-      </li>
-      {% else %}
-      <li class="menu__item">
-        <h1 class="logo">
+      <li class="menu__item menu__item--major{% if page.flag == 'home' %} is-active{% endif %}">
           <a
             class="menu__link"
             href="/"
-            aria-label="Home page"
-            aria-current="page"
+            {% if page.flag == "home" %}aria-current="page"{% endif %} 
+            aria-label="Home page" 
           >
             <span>James Clarke's photos</span>
           </a>
-        </h1>
       </li>
-      {% endif %} {% assign navigation = site.pages | sort:"navigation_order" %}
+      {% assign navigation = site.pages | sort:"navigation_order" %}
       {% assign group = 'navigation' %} {% include navigation.html %}
     </ul>
   </nav>
