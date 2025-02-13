@@ -7,12 +7,12 @@ $use-markup-fix: false;
 $use-silent-classes: true;
 
 //breakpoints
-$lap-start: 681px;
+$lap-start: 768px;
 $desk-start: 1025px;
 
 $breakpoints: (
-  "palm" "(max-width: 680px)",
-  "lap" "(min-width: 681px) and (max-width: 1024px)",
+  "palm" "(max-width: 767px)",
+  "lap" "(min-width: 768px) and (max-width: 1024px)",
   "portable" "(max-width: 1024px)",
   "desk" "(min-width: 1025px)"
 );
@@ -28,32 +28,25 @@ $h6-size: 9px;
 
 //colours
 $body-bg: #fff;
+$body-bg--inverted: #000;
 $body-text: #000;
 $menu-text: #000;
-$body-bg--inverted: #000;
 $body-text--inverted: #fff;
 $menu-text--inverted: #fff;
 $link-hover-colour: #43bfff;
 $menu-text--palm: #fff;
-$site-head-bg: $body-bg;
-$header-bg--palm: #111;
-$post__date-colour: #000;
-$blogroll-bg: #eee;
-$blogroll-bg--hover: #111;
-$blogroll-text--hover: #fff;
-$cv-text-colour: #000;
-
-//multiples
-$cv-divider: 1px solid #ddd;
+$pink: #ff38a5;
 
 //metrics
 $site-max-width: 1550px;
 $spacer: 24px;
+$spacer--double: $spacer * 2;
 $spacer--minor: 15px;
 $gutter: 15px;
 $wall-gutter: 2px;
-$site-head-width: 300px;
-$site-head-gutter: 25px;
+$page-gutter: 1.25rem;
+$site-head-width: 324px;
+$site-head-gutter: 40px;
 $paging-height: 40px;
 $menu__item-divider-size: 4px;
 $menu__item-width: 80px;
