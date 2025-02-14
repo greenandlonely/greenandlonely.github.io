@@ -1,0 +1,22 @@
+.tag {
+  background-color: $grey;
+  padding: 0.125rem 0.25rem;
+  color: $body-text;
+  font-size: 1rem;
+  display: inline-block;
+
+  &:hover {
+    // background-color: $body-bg--inverted;
+    // text-decoration: none;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: $body-text--inverted;
+    background-color: $grey--inverted;
+
+    &,
+    &:hover {
+      //   background-color: $grey--inverted;
+    }
+  }
+}

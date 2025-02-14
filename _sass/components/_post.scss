@@ -2,8 +2,22 @@
   font-size: 1rem;
 
   &__header {
-    margin: 0 0 0.33rem $page-gutter;
-    display: inline-block;
+    padding-left: $page-gutter;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 0.33rem;
+
+    @include media-query(lap-and-up) {
+      align-items: center;
+      flex-direction: row;
+    }
+    @include media-query(desk) {
+      padding-left: $page-gutter--lap;
+    }
   }
 
   &__title {
@@ -19,8 +33,15 @@
     vertical-align: baseline;
 
     &::before {
-      content: "...... ";
+      content: " ...... ";
     }
+  }
+
+  &__tags {
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   &__link {
@@ -45,7 +66,7 @@
         margin-right: auto;
       }
 
-      @include media-query(desk) {
+      @include media-query(lap-and-up) {
         width: 50%;
       }
     }
@@ -67,7 +88,7 @@
   }
 
   &__img {
-    margin: 0 0 0 auto;
+    margin: 0; // 0 0 auto;
     margin-top: 2px;
     display: block;
 
@@ -86,28 +107,28 @@
     display: block;
     margin-top: 1em;
     margin-bottom: 25px;
-    padding: 0 $spacer--minor 0 5px;
+    padding: 0 0.5rem;
   }
 
   &__img--portrait {
     @extend .post__img;
     max-width: 768px;
-    text-align: right !important;
+    // text-align: right !important;
 
     img {
       margin: 0 0 0 auto;
 
-      @include media-query(desk) {
-        height: 100vh;
-        max-height: 960px;
-        width: auto !important;
+      @include media-query(lap-and-up) {
+        // height: 100vh;
+        // max-height: 960px;
+        // width: auto !important;
       }
     }
   }
 
   &__img--column {
     @extend .post__img;
-    max-width: 768px;
+    // max-width: 768px;
 
     img {
       margin: 0 auto;

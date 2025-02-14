@@ -11,7 +11,7 @@
     width: $site-head-width;
     height: 100vh;
     background-color: $body-bg;
-    padding: 46px $site-head-gutter 20px 10px;
+    padding: $top-gutter $site-head-gutter 1.25rem 0.5rem;
   }
 
   @media screen and (prefers-color-scheme: dark) {
@@ -23,7 +23,7 @@
   max-width: $site-max-width;
 
   @include media-query(desk) {
-    padding-top: $spacer--double;
+    padding-top: $top-gutter;
     padding-left: $site-head-width;
   }
 }

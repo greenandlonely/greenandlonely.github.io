@@ -33,18 +33,23 @@ $body-text: #000;
 $menu-text: #000;
 $body-text--inverted: #fff;
 $menu-text--inverted: #fff;
-$link-hover-colour: #43bfff;
 $menu-text--palm: #fff;
 $pink: #ff38a5;
+$grey: #eee;
+$grey--inverted: #333;
+$blue: #43bfff;
 
 //metrics
 $site-max-width: 1550px;
-$spacer: 24px;
+$spacer: 1.5rem;
 $spacer--double: $spacer * 2;
-$spacer--minor: 15px;
-$gutter: 15px;
+$spacer--minor: 1rem;
+$gutter: 1rem;
+$top-gutter: 3rem;
 $wall-gutter: 2px;
 $page-gutter: 1.25rem;
+$page-gutter--lap: 0.5rem;
+$wall-gutter: 0.5rem;
 $site-head-width: 324px;
 $site-head-gutter: 40px;
 $paging-height: 40px;

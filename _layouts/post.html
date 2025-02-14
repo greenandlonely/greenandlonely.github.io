@@ -6,10 +6,21 @@ layout: default
   <div class="post">
     <article>
       <header class="post__header">
-        <h1 class="page__heading post__title">{{ page.title }}</h1>
-        <time datetime="{{ post.date | date: '%Y-%m-%d' }}" class="post__date"
-          >{{ page.date | date: "%d.%m.%Y" }}</time
-        >
+        <div>
+            <h1 class="post__title post__heading">{{ page.title }}</h1>
+            <time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="post__date">
+                {{ page.date | date: "%d.%m.%Y" }}
+            </time>
+        </div>
+        {% if page.tags != empty %}
+        <dl class="post__tags">
+            <dt class="is-visuallyhidden">Tags:</dt>
+            {% for tag in page.tags %}
+            <dd class="tag">{{ tag }}</dd>
+            {% comment %}<a href="/blog/tag/{{ tag }}" class="tag"></a>{% endcomment %}
+            {% endfor %}
+        </dl>
+        {% endif %}
       </header>
 
       {{ content }}
@@ -23,9 +34,7 @@ layout: default
             id="prev"
             rel="prev"
             href="{{ page.next.url }}"
-          >
-            Previous post
-          </a>
+          >Previous post</a>
         </li>
         {% endif %} {% if page.previous %}
         <li class="paging__item paging__next">
@@ -34,9 +43,7 @@ layout: default
             class="paging__link"
             rel="next"
             href="{{ page.previous.url }}"
-          >
-            Next post
-          </a>
+          >Next post</a>
         </li>
         {% endif %}
       </ul>

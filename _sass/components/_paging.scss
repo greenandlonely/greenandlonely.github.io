@@ -3,24 +3,15 @@
   padding: 1rem $page-gutter 0;
   display: block;
   margin: 3rem 0;
-  font-size: 1rem;
 
-  //   @include media-query(lap-and-up) {
-  //     width: $site-head-width;
-  //     position: fixed;
-  //     bottom: 0;
-  //     left: 0;
-  //     z-index: 100;
-  //     margin: 0;
-  //   }
+  @include media-query(desk) {
+    padding-left: $page-gutter--lap;
+  }
 
   &__list {
     @include bare-list;
     display: flex;
     gap: 8px;
-  }
-
-  &__next {
   }
 
   &__prev {

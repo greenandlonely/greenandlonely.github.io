@@ -9,14 +9,26 @@ flag: blog
 <!-- <a class="post__link" href="{{ post.url | prepend: site.baseurl }}"> -->
 
 <div class="blog">
-	<ol class="blog__posts">
+	<ol class="blog__posts" aria-label="Blog posts, in chronological order">
 		{% for post in paginator.posts %}
 		<li>
 			<article class="post">
 				<header class="post__header">
-					<h2 class="post__title post__heading">{{ post.title }}</h2>
-					<time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post__date">{{ post.date | date: "%d.%m.%Y" }}</time>
+					<div>
+                        <h3 class="post__title post__heading">{{ post.title }}</h3>
+					    <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="post__date">{{ post.date | date: "%d.%m.%Y" }}</time>
+                    </div>
+                    {% if post.tags != empty %}
+                    <dl class="post__tags">
+                        <dt class="is-visuallyhidden">Tags:</dt>
+                        {% for tag in post.tags %}
+                        <dd class="tag">{{ tag }}</dd>
+                        {% endfor %}
+                        {% comment %}<a href="/blog/tag/{{ tag }}" class="tag"></a>{% endcomment %}
+                    </dl>
+                    {% endif %}
 				</header>
+
 				{{ post.content }}
 			</article>
 		</li>
