@@ -28,39 +28,10 @@
   }
 }
 
-.blog {
-  position: relative;
+.blog-posts {
+  @include bare-list;
 
-  &__posts {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-
-    > li:last-of-type .post {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.pnf {
-  max-width: 1024px;
-
-  @include media-query(lap-and-up) {
-    margin: 0 auto;
-  }
-
-  &__content {
-    padding: 2rem 1rem;
-  }
-
-  &__heading {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  &__link {
-    display: inline-block;
-    font-size: 1rem;
-    margin-top: 2rem;
+  > * + * {
+    margin-top: $post-margin;
   }
 }

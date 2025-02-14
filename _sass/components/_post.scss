@@ -169,27 +169,13 @@
     list-style-type: square;
   }
 
-  .blog__posts & {
-    margin-bottom: $post-margin;
-
-    .post__title {
-      position: relative;
-      width: auto !important;
-      margin-left: 0;
-      line-height: 1;
-      left: auto;
-      z-index: 1;
-      vertical-align: baseline;
-    }
-  }
-
   p {
     padding: 0 $page-gutter;
     max-width: 800px;
     line-height: 1.35;
 
     @include media-query(desk) {
-      padding-left: $page-gutter--desk;
+      padding: 0 $page-gutter--desk;
     }
   }
 }
