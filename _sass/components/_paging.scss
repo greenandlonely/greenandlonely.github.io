@@ -5,7 +5,7 @@
   margin: 3rem 0;
 
   @include media-query(desk) {
-    padding-left: $page-gutter--lap;
+    padding-left: $page-gutter--desk;
   }
 
   &__list {

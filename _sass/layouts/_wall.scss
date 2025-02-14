@@ -11,7 +11,7 @@
     padding-left: $page-gutter;
 
     @include media-query(desk) {
-      padding-left: $page-gutter--lap;
+      padding-left: $page-gutter--desk;
     }
   }
 

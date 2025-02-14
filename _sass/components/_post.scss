@@ -16,7 +16,7 @@
       flex-direction: row;
     }
     @include media-query(desk) {
-      padding-left: $page-gutter--lap;
+      padding-left: $page-gutter--desk;
     }
   }
 
@@ -184,8 +184,12 @@
   }
 
   p {
-    padding: 0 $spacer--minor;
+    padding: 0 $page-gutter;
     max-width: 800px;
     line-height: 1.35;
+
+    @include media-query(desk) {
+      padding-left: $page-gutter--desk;
+    }
   }
 }
