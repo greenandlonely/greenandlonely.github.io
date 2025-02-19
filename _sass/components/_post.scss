@@ -42,6 +42,11 @@
     display: flex;
     gap: 0.5rem;
     padding-right: 0.5rem;
+    margin-bottom: 0.25rem;
+
+    @include media-query(desk) {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -50,13 +55,13 @@
 
   &__columns {
     @extend %grid;
-    margin-left: -2px !important;
+    margin-left: -$wall-gutter !important;
     font-size: 0;
     text-align: right;
 
     .post__img {
       @extend %grid__item;
-      padding-left: 2px !important;
+      padding-left: $wall-gutter !important;
       width: 100%;
       display: inline-block;
 
@@ -74,7 +79,7 @@
 
   &__column {
     @extend %grid__item;
-    padding-left: 2px !important;
+    padding-left: $wall-gutter !important;
     width: 100%;
 
     @include media-query(lap-and-up) {
@@ -89,12 +94,12 @@
 
   &__img {
     margin: 0; // 0 0 auto;
-    margin-top: 2px;
+    margin-top: $wall-gutter;
     display: block;
 
     &--top-gap {
       @include media-query(desk) {
-        margin-top: 2px;
+        margin-top: $wall-gutter;
       }
     }
 
@@ -103,17 +108,9 @@
     }
   }
 
-  &__caption {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 25px;
-    padding: 0 0.5rem;
-  }
-
   &__img--portrait {
     @extend .post__img;
     max-width: 768px;
-    // text-align: right !important;
 
     img {
       margin: 0 0 0 auto;
@@ -135,8 +132,8 @@
     }
   }
 
-  &__list {
-    margin: 0 0 $gutter auto;
+  ul {
+    margin: 0 0 $gutter 0;
     text-align: left;
     padding: 15px 25px;
     width: 90%;
@@ -165,10 +162,6 @@
     }
   }
 
-  ul.post__list {
-    list-style-type: square;
-  }
-
   p {
     padding: 0 $page-gutter;
     max-width: 800px;
@@ -176,6 +169,22 @@
 
     @include media-query(desk) {
       padding: 0 $page-gutter--desk;
+    }
+  }
+
+  figcaption {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 25px;
+    padding: 0 $page-gutter;
+
+    @include media-query(desk) {
+      padding: 0 $page-gutter--desk;
+    }
+
+    p {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

@@ -5,8 +5,8 @@
     <description>James Clarke&apos;s photos</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed/" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Feb 2025 18:32:47 +0000</pubDate>
-    <lastBuildDate>Fri, 14 Feb 2025 18:32:47 +0000</lastBuildDate>
+    <pubDate>Wed, 19 Feb 2025 11:34:22 +0000</pubDate>
+    <lastBuildDate>Wed, 19 Feb 2025 11:34:22 +0000</lastBuildDate>
     <generator>Jekyll v4.3.4</generator>
     
       <item>
@@ -205,7 +205,7 @@
     alt=&quot;Photo of 3 swans on a lake in Hyde Park refreshing themselves under a water pump outlet&quot;
   /&gt;
 
-  &lt;figcaption class=&quot;post__caption&quot;&gt;Communal shower&lt;/figcaption&gt;
+  &lt;figcaption&gt;Communal shower&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
@@ -217,7 +217,7 @@
     alt=&quot;Photo of 5 swans burying their faces in their bodies as they rest beside Round Pond in Hyde Park &quot;
   /&gt;
 
-  &lt;figcaption class=&quot;post__caption&quot;&gt;Hide park&lt;/figcaption&gt;
+  &lt;figcaption&gt;Hide park&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;figure&gt;
@@ -229,7 +229,7 @@
     alt=&quot;Photo of a heron standing on top of &apos;The Arch&apos; sculpture in Hyde Park, with a late afternoon sky in the background&quot;
   /&gt;
 
-  &lt;figcaption class=&quot;post__caption&quot;&gt;Heron&lt;/figcaption&gt;
+  &lt;figcaption&gt;Heron&lt;/figcaption&gt;
 &lt;/figure&gt;
 </description>
         <pubDate>Mon, 28 Aug 2017 00:00:00 +0100</pubDate>
