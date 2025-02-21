@@ -47,6 +47,17 @@
 
     .menu__item {
       font-size: 1rem;
+
+      &.is-active {
+        color: $blue;
+
+        .menu__link {
+          > span {
+            background-color: transparent;
+            color: unset;
+          }
+        }
+      }
     }
     .menu__link::after {
       content: "-";
